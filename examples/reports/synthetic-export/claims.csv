@@ -1,0 +1,11 @@
+stage,claim_id,kind,claim,scope,period,evidence_ids
+mandate,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+evidence,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+exposure,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+transmission,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+valuation,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+valuation,CALC1,CALCULATION,"Recomputed illustrative cashflow_bridge; inspect arguments, units and result in calculation C1.",FICTIONAL-SUBJECT,2026-09-25,
+market,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+expression,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+challenge,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,
+memo,A1,ASSUMPTION,Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.,FICTIONAL-SUBJECT,2026-09-25,

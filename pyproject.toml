@@ -1,0 +1,11 @@
+[project]
+name = "sustainability-financial-materiality-agent"
+version = "0.2.0"
+description = "Financial materiality research workflow by HHFinAi"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "HHFinAi"}]
+dependencies = []
+
+[tool.hhfinai]
+execution = "Run from repository root; wheel installation not supported or tested"

@@ -1,0 +1,10 @@
+{
+  "revenue": 100000000,
+  "volume_change": -0.03,
+  "price_change": 0.01,
+  "contribution_margin": 0.4,
+  "incremental_opex": 1000000,
+  "incremental_capex": 2000000,
+  "incremental_working_capital": 250000,
+  "tax_rate": 0.25
+}

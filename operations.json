@@ -1,0 +1,100 @@
+{
+  "agent": "sustainability-financial-materiality-agent",
+  "version": "0.2.0",
+  "operations": [
+    {
+      "operation": "cashflow_bridge",
+      "signature": "(revenue: 'float', volume_change: 'float', price_change: 'float', contribution_margin: 'float', incremental_opex: 'float', incremental_capex: 'float', incremental_working_capital: 'float', tax_rate: 'float') -> 'dict'",
+      "argument_units": {
+        "revenue": "$money",
+        "volume_change": "decimal",
+        "price_change": "decimal",
+        "contribution_margin": "decimal",
+        "incremental_opex": "$money",
+        "incremental_capex": "$money",
+        "incremental_working_capital": "$money",
+        "tax_rate": "decimal"
+      },
+      "output_unit": "cashflow_bridge",
+      "description": "One-period sensitivity. Positive cost/capex/WC changes consume cash; tax shield is assumed usable."
+    },
+    {
+      "operation": "dscr",
+      "signature": "(cash_available: 'float', debt_service: 'float') -> 'float'",
+      "argument_units": {
+        "cash_available": "$money",
+        "debt_service": "$money"
+      },
+      "output_unit": "multiple",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "equity_bridge",
+      "signature": "(enterprise_value: 'float', cash: 'float', debt: 'float', minority_claims: 'float', shares: 'float') -> 'dict'",
+      "argument_units": {
+        "enterprise_value": "$money",
+        "cash": "$money",
+        "debt": "$money",
+        "minority_claims": "$money",
+        "shares": "shares"
+      },
+      "output_unit": "equity_value_bridge",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "holding_period_return",
+      "signature": "(initial_dirty_price: 'float', exit_dirty_price: 'float', cash_income: 'float', funding_cost: 'float', transaction_cost: 'float') -> 'float'",
+      "argument_units": {
+        "initial_dirty_price": "$money",
+        "exit_dirty_price": "$money",
+        "cash_income": "$money",
+        "funding_cost": "$money",
+        "transaction_cost": "$money"
+      },
+      "output_unit": "decimal_return",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "incremental_dcf",
+      "signature": "(annual_delta_cashflows: 'list[float]', discount_rate: 'float', terminal_growth: 'float', include_terminal: 'bool') -> 'dict'",
+      "argument_units": {
+        "annual_delta_cashflows": "$money",
+        "discount_rate": "decimal",
+        "terminal_growth": "decimal",
+        "include_terminal": "boolean"
+      },
+      "output_unit": "incremental_valuation",
+      "description": "Year-1 onward deltas. Terminal perpetuity uses last delta*(1+g), only when explicitly requested."
+    },
+    {
+      "operation": "npv",
+      "signature": "(cashflows: 'list[float]', annual_discount: 'float') -> 'float'",
+      "argument_units": {
+        "cashflows": "$money",
+        "annual_discount": "decimal"
+      },
+      "output_unit": "$money",
+      "description": "Periodic NPV; cashflows[0] is at time zero, then annual periods."
+    },
+    {
+      "operation": "scale",
+      "signature": "(value: 'float', factor: 'float') -> 'float'",
+      "argument_units": {
+        "value": "$input_unit",
+        "factor": "conversion_factor"
+      },
+      "output_unit": "$output_unit",
+      "description": "Explicit arithmetic conversion; external unit semantics need human review."
+    },
+    {
+      "operation": "scenario_expected_value",
+      "signature": "(scenario_values: 'list[float]', probabilities: 'list[float]') -> 'float'",
+      "argument_units": {
+        "scenario_values": "$money",
+        "probabilities": "decimal"
+      },
+      "output_unit": "$money",
+      "description": "See source code and domain methodology for assumptions."
+    }
+  ]
+}

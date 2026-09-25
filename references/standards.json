@@ -1,0 +1,31 @@
+{
+  "as_of": "2026-09-25",
+  "standards": [
+    {
+      "id": "IFRS-S1",
+      "title": "IFRS S1: sustainability-related financial information",
+      "url": "https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/ifrs-s1-general-requirements/",
+      "source_date": "2023-06-26",
+      "checked_on": "2026-09-25",
+      "status": "ISSUED_STANDARD",
+      "can_apply_as_current_rule": false,
+      "note": "Investor-focused financial materiality. Jurisdictional adoption must be checked separately. Not an impact-materiality substitute.",
+      "jurisdiction": "See primary source and mandate",
+      "effective_from": null,
+      "verification_scope": "Official landing-page/source description checked; not an exhaustive line-by-line compliance mapping"
+    },
+    {
+      "id": "IFRS-TRANSITION",
+      "title": "IFRS Foundation transition disclosure guidance",
+      "url": "https://www.ifrs.org/sustainability/knowledge-hub/ifrs-resources/",
+      "source_date": "2025-06-23",
+      "checked_on": "2026-09-25",
+      "status": "EDUCATIONAL_GUIDANCE",
+      "can_apply_as_current_rule": false,
+      "note": "Guidance on applying IFRS S2; does not require an entity to have a transition plan or prove its delivery.",
+      "jurisdiction": "See primary source and mandate",
+      "effective_from": null,
+      "verification_scope": "Official landing-page/source description checked; not an exhaustive line-by-line compliance mapping"
+    }
+  ]
+}

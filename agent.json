@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "name": "sustainability-financial-materiality-agent",
+  "title": "Sustainability-to-Financial-Materiality Analysis Agent",
+  "owner": "HHFinAi",
+  "version": "0.2.0",
+  "default_route": "equity",
+  "routes": {
+    "equity": {
+      "title": "Equity",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "exposure",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "transmission",
+          "depends_on": [
+            "exposure"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "transmission"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "equity"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    },
+    "credit": {
+      "title": "Credit",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "exposure",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "transmission",
+          "depends_on": [
+            "exposure"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "transmission"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "bond"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    },
+    "issuer-review": {
+      "title": "Issuer Review",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "exposure",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "transmission",
+          "depends_on": [
+            "exposure"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "transmission"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "equity",
+        "bond"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    }
+  },
+  "stages": {
+    "mandate": {
+      "id": "mandate",
+      "title": "Mandate and investable decision",
+      "required_sections": [
+        "decision_question",
+        "instrument_boundary",
+        "mandate_constraints"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/mandate.md",
+      "investment_gate": false
+    },
+    "evidence": {
+      "id": "evidence",
+      "title": "Evidence intake and reconciliation",
+      "required_sections": [
+        "source_register_review",
+        "boundary_reconciliation",
+        "material_gaps"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/evidence.md",
+      "investment_gate": false
+    },
+    "exposure": {
+      "id": "exposure",
+      "title": "Economic exposure and materiality",
+      "required_sections": [
+        "business_model",
+        "issue_inventory",
+        "time_horizons",
+        "financial_vs_impact_materiality"
+      ],
+      "standard_ids": [
+        "IFRS-S1"
+      ],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/exposure.md",
+      "investment_gate": false
+    },
+    "transmission": {
+      "id": "transmission",
+      "title": "Causal financial transmission",
+      "required_sections": [
+        "causal_chain",
+        "revenue_margin_capex",
+        "credit_channels",
+        "double_counting_register"
+      ],
+      "standard_ids": [
+        "IFRS-S1"
+      ],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/transmission.md",
+      "investment_gate": false
+    },
+    "valuation": {
+      "id": "valuation",
+      "title": "Financial bridge and sensitivity",
+      "required_sections": [
+        "baseline_reconciliation",
+        "incremental_cashflows",
+        "equity_credit_bridge",
+        "scenario_sensitivity"
+      ],
+      "standard_ids": [
+        "IFRS-S1"
+      ],
+      "requires_calculation": true,
+      "prompt_path": "prompts/stages/valuation.md",
+      "investment_gate": false,
+      "allowed_operations": [
+        "cashflow_bridge",
+        "incremental_dcf",
+        "equity_bridge",
+        "scenario_expected_value"
+      ]
+    },
+    "market": {
+      "id": "market",
+      "title": "Market context and implementation evidence",
+      "required_sections": [
+        "market_or_contract_evidence",
+        "liquidity_funding_access",
+        "portfolio_context"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/market.md",
+      "investment_gate": false
+    },
+    "expression": {
+      "id": "expression",
+      "title": "Investment-decision handoff",
+      "required_sections": [
+        "valuation_and_entry",
+        "risk_catalysts_and_thesis_breakers",
+        "eligibility_review"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/expression.md",
+      "investment_gate": true
+    },
+    "challenge": {
+      "id": "challenge",
+      "title": "Independent challenge and exceptions",
+      "required_sections": [
+        "source_challenge",
+        "model_and_method_limits",
+        "material_issues"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/challenge.md",
+      "investment_gate": false
+    },
+    "memo": {
+      "id": "memo",
+      "title": "Investment committee and accountable review",
+      "required_sections": [
+        "investment_question_and_answer",
+        "financial_vs_sustainability_conclusions",
+        "evidence_and_calculations",
+        "decision_conditions_and_limits"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/memo.md",
+      "investment_gate": false,
+      "required_assessments": {
+        "financial_materiality_basis": [
+          "cash_flow",
+          "credit",
+          "both",
+          "not_established"
+        ],
+        "impact_materiality_separate": [
+          true
+        ],
+        "double_counting_review": [
+          "reviewed",
+          "unresolved"
+        ],
+        "scenario_not_forecast": [
+          true
+        ]
+      }
+    }
+  },
+  "demo_operation": "cashflow_bridge",
+  "demo_arguments": {
+    "revenue": 100000000,
+    "volume_change": -0.03,
+    "price_change": 0.01,
+    "contribution_margin": 0.4,
+    "incremental_opex": 1000000,
+    "incremental_capex": 2000000,
+    "incremental_working_capital": 250000,
+    "tax_rate": 0.25
+  },
+  "demo_assessment": "Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.",
+  "demo_domain_assessment": {
+    "financial_materiality_basis": "both",
+    "impact_materiality_separate": true,
+    "double_counting_review": "reviewed",
+    "scenario_not_forecast": true
+  },
+  "capabilities": {
+    "embedded_llm": false,
+    "live_data": false,
+    "trade_execution": false,
+    "scheduler": false,
+    "external_communications": false,
+    "authenticated_human_identity": false
+  }
+}
