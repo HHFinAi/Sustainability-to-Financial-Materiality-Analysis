@@ -1,0 +1,40 @@
+{
+  "agent": "sustainability-financial-materiality-agent",
+  "version": "0.2.0",
+  "validated_on": "2026-09-25",
+  "python": "3.13.5",
+  "platform": "Linux",
+  "unit_test_executions": 120,
+  "domain_unit_tests": 13,
+  "unit_tests": "PASS",
+  "schema_validations": 36,
+  "schema_validation": "PASS",
+  "routes": [
+    {
+      "route": "equity",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 9,
+      "packet_digest": "5d8e99f0666c33d66775180adf153aa30d148c86f81e2bc833e13bee3bfdad17",
+      "execution_authorized": false
+    },
+    {
+      "route": "credit",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 9,
+      "packet_digest": "3778dfacd0696820733a7ec79c9464a2eaa0969e790d9d3cd81b6b743776a420",
+      "execution_authorized": false
+    },
+    {
+      "route": "issuer-review",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 9,
+      "packet_digest": "7088e554ed03bfc88e80f336b321141bd92a53658faf7430a870a0df0edc6931",
+      "execution_authorized": false
+    }
+  ],
+  "source_study_status": "NEEDS_DATA",
+  "live_research_performed": false,
+  "remote_github_actions_run": false,
+  "production_certification": false,
+  "repository_checks": "PASS"
+}

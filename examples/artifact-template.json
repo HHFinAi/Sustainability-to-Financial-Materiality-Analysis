@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "run_id": "REPLACE_FROM_CURRENT_PACKET",
+  "input_digest": "REPLACE_FROM_CURRENT_PACKET",
+  "stage_id": "mandate",
+  "status": "NEEDS_DATA",
+  "producer": {
+    "name": "REPLACE with actual analyst or authorized AI host",
+    "type": "ai"
+  },
+  "summary": "TEMPLATE: replace with actual scoped evidence-based work.",
+  "claims": [
+    {
+      "id": "A1",
+      "kind": "ASSUMPTION",
+      "text": "Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty.",
+      "basis": "Original fictional fixture for workflow testing; not an observed investment result.",
+      "scope": "FICTIONAL-SUBJECT",
+      "period": "2026-09-25",
+      "evidence_ids": [],
+      "limitations": [
+        "SYNTHETIC: all entity-level analysis below is illustrative."
+      ]
+    }
+  ],
+  "calculations": [],
+  "standards_considered": [],
+  "sections": {
+    "decision_question": {
+      "analysis": "SYNTHETIC decision question: Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty. This fixture tests structured handoffs, not substantive completion of the live research checklist.",
+      "claim_ids": [
+        "A1"
+      ]
+    },
+    "instrument_boundary": {
+      "analysis": "SYNTHETIC instrument boundary: Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty. This fixture tests structured handoffs, not substantive completion of the live research checklist.",
+      "claim_ids": [
+        "A1"
+      ]
+    },
+    "mandate_constraints": {
+      "analysis": "SYNTHETIC mandate constraints: Fictional industrial issuer: stress supply disruption and energy costs without adding a separate unexplained ESG discount-rate penalty. This fixture tests structured handoffs, not substantive completion of the live research checklist.",
+      "claim_ids": [
+        "A1"
+      ]
+    }
+  },
+  "gaps": [
+    "REPLACE with scoped missing inputs or remove only after resolving them."
+  ],
+  "issues": [],
+  "confidence": {
+    "value": 0.0,
+    "basis": "Not investment confidence; fixture has no empirical research validation."
+  }
+}

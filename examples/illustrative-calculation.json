@@ -1,0 +1,59 @@
+{
+  "id": "C1",
+  "operation": "cashflow_bridge",
+  "arguments": {
+    "revenue": 100000000,
+    "volume_change": -0.03,
+    "price_change": 0.01,
+    "contribution_margin": 0.4,
+    "incremental_opex": 1000000,
+    "incremental_capex": 2000000,
+    "incremental_working_capital": 250000,
+    "tax_rate": 0.25
+  },
+  "currency": "USD",
+  "measurement_unit": "specified_outcome",
+  "input_unit": "percent",
+  "result_unit": "decimal",
+  "input_provenance": {
+    "revenue": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "volume_change": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "decimal"
+    },
+    "price_change": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "decimal"
+    },
+    "contribution_margin": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "decimal"
+    },
+    "incremental_opex": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "incremental_capex": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "incremental_working_capital": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "tax_rate": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "decimal"
+    }
+  },
+  "result": {
+    "revenue_change": -2029999.9999999984,
+    "ebit_change": -1811999.9999999995,
+    "after_tax_operating_change": -1358999.9999999995,
+    "free_cashflow_change": -3608999.9999999995
+  },
+  "output_unit": "cashflow_bridge"
+}
