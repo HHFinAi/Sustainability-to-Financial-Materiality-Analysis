@@ -1,5 +1,7 @@
 # Sustainability-to-Financial-Materiality Analysis Agent
 
+[![Validate research workflow](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis/actions/workflows/validate.yml)
+
 **Institutional-quality buy-side research, designed to support tradable investment decisions through a traceable, auditable workflow.**
 
 Which sustainability issues change revenue, margins, cash flows, credit or valuation, by how much and under which assumptions?
