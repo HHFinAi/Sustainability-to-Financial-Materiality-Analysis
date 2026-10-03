@@ -1,0 +1,60 @@
+{
+  "case": "Heidelberg Materials — Brevik incremental cash-flow sensitivity",
+  "issuer": "Heidelberg Materials AG",
+  "prepared_on": "2026-10-03",
+  "information_cutoff": "2026-02-25",
+  "valuation_date": "2026-02-25",
+  "currency": "EUR",
+  "financial_units": "EUR million unless per-tonne",
+  "review_status": "RESEARCH_ONLY; no human approval recorded",
+  "source_register": "sources.csv",
+  "facts": {
+    "capture_capacity_tonnes_per_year": {"value": 400000, "source": "HM2", "classification": "FACT", "note": "Nameplate capacity, not actual captured or permanently stored tonnes."},
+    "group_fcf_2025_eur_m": {"value": 2109, "source": "HM1", "classification": "FACT", "note": "Preliminary unaudited reported group FCF; scale comparator only, not unlevered project cash flow."}
+  },
+  "management_expectations": {
+    "years": [2026, 2027, 2028, 2029, 2030],
+    "brevik_evozero_cement_tonnes": [350000, 450000, 500000, 550000, 550000],
+    "carbon_price_eur_per_tonne": [80, 85, 90, 95, 100],
+    "source": "HM3",
+    "classification": "FACT_OF_MANAGEMENT_EXPECTATION",
+    "note": "Cement production plans and management carbon-price assumptions, not observed sales, capture volumes or market forward prices. Intermediate carbon prices are a linear interpolation of management endpoints. No Padeswood volume included."
+  },
+  "common_assumptions": {
+    "discount_rate": 0.08,
+    "cash_tax_rate": 0.25,
+    "annual_incremental_capex_eur_m": 5,
+    "premium_revenue_working_capital_fraction": 0.05,
+    "opening_premium_working_capital_eur_m": 0,
+    "capture_scaling_cement_tonnes": 550000,
+    "classification": "ASSUMPTION",
+    "note": "Analyst sensitivities, not company guidance: year-end cash flows; nominal rates held flat; no loss tax shield, depreciation tax shield, financing, terminal value, working-capital release or sunk construction capex. Capture scales with realized cement relative to 550kt and is capped at 400kt. Premium volume equals sales volume within each year. This mapping is a simplifying operational assumption, not a physical emissions factor."
+  },
+  "scenarios": {
+    "downside": {
+      "realization_fraction": 0.6,
+      "incremental_premium_eur_per_cement_tonne": 20,
+      "retained_carbon_cash_fraction": 0,
+      "net_ccs_opex_eur_per_captured_tonne": 60
+    },
+    "central_sensitivity": {
+      "realization_fraction": 0.85,
+      "incremental_premium_eur_per_cement_tonne": 60,
+      "retained_carbon_cash_fraction": 0.5,
+      "net_ccs_opex_eur_per_captured_tonne": 40
+    },
+    "upside": {
+      "realization_fraction": 1,
+      "incremental_premium_eur_per_cement_tonne": 100,
+      "retained_carbon_cash_fraction": 1,
+      "net_ccs_opex_eur_per_captured_tonne": 20
+    }
+  },
+  "scenario_classification": "ASSUMPTION; deliberately broad conditional sensitivities, not forecasts or probabilities",
+  "cash_boundary": "Premium is incremental to otherwise identical conventional-cement revenue, including ordinary carbon-price pass-through. Retained carbon cash is residual monetized avoided-allowance benefit after eligibility, free allocation, aid settlement and timing effects. Net CCS opex is after operating grants but BEFORE that carbon cash. Never include the same grant or avoided allowance twice. These contractual economics are unverified and must be replaced together with a reconciled cash waterfall before underwriting.",
+  "sensitivity_grid": {
+    "premium_eur_per_cement_tonne": [20, 40, 60, 80, 100],
+    "net_ccs_opex_eur_per_captured_tonne": [20, 40, 60],
+    "discount_rates": [0.06, 0.08, 0.1]
+  }
+}

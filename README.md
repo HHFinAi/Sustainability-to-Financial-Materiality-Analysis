@@ -8,7 +8,12 @@ Which sustainability issues change revenue, margins, cash flows, credit or valua
 
 **HHFinAi · v0.2.0 · Python 3.10+ · 9 research stages · 3 named routes · Human review · No autonomous trading**
 
-[Worked example](examples/WORKED_EXAMPLE.md) · [Workflow](WORKFLOW.md) · [Evidence and audit](docs/AUDIT.md) · [Controls and limits](docs/INSTITUTIONAL_QUALITY.md) · [Validation](docs/VALIDATION.md)
+[Heidelberg Materials case](examples/WORKED_EXAMPLE.md) · [Workflow](WORKFLOW.md) · [Evidence and audit](docs/AUDIT.md) · [Controls and limits](docs/INSTITUTIONAL_QUALITY.md) · [Validation](docs/VALIDATION.md)
+
+## Start with the investment case
+Read [Heidelberg Materials: what Brevik CCS must earn to matter](examples/WORKED_EXAMPLE.md), a dated real-issuer case connecting carbon capture to incremental cash flow, a premium break-even and a five-year valuation sensitivity. It separates reported facts, management expectations and analyst assumptions, and ends with a WATCH judgment and specific evidence gates.
+
+The central sensitivity gives **€56.08m** of discounted 2026–2030 cash flow; it is not a company forecast or total project value. [Inspect the annual bridge and downside](examples/heidelberg-brevik/RESULTS.md) or reproduce it with `python examples/heidelberg-brevik/model.py --check`. The [original fictional stress](examples/SYNTHETIC_CASHFLOW_EXAMPLE.md) remains available as a simple arithmetic demonstration.
 
 ## What it delivers
 - Issue-to-financial-driver map
@@ -52,7 +57,7 @@ The [bounded source-study packet](examples/reports/source-study-packet.md) uses 
 ## What does not run
 No embedded AI model, live market feed, automatic extraction, scheduler, broker connection, external messaging or automatic voting. Human-review names are attestations, not authenticated identities. Tests establish selected software behavior—not alpha, comprehensive legal conformity, ecological validity, causal impact, complete data quality or production security. Runtime and host compatibility beyond the recorded tests are not certified.
 
-## Repository and publication
-[GitHub Desktop publication guide](START_HERE_GITHUB_DESKTOP.md) · [Prepared metadata](repository-metadata.json) · [GEO/SGO discoverability](docs/GEO_SEO.md) · [FAQ](docs/FAQ.md) · [Notices](NOTICE.md)
+## Published repository and local synchronization
+[GitHub Desktop synchronization and new-copy guide](START_HERE_GITHUB_DESKTOP.md) · [Repository metadata](repository-metadata.json) · [GEO/SGO discoverability](docs/GEO_SEO.md) · [FAQ](docs/FAQ.md) · [Notices](NOTICE.md)
 
-This is a locally prepared package for **HHFinAi**, not a claim of an already published repository. Preserve `.git` when integrating with existing work. All eight expansion packages use a shared versioned core, independently vendored to run offline. Old v0.1.0 repositories are not modified or silently upgraded. Use a new run after changing the runtime.
+The source code is published at [HHFinAi/Sustainability-to-Financial-Materiality-Analysis](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis). In GitHub Desktop, use **Fetch origin** and **Pull origin** before editing an existing clone. Preserve `.git` and review changes on a working branch. All eight expansion packages use a shared versioned core, independently vendored to run offline. Installing or updating one repository does not silently upgrade another. Use a new run after changing the runtime.
