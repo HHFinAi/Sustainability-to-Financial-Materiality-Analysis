@@ -1,0 +1,4 @@
+scenario,window_pv_eur_m,fcf_2026_eur_m,fcf_2030_eur_m,fcf_2030_pct_of_reported_group_2025_fcf,break_even_premium_eur_per_cement_tonne
+downside,-47.55270408,-10.17363636,-12.8,-0.60692271,68.34175872
+central_sensitivity,56.08018679,7.495,18.5875,0.88134187,13.08355485
+upside,193.59680594,30.95454545,60.25,2.85680417,0.0

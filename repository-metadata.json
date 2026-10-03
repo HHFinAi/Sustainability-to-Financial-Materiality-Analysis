@@ -1,6 +1,6 @@
 {
   "owner": "HHFinAi",
-  "repository_name": "sustainability-financial-materiality-agent",
+  "repository_name": "Sustainability-to-Financial-Materiality-Analysis",
   "description": "Financial materiality: institutional-quality buy-side research with traceable, auditable workflows and investment-decision handoffs. Research support, not certification or trading.",
   "topics": [
     "sustainable-finance",
@@ -12,7 +12,9 @@
     "human-in-the-loop",
     "materiality-analysis"
   ],
-  "publication_status": "prepared-not-published",
-  "intended_repository_url": "https://github.com/HHFinAi/sustainability-financial-materiality-agent",
-  "homepage": null
+  "publication_status": "published",
+  "homepage": null,
+  "repository_url": "https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis",
+  "visibility": "public",
+  "publication_status_checked_on": "2026-10-03"
 }
