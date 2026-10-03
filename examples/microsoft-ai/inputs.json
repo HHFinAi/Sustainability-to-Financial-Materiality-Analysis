@@ -1,0 +1,30 @@
+{
+  "case_id": "MSFT-COOLING-2026-10-04",
+  "classification": "ANALYST_ASSUMPTIONS_NOT_ISSUER_GUIDANCE",
+  "currency": "USD",
+  "money_unit": "million",
+  "scope": "Illustrative incremental cooling design, not a disclosed Microsoft site or company valuation",
+  "it_capacity_mw": 100.0,
+  "average_it_load_fraction": 0.70,
+  "hours_per_year": 8760,
+  "avoided_cooling_water_l_per_it_kwh": 0.30,
+  "incremental_pue": 0.02,
+  "electricity_usd_per_mwh": 80.0,
+  "water_usd_per_m3": 3.0,
+  "incremental_capex_usd_m": 15.0,
+  "incremental_maintenance_usd_m_per_year": 0.25,
+  "asset_life_years": 10,
+  "discount_rate": 0.08,
+  "cash_tax_rate": 0.25,
+  "commissioning_delay_years": 0,
+  "capex_overrun_fraction": 0.0,
+  "additional_operating_benefit_usd_m_per_year": 0.0,
+  "assumptions": {
+    "water_intensity": "Illustrative avoided direct cooling-water intensity; the similar 0.30 figure in MS2 has consumption/withdrawal wording ambiguity and is not treated as a calibrated site input.",
+    "electricity": "Constant IT load; extra facility electricity equals IT MWh times incremental PUE. No renewable matching or carbon-credit value assumed.",
+    "benefit": "Recurring pre-tax incremental operating cash benefit. Zero initially; break-even is solved, not forecast. Avoided disruption and enabled profit must not be double counted.",
+    "tax": "Straight-line tax depreciation over cooling-asset life, zero residual; all incremental deductions immediately usable against other taxable income. This is an assumption, not tax advice.",
+    "timing": "All incremental capex at time zero; operating cash flow and tax depreciation start after commissioning; benefits occur at year-end for the full asset life.",
+    "exclusions": "No terminal value, working-capital change, financing flows, delay holding costs, hardware replacement, carbon externality pricing, or quantified supply-chain water. These omissions require reassessment for actual underwriting."
+  }
+}

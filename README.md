@@ -1,63 +1,84 @@
-# Sustainability-to-Financial-Materiality Analysis Agent
+# Sustainability to Financial Materiality
 
-[![Validate research workflow](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis/actions/workflows/validate.yml)
+**Investment research by HHFinAi: company economics, capital allocation and valuation, supported by reproducible calculations.**
 
-**Institutional-quality buy-side research, designed to support tradable investment decisions through a traceable, auditable workflow.**
+Which sustainability issues change cash flow, by how much, and what evidence would change the investment judgment?
 
-Which sustainability issues change revenue, margins, cash flows, credit or valuation, by how much and under which assumptions?
+## Start with the research
 
-**HHFinAi · v0.2.0 · Python 3.10+ · 9 research stages · 3 named routes · Human review · No autonomous trading**
+### Heidelberg Materials — what Brevik CCS must earn to matter
 
-[Heidelberg Materials case](examples/WORKED_EXAMPLE.md) · [Workflow](WORKFLOW.md) · [Evidence and audit](docs/AUDIT.md) · [Controls and limits](docs/INSTITUTIONAL_QUALITY.md) · [Validation](docs/VALIDATION.md)
+**Research assessment: WATCH.** The historical case tests whether an operating carbon-capture project supports incremental value, rather than assuming a group-wide green premium. The central sensitivity gives **€56.08m** of discounted 2026–2030 incremental cash flow; it is not a company forecast or full project NPV. The five-year premium break-even is **€13.08/t cement** under the stated assumptions.
 
-## Start with the investment case
-Read [Heidelberg Materials: what Brevik CCS must earn to matter](examples/WORKED_EXAMPLE.md), a dated real-issuer case connecting carbon capture to incremental cash flow, a premium break-even and a five-year valuation sensitivity. It separates reported facts, management expectations and analyst assumptions, and ends with a WATCH judgment and specific evidence gates.
+**Status:** retrospective real-issuer research; evidence cutoff **25 February 2026**. This is mitigation/transition economics, not physical adaptation. Material evidence gates and the limits of the cash-flow window remain explicit.
 
-The central sensitivity gives **€56.08m** of discounted 2026–2030 cash flow; it is not a company forecast or total project value. [Inspect the annual bridge and downside](examples/heidelberg-brevik/RESULTS.md) or reproduce it with `python examples/heidelberg-brevik/model.py --check`. The [original fictional stress](examples/SYNTHETIC_CASHFLOW_EXAMPLE.md) remains available as a simple arithmetic demonstration.
+[Read the investment memo](examples/WORKED_EXAMPLE.md) · [Inspect results](examples/heidelberg-brevik/RESULTS.md) · [Run the model](examples/heidelberg-brevik/model.py)
 
-## What it delivers
-- Issue-to-financial-driver map
-- Incremental cash-flow bridge and valuation sensitivity
-- Separate equity and credit implications
-- Catalysts, downside and thesis breakers
+### Microsoft — what must water-resilient AI infrastructure earn?
 
-## Run the tests and a synthetic demonstration
-From the extracted repository root:
+**Research finding: water savings are not a return calculation.** An explicitly illustrative cooling-design model requires **$3.16m/year** of additional pre-tax operating benefit to break even under its reference assumptions. That is a hurdle to investigate, not a Microsoft forecast or site valuation.
+
+**Status:** real-issuer disclosure context plus an illustrative incremental model, prepared **4 October 2026**. Historical FY2023–FY2025 financial context is kept separate from the 2026 stewardship disclosure. No current share-price recommendation is made.
+
+[Read the research case](examples/microsoft-ai/README.md) · [Sensitivity table](examples/microsoft-ai/RESULTS.md) · [Evidence and source challenges](examples/microsoft-ai/SOURCES.md) · [Evaluation record](examples/microsoft-ai/EVALUATION.md)
+
+## Research contribution and accountability
+
+The work makes counterfactuals, financial transmission, break-even conditions, contrary cases and unresolved evidence visible. Sustainability credentials do not substitute for valuation or underlying economics. Original HHFinAi implementations are distinguished from third-party methodology and issuer disclosures.
+
+The Microsoft release was prepared with AI assistance under Ed's portfolio-development brief. Mathematical checks are executable; independent human validation and workflow research approval are not represented as complete. Each case identifies its own scope. [Portfolio and research standards](https://github.com/HHFinAi/HHFinAi)
+
+## Reproduce the research examples
+
+From the repository root, using Python 3.10 or later:
+
 ```bash
+python examples/heidelberg-brevik/model.py --check
+python examples/microsoft-ai/model.py --check
+python examples/microsoft-ai/claim_checks.py
 python -m unittest discover -s tests -v
 python scripts/check_repository.py
+```
+
+The Microsoft metadata exercise is **48 engineered contract checks**, not measured LLM extraction accuracy, investment alpha or productivity improvement. Its [evaluation record](examples/microsoft-ai/EVALUATION.md) separates executed checks from the proposed empirical benchmark.
+
+## Workflow infrastructure
+
+**Engine v0.2.0 · 9 research stages · 3 named routes · Human review · No autonomous trading**
+
+[Workflow](WORKFLOW.md) · [Host instructions](AGENTS.md) · [Prompts and skills](PROMPTS.md) · [Data contract](docs/DATA_CONTRACT.md) · [Evidence and audit](docs/AUDIT.md) · [Validation](docs/VALIDATION.md)
+
+The engine validates and records structured research. A human or separately authorized AI host retrieves evidence and performs substantive analysis; the engine does not fetch documents or run an LLM.
+
+```bash
 python -m sf_agent routes
 python -m sf_agent demo --out runs/demo-01
 python -m sf_agent report --run runs/demo-01
 python -m sf_agent export --run runs/demo-01 --out exports/demo-01
 python -m sf_agent calc --operation cashflow_bridge --arguments examples/calculation-arguments.json
 ```
-Use `python3` where appropriate. Select a new output directory each time; existing runs are never overwritten. No external packages, model keys or network access are required. The synthetic demo uses fictional inputs and pre-authored fixtures. It does not perform live investment research.
 
-## Perform an actual research workflow
-Populate `examples/research-request-template.json` with verified identifiers, mandate and authorized source records; remove every placeholder. Keep it outside a public repository when confidential.
+Use a new output directory each time. The demo uses fictional, pre-authored fixtures and does not perform live investment research. [Original synthetic cash-flow example](examples/SYNTHETIC_CASHFLOW_EXAMPLE.md).
+
+For an actual research run, replace every placeholder in `examples/research-request-template.json` and keep confidential material outside the public repository:
+
 ```bash
 python -m sf_agent init --request your-request.json --out runs/research-01
 python -m sf_agent next --run runs/research-01
-# The host AI or human researches the ready stage and saves a structured artifact.
 python -m sf_agent submit --run runs/research-01 --stage mandate --artifact your-artifact.json --revision 0
 python -m sf_agent status --run runs/research-01
 ```
-Repeat `next` and `submit` using the current revision. The engine validates and records research; it does not fetch documents or run an LLM. See [the host contract](AGENTS.md), [data contract](docs/DATA_CONTRACT.md), and [skills](PROMPTS.md). Missing material data require `NEEDS_DATA` or an explicit blocking issue.
 
-## What institutional-quality, tradable and auditable mean here
-**Institutional-quality** describes instrument-specific analysis, evidence, model assumptions, challenge and accountable review. **Tradable** means investment-decision relevance backed by scoped market or contract evidence, not a guarantee that a trade exists or should be executed. **Auditable** means local research records can be inspected and reconstructed—not tamper-proof storage, verified source truth or independent certification. Read the [claim-to-control map](docs/INSTITUTIONAL_QUALITY.md).
+Continue with the current revision. Material evidence gaps require `NEEDS_DATA` or an explicit blocking issue. The [methodology-only source study](examples/reports/source-study-packet.md) remains `NEEDS_DATA`; standalone research examples do not override it. [Synthetic workflow packet](examples/reports/synthetic-packet.md).
 
-## Domain limits
-Scenario arithmetic is not a forecast. Financial materiality and impact materiality are separate; no universal ESG premium or automatic ESG score-to-WACC conversion.
+## Controls and limitations
 
-## Source study and verification
-The [bounded source-study packet](examples/reports/source-study-packet.md) uses a reviewed official-methodology reference and deliberately stops at NEEDS_DATA because methodology alone is not issuer evidence. The [synthetic packet](examples/reports/synthetic-packet.md) demonstrates structure only. Source references were checked within the scope recorded on **2026-09-25**; frameworks may change. [Sources and applicability](references/SOURCES.md).
+Financial and impact materiality are separate. There is no universal ESG premium or automatic score-to-WACC conversion. Scenario arithmetic is not a forecast. Evidence attestations are not independently authenticated, and local audit records are not tamper-proof. [Claim-to-control map](docs/INSTITUTIONAL_QUALITY.md).
 
-## What does not run
-No embedded AI model, live market feed, automatic extraction, scheduler, broker connection, external messaging or automatic voting. Human-review names are attestations, not authenticated identities. Tests establish selected software behavior—not alpha, comprehensive legal conformity, ecological validity, causal impact, complete data quality or production security. Runtime and host compatibility beyond the recorded tests are not certified.
+There is no embedded AI model, live market feed, scheduler, broker connection, external messaging or automatic voting. Software tests do not establish source truth, commercial viability, investment performance, legal compliance or production security. Third-party methods and sources retain their rights; no endorsement is implied. [Sources](references/SOURCES.md) · [Notices](NOTICE.md) · [FAQ](docs/FAQ.md).
 
-## Published repository and local synchronization
-[GitHub Desktop synchronization and new-copy guide](START_HERE_GITHUB_DESKTOP.md) · [Repository metadata](repository-metadata.json) · [GEO/SGO discoverability](docs/GEO_SEO.md) · [FAQ](docs/FAQ.md) · [Notices](NOTICE.md)
+## Existing users and repository maintenance
 
-The source code is published at [HHFinAi/Sustainability-to-Financial-Materiality-Analysis](https://github.com/HHFinAi/Sustainability-to-Financial-Materiality-Analysis). In GitHub Desktop, use **Fetch origin** and **Pull origin** before editing an existing clone. Preserve `.git` and review changes on a working branch. All eight expansion packages use a shared versioned core, independently vendored to run offline. Installing or updating one repository does not silently upgrade another. Use a new run after changing the runtime.
+The workflow core, original cases, source studies and research-approval controls are preserved. The Microsoft case is a supplemental example, not a silent upgrade of the vendored engine. Fetch and pull remote changes before editing an existing clone; preserve `.git` and review local changes.
+
+[GitHub Desktop guide](START_HERE_GITHUB_DESKTOP.md) · [Repository metadata](repository-metadata.json) · [Discoverability](docs/GEO_SEO.md)

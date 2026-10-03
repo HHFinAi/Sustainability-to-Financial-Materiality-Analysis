@@ -1,0 +1,42 @@
+{
+  "case_id": "MSFT-COOLING-2026-10-04",
+  "retrieved_on": "2026-10-04",
+  "boundary": "FY2023-2025 financial baseline; not a current company forecast. Engineering disclosure dated 2024-12-09; stewardship separately observes the 2026 report.",
+  "sources": {
+    "MS1": {
+      "title": "Microsoft Annual Report 2025",
+      "url": "https://www.microsoft.com/investor/reports/ar25/index.html",
+      "locator": "Cash Flows Statements; years ended June 30, 2025/2024/2023",
+      "review": "Fields inspected by AI assistant; no independent human attestation recorded"
+    },
+    "MS2": {
+      "title": "Sustainable by design: Next-generation datacenters consume zero water for cooling",
+      "date": "2024-12-09",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Mitigating energy impacts; Pilot projects and implementation; WUE definition and footnote",
+      "review": "Company design statements, not independently verified operational results"
+    },
+    "MS3": {
+      "title": "Responsible AI Transparency Report 2026, public HTML overview",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/responsible-ai/reports/transparency-report/",
+      "locator": "Scaling adaptable governance; Meeting the agentic moment; Lessons from deploying AI",
+      "review": "2026 HTML summary inspected, not a review of every underlying report or product control"
+    },
+    "A1": {
+      "title": "HHFinAi analyst scenario inputs",
+      "url": null,
+      "locator": "inputs.json",
+      "review": "Illustrative assumptions, not sourced issuer facts"
+    }
+  },
+  "records": [
+    {"id":"MS1-cash_from_operations-2025","entity":"Microsoft Corporation","metric":"cash_from_operations","value":136162,"unit":"USD million","period":"FY2025 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"MS1-cash_additions_to_property_and_equipment-2025","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":64551,"unit":"USD million","period":"FY2025 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"MS1-cash_from_operations-2024","entity":"Microsoft Corporation","metric":"cash_from_operations","value":118548,"unit":"USD million","period":"FY2024 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"MS1-cash_additions_to_property_and_equipment-2024","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":44477,"unit":"USD million","period":"FY2024 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"MS1-cash_from_operations-2023","entity":"Microsoft Corporation","metric":"cash_from_operations","value":87582,"unit":"USD million","period":"FY2023 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"MS1-cash_additions_to_property_and_equipment-2023","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":28107,"unit":"USD million","period":"FY2023 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
+    {"id":"A-PUE","entity":"illustrative cooling design","metric":"incremental_pue","value":0.02,"unit":"ratio","period":"each modeled operating year","scope":"hypothetical incremental cooling design","classification":"ANALYST_ASSUMPTION","source_id":"A1","locator":"inputs.json incremental_pue"},
+    {"id":"A-CAPEX","entity":"illustrative cooling design","metric":"incremental_capex","value":15.0,"unit":"USD million","period":"time zero","scope":"hypothetical incremental cooling design","classification":"ANALYST_ASSUMPTION","source_id":"A1","locator":"inputs.json incremental_capex_usd_m"}
+  ]
+}
