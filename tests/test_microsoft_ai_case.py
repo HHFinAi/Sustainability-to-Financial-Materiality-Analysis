@@ -9,6 +9,7 @@ import subprocess
 import sys
 from pathlib import Path
 import unittest
+from unittest.mock import patch
 
 CASE = Path(__file__).resolve().parents[1] / "examples" / "microsoft-ai"
 
@@ -225,6 +226,21 @@ class MicrosoftAIExampleTests(unittest.TestCase):
         run = subprocess.run([sys.executable, str(CASE / "model.py"), "--check"], capture_output=True, text=True)
         self.assertEqual(run.returncode, 0, run.stderr)
         self.assertEqual(before, {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in paths})
+
+    def test_results_independent_of_python_builtin_float_sum_algorithm(self):
+        # Python 3.12 changed builtin float summation. Emulate Python 3.10/3.11
+        # accumulation and require model reports/cash flows to remain identical.
+        def sequential_sum(values, start=0):
+            total = start
+            for value in values:
+                total += value
+            return total
+
+        expected_results = model.analysis(self.p)
+        expected_report = model.render(self.p)
+        with patch.object(model, "sum", sequential_sum, create=True):
+            self.assertEqual(model.analysis(self.p), expected_results)
+            self.assertEqual(model.render(self.p), expected_report)
 
     def test_extension_keeps_original_financial_observation_periods(self):
         evidence = json.loads((CASE / "evidence.json").read_text())
