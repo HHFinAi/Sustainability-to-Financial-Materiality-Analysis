@@ -1,2 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve the exact archived CLI export bytes and terminal transcript.
+examples/host-integration/session-export/*.csv -text whitespace=cr-at-eol
+examples/host-integration/session-transcript.txt whitespace=-blank-at-eof

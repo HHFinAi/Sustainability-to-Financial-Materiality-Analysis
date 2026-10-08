@@ -30,13 +30,170 @@
     }
   },
   "records": [
-    {"id":"MS1-cash_from_operations-2025","entity":"Microsoft Corporation","metric":"cash_from_operations","value":136162,"unit":"USD million","period":"FY2025 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"MS1-cash_additions_to_property_and_equipment-2025","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":64551,"unit":"USD million","period":"FY2025 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"MS1-cash_from_operations-2024","entity":"Microsoft Corporation","metric":"cash_from_operations","value":118548,"unit":"USD million","period":"FY2024 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"MS1-cash_additions_to_property_and_equipment-2024","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":44477,"unit":"USD million","period":"FY2024 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"MS1-cash_from_operations-2023","entity":"Microsoft Corporation","metric":"cash_from_operations","value":87582,"unit":"USD million","period":"FY2023 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"MS1-cash_additions_to_property_and_equipment-2023","entity":"Microsoft Corporation","metric":"cash_additions_to_property_and_equipment","value":28107,"unit":"USD million","period":"FY2023 ended June 30","scope":"consolidated group","classification":"REPORTED_FACT","source_id":"MS1","locator":"Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"},
-    {"id":"A-PUE","entity":"illustrative cooling design","metric":"incremental_pue","value":0.02,"unit":"ratio","period":"each modeled operating year","scope":"hypothetical incremental cooling design","classification":"ANALYST_ASSUMPTION","source_id":"A1","locator":"inputs.json incremental_pue"},
-    {"id":"A-CAPEX","entity":"illustrative cooling design","metric":"incremental_capex","value":15.0,"unit":"USD million","period":"time zero","scope":"hypothetical incremental cooling design","classification":"ANALYST_ASSUMPTION","source_id":"A1","locator":"inputs.json incremental_capex_usd_m"}
+    {
+      "id": "MS1-cash_from_operations-2025",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_from_operations",
+      "value": 136162,
+      "unit": "USD million",
+      "period": "FY2025 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "MS1-cash_additions_to_property_and_equipment-2025",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_additions_to_property_and_equipment",
+      "value": 64551,
+      "unit": "USD million",
+      "period": "FY2025 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "MS1-cash_from_operations-2024",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_from_operations",
+      "value": 118548,
+      "unit": "USD million",
+      "period": "FY2024 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "MS1-cash_additions_to_property_and_equipment-2024",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_additions_to_property_and_equipment",
+      "value": 44477,
+      "unit": "USD million",
+      "period": "FY2024 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "MS1-cash_from_operations-2023",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_from_operations",
+      "value": 87582,
+      "unit": "USD million",
+      "period": "FY2023 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "MS1-cash_additions_to_property_and_equipment-2023",
+      "entity": "Microsoft Corporation",
+      "metric": "cash_additions_to_property_and_equipment",
+      "value": 28107,
+      "unit": "USD million",
+      "period": "FY2023 ended June 30",
+      "scope": "consolidated group",
+      "classification": "REPORTED_FACT",
+      "source_id": "MS1",
+      "locator": "Cash Flows Statements: Operations / Investing; capex represented as positive expenditure"
+    },
+    {
+      "id": "A-PUE",
+      "entity": "illustrative cooling design",
+      "metric": "incremental_pue",
+      "value": 0.02,
+      "unit": "ratio",
+      "period": "each modeled operating year",
+      "scope": "hypothetical incremental cooling design",
+      "classification": "ANALYST_ASSUMPTION",
+      "source_id": "A1",
+      "locator": "inputs.json incremental_pue"
+    },
+    {
+      "id": "A-CAPEX",
+      "entity": "illustrative cooling design",
+      "metric": "incremental_capex",
+      "value": 15.0,
+      "unit": "USD million",
+      "period": "time zero",
+      "scope": "hypothetical incremental cooling design",
+      "classification": "ANALYST_ASSUMPTION",
+      "source_id": "A1",
+      "locator": "inputs.json incremental_capex_usd_m"
+    }
+  ],
+  "extensions": [
+    {
+      "extension_date": "2026-10-08",
+      "review_status": "AI_ASSISTANT_PRIMARY_PASSAGE_REVIEW_NO_INDEPENDENT_HUMAN_ATTESTATION",
+      "original_records_retained": true,
+      "issuer_underwriting_status": "NEEDS_DATA",
+      "sources": {
+        "MS4": {
+          "title": "Microsoft Arizona West US 3 launch",
+          "date": "2021-06-15",
+          "reviewed_on": "2026-10-08",
+          "url": "https://azure.microsoft.com/en-us/blog/expanding-cloud-services-microsoft-launches-its-sustainable-datacenter-region-in-arizona/",
+          "locator": "West US 3 resilience; Sustainable datacenter design, operations; Beyond the datacenter",
+          "scope": "Dated issuer design and redundancy descriptions, not actual loss economics"
+        },
+        "MS5": {
+          "title": "Microsoft datacenters in Arizona",
+          "date": "2024-12",
+          "date_basis": "Internal footer; URL directory not relied on",
+          "reviewed_on": "2026-10-08",
+          "url": "https://local.microsoft.com/wp-content/uploads/2024/04/Microsoft-datacenters-in-Arizona.pdf",
+          "locator": "PDF page 5, WATER bullets; page image inspected",
+          "scope": "Existing versus planned cooling archetypes, not matched site measurement"
+        },
+        "MS6": {
+          "title": "Phoenix AMA Model FAQs",
+          "date": "2023",
+          "date_basis": "2023 model release, document URL dated November 2023; exact issue day not established",
+          "reviewed_on": "2026-10-08",
+          "url": "https://www.azwater.gov/sites/default/files/2023-11/PHX_Model_FAQs_new.pdf",
+          "locator": "Page 1: model results and continued growth/certificates sections",
+          "scope": "Historical regional groundwater projection; not latest model, annual hazard probability or issuer permit"
+        }
+      },
+      "reviewed_observations": [
+        {
+          "id": "MS4-AZ-DESIGN",
+          "classification": "DATED_ISSUER_STATEMENT",
+          "source_id": "MS4",
+          "entity": "Microsoft Arizona West US 3 datacenter region",
+          "observation": "Outside-air cooling below 85 degrees F; evaporation above; availability zones have independent cooling infrastructure."
+        },
+        {
+          "id": "MS5-AZ-COUNTERFACTUAL",
+          "classification": "DATED_ISSUER_STATEMENT",
+          "source_id": "MS5",
+          "entity": "Microsoft Arizona existing versus planned facilities",
+          "observation": "Existing direct evaporative cooling is distinguished from planned air-cooled chillers/direct-to-chip cooling."
+        },
+        {
+          "id": "MS6-BASIN",
+          "classification": "HISTORICAL_REGULATOR_MODEL_CONTEXT",
+          "source_id": "MS6",
+          "entity": "Phoenix Active Management Area",
+          "observation": "Regional 100-year groundwater projection has unmet demand; already approved certificates are not rescinded. This is not a site loss estimate."
+        }
+      ],
+      "assumptions_locator": "inputs.json reliability and capacity_expansion",
+      "calculation_locator": "results.json",
+      "unresolved_dependencies": [
+        "Matched site/design pair, withdrawal versus consumption definitions, water source and delivery contract",
+        "Cooling-specific incremental capex, realized PUE, maintenance, useful life and tax treatment",
+        "Water-linked disruption probability/duration before and after cooling change, including correlated power/heat events",
+        "Protected nonrecoverable cash contribution after rerouting/recovery and avoidable costs; contractual loss allocation",
+        "Water design demonstrably binding for new capacity, plus billable demand, prices and grid/power permits",
+        "All added-capacity infrastructure, hardware replacement, operating costs, working capital and taxes"
+      ]
+    }
   ]
 }

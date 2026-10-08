@@ -8,17 +8,21 @@ Which sustainability issues change cash flow, by how much, and what evidence wou
 
 ### Heidelberg Materials — what Brevik CCS must earn to matter
 
-**Research assessment: WATCH.** The historical case tests whether an operating carbon-capture project supports incremental value, rather than assuming a group-wide green premium. The central sensitivity gives **€56.08m** of discounted 2026–2030 incremental cash flow; it is not a company forecast or full project NPV. The five-year premium break-even is **€13.08/t cement** under the stated assumptions.
+**Research assessment: WATCH.** The extended case separates cement sales, captured/stored carbon, retained carbon cash, operating aid and costs through a finite operating life. Capital-recovery stresses, a conditional enterprise-to-equity bridge and reverse premium hurdles show what must be earned. Realized premiums and executed grant economics remain unknown.
+
+The original model is retained: **€56.08m** of discounted 2026–2030 incremental cash flow and a **€13.08/t cement** five-year premium break-even under its assumptions. That limited window is not full project NPV or an actual lifecycle return.
 
 **Status:** retrospective real-issuer research; evidence cutoff **25 February 2026**. This is mitigation/transition economics, not physical adaptation. Material evidence gates and the limits of the cash-flow window remain explicit.
 
-[Read the investment memo](examples/WORKED_EXAMPLE.md) · [Inspect results](examples/heidelberg-brevik/RESULTS.md) · [Run the model](examples/heidelberg-brevik/model.py)
+[Read the investment memo](examples/WORKED_EXAMPLE.md) · [Forward valuation and capital recovery](examples/heidelberg-brevik/FORWARD_VALUATION.md) · [Original five-year results](examples/heidelberg-brevik/RESULTS.md)
 
 ### Microsoft — what must water-resilient AI infrastructure earn?
 
 **Research finding: water savings are not a return calculation.** An explicitly illustrative cooling-design model requires **$3.16m/year** of additional pre-tax operating benefit to break even under its reference assumptions. That is a hurdle to investigate, not a Microsoft forecast or site valuation.
 
-**Status:** real-issuer disclosure context plus an illustrative incremental model, prepared **4 October 2026**. Historical FY2023–FY2025 financial context is kept separate from the 2026 stewardship disclosure. No current share-price recommendation is made.
+The **8 October extension** quantifies avoided-disruption thresholds and a separate added-capacity project including infrastructure, hardware replacement, power, working capital and taxes. Unavailable or delayed deduction scenarios retain the cash-tax charge.
+
+**Status:** real-issuer disclosure context plus an illustrative incremental model; original baseline prepared **4 October 2026**. Historical FY2023–FY2025 financial context is kept separate from later disclosure. Site economics remain `NEEDS_DATA`.
 
 [Read the research case](examples/microsoft-ai/README.md) · [Sensitivity table](examples/microsoft-ai/RESULTS.md) · [Evidence and source challenges](examples/microsoft-ai/SOURCES.md) · [Evaluation record](examples/microsoft-ai/EVALUATION.md)
 
@@ -34,13 +38,16 @@ From the repository root, using Python 3.10 or later:
 
 ```bash
 python examples/heidelberg-brevik/model.py --check
+python examples/heidelberg-brevik/forward_model.py --check
 python examples/microsoft-ai/model.py --check
 python examples/microsoft-ai/claim_checks.py
-python -m unittest discover -s tests -v
-python scripts/check_repository.py
+python evaluation/claim-accuracy/score.py --check
+python scripts/validate_repository.py --out runs/validation-01
 ```
 
-The Microsoft metadata exercise is **48 engineered contract checks**, not measured LLM extraction accuracy, investment alpha or productivity improvement. Its [evaluation record](examples/microsoft-ai/EVALUATION.md) separates executed checks from the proposed empirical benchmark.
+The Microsoft metadata exercise is **48 engineered contract checks**. The separate [32-item observed assistant comparison](evaluation/claim-accuracy/README.md) archives actual baseline/structured responses, frozen prompts, labels and scoring. Its assistant label review does not establish independent human adjudication, production accuracy, time savings or investment alpha. [Evaluation record](examples/microsoft-ai/EVALUATION.md).
+
+The [recorded filesystem-host session](examples/host-integration/README.md) tests actual research-mode submissions, stale-revision rejection, invalidation and export. The reproducibility helper replays archived artifacts; it does not perform new AI research.
 
 ## Workflow infrastructure
 

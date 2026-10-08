@@ -1,0 +1,16 @@
+{
+  "run_id": "structured-2026-10-08",
+  "run_kind": "structured_session",
+  "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+  "prompt_file": "structured-prompt.md",
+  "prompt_sha256": "fab7f8e19edc117f9517d3bd39d9b49e6e6df577e05088e857bdbd7bcb4a15c1",
+  "response_file": "runs/structured-response.json",
+  "response_sha256": "4d74c14abd4a2cd5bd8cbb6c12de12adbdbaede27e2ffc6822f56bec012c52af",
+  "model_revision": "unavailable",
+  "system": "ChatGPT Work assistant session",
+  "context": "fresh fork-none; candidate-only evidence",
+  "answer_key_access": false,
+  "measured_wall_seconds": null,
+  "started_at_utc": "2026-10-08T12:44:17Z",
+  "completed_at_utc": "2026-10-08T12:46:10Z"
+}

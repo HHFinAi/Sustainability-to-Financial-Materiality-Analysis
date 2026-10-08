@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "review_type": "INDEPENDENT_ASSISTANT_GOLD_LABEL_REVIEW",
+  "review_status": "FROZEN",
+  "reviewer": "Assistant; not a human reviewer",
+  "human_adjudication": "NOT_PERFORMED",
+  "exact_model_revision": "UNAVAILABLE",
+  "review_started_date_utc": "2026-10-08",
+  "review_completed_date_utc": "2026-10-08",
+  "review_completed_at_utc": "2026-10-08T12:49:20.483111+00:00",
+  "start_date_precision": "day; exact review start timestamp was not recorded",
+  "prompt_task_literal": "Perform an independent ASSISTANT gold-label review, blind to author answer key and both predictions. Allowed files only: /workspace/scratch/aa791f94b7b7/hhfinai-work/Sustainability-to-Financial-Materiality-Analysis/evaluation/claim-accuracy/candidate-corpus.json and sources.json. Source PDFs available read-only /tmp/hhfinai-evaluation-sources/{AP,AZ,SH,UL,MA,SE,IB,VW}.pdf; you may inspect these and source URLs if needed to verify supplied fragments/locators. DO NOT access answer-key.json, scorer, any runs files or another agent's answers. Derive all 32 claim decisions and extraction records independently. Schema {schema_version:1,dataset_id:'hhfinai-issuer-claim-accuracy-2026-10-08',candidate_file_sha256:'e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7',answer_key_access:false,items:[{id,decision:'supported'|'contradicted'|'insufficient'|'abstain',record:{value:finite number,unit:canonical supplied unit,entity_id:canonical supplied entity,period:canonical supplied period,scope:canonical supplied scope}|null,reason:brief source-based reason}]}. Extract requested fact even when claim contradicted. Use displayed source scale, do not normalize million/billion. Absent requested causal/financial fact means null record, insufficient judgment. Write unchanged reviewed response to evaluation/claim-accuracy/blind-gold-review.json. Record separate blind-gold-review-metadata.json with prompt/task literal, sources/candidate/response hashes, start/end dates, exact model revision unavailable, author key/predictions access false attested, human adjudication NOT_PERFORMED. Report ONLY paths/hashes/status until frozen. No commits/push. This is independent assistant label review, never represent it as human review.",
+  "candidate_task_literal": "For each proposed claim, give supported, contradicted, insufficient, or abstain based only on the supplied source fragment. Also extract the requested reported fact, even when the proposed claim is contradicted. Use null when the requested fact is not supplied.",
+  "candidate_file": {
+    "path": "/workspace/scratch/aa791f94b7b7/hhfinai-work/Sustainability-to-Financial-Materiality-Analysis/evaluation/claim-accuracy/candidate-corpus.json",
+    "sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7"
+  },
+  "sources_file": {
+    "path": "/workspace/scratch/aa791f94b7b7/hhfinai-work/Sustainability-to-Financial-Materiality-Analysis/evaluation/claim-accuracy/sources.json",
+    "sha256": "ae9f99347d9808754f7e043d96ef48bf5e9c0a126b2a3e89cfc972b008cc196d"
+  },
+  "response_file": {
+    "path": "/workspace/scratch/aa791f94b7b7/hhfinai-work/Sustainability-to-Financial-Materiality-Analysis/evaluation/claim-accuracy/blind-gold-review.json",
+    "sha256": "dd0ec21ceff94b819c6904c4a86ab83251e61dc42d207f30267de404cf516801"
+  },
+  "source_pdf_checks": [
+    {
+      "source_id": "AP",
+      "path": "/tmp/hhfinai-evaluation-sources/AP.pdf",
+      "sha256": "597676e8b48ac45529303abc7ef47425ca62ff4efc3a375962a077a033525f74",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "AZ",
+      "path": "/tmp/hhfinai-evaluation-sources/AZ.pdf",
+      "sha256": "654b1e1cd9e0d3b6709d4c1e2a83e6c0fc8553e91556dca74bfcc78a0a44af6a",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "IB",
+      "path": "/tmp/hhfinai-evaluation-sources/IB.pdf",
+      "sha256": "fb7a3b68f10274f1893ef5a877f17fdb96ab9576a78c7a54f5d151b2708bdf4c",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "MA",
+      "path": "/tmp/hhfinai-evaluation-sources/MA.pdf",
+      "sha256": "661f78a0346bab16cc2613ff9dbf50fb95e5163ea74ac9577f1f06a98e697a8c",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "SE",
+      "path": "/tmp/hhfinai-evaluation-sources/SE.pdf",
+      "sha256": "07520fea43d33fd7b0d2969796d8cf4439b5384eea114504d8d98c9156b3e20a",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "SH",
+      "path": "/tmp/hhfinai-evaluation-sources/SH.pdf",
+      "sha256": "7d41542ba9d5e1e53f855d96f79f2a194190c5a90b442cb729af21a080b5a50e",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "UL",
+      "path": "/tmp/hhfinai-evaluation-sources/UL.pdf",
+      "sha256": "c15d7a38b41d7baef49e78a9db9bbb1deaeec685ec160d1b7478c062eef8d6f2",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    },
+    {
+      "source_id": "VW",
+      "path": "/tmp/hhfinai-evaluation-sources/VW.pdf",
+      "sha256": "e36a5195b73a2444d8082086eb6133d5e4dd7dd79a78d37292de9fb0bdf32f4e",
+      "matches_sources_manifest": true,
+      "access": "read_only"
+    }
+  ],
+  "blindness_attestation": {
+    "author_answer_key_access": false,
+    "prediction_files_access": false,
+    "scorer_access": false,
+    "other_agent_answers_access": false,
+    "attestation": "All labels and extraction records were derived independently from the supplied candidate corpus and source PDFs. No author key, predictions, scoring implementation, or other agent answers were accessed."
+  },
+  "source_verification": {
+    "all_eight_pdf_hashes_match_manifest": true,
+    "supplied_fragment_values_verified": true,
+    "source_urls_opened": false,
+    "printed_page_locator_discrepancies": [
+      {
+        "fragment_id": "UL-profit",
+        "pdf_page": 47,
+        "candidate_printed_page": "45",
+        "verified_printed_page": "44"
+      },
+      {
+        "fragment_id": "UL-emissions",
+        "pdf_page": 246,
+        "candidate_printed_page": "244",
+        "verified_printed_page": "243"
+      },
+      {
+        "fragment_id": "UL-sales",
+        "pdf_page": 45,
+        "candidate_printed_page": "43",
+        "verified_printed_page": "42"
+      }
+    ],
+    "locator_discrepancy_effect": "Selected values and PDF page locations verified; printed-page labels differ. Candidate corpus was not changed."
+  },
+  "canonicalization_conventions": {
+    "entity_id": "Use the keys of the supplied entity_ids map, such as AP and IB.",
+    "scale": "Keep source-display million, thousand and billion units; no rescaling.",
+    "period": "Use explicit fiscal basis for Apple and financial records, FY2024 for Iberdrola intensity under the supplied FY2024 highlights context, calendar-year periods for other annual emissions and energy metrics, and supplied cumulative/program-baseline periods for Schneider."
+  },
+  "validation_status": "32 unique IDs in candidate order; valid decisions; finite numeric records and supplied canonical vocabularies; absent causal financial facts have null records.",
+  "frozen_response": "The saved reviewed response was frozen before any comparison with an author key or predictions.",
+  "git_mutations": "NONE; no commit or push performed"
+}

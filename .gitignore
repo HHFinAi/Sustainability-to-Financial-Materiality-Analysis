@@ -16,6 +16,8 @@ env/
 # Generated research artifacts
 runs/
 exports/
+!evaluation/claim-accuracy/runs/
+!evaluation/claim-accuracy/runs/**
 
 # Local configuration and credentials
 .env

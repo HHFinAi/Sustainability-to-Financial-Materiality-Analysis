@@ -18,10 +18,14 @@ A correct amount attached to the wrong year; group capex relabelled AI-only; a m
 
 ## Not measured
 
-No LLM-versus-baseline comparison, independent human accuracy assessment, production latency, cost saving, research-time saving, investment alpha, empirical avoided loss, or regulatory compliance is measured. The project model is intentionally illustrative. Mathematical correctness does not make its assumptions true.
+The 4 October model and engineered metadata checks did not measure an LLM-versus-baseline comparison. A separate [8 October issuer claim evaluation](../../evaluation/claim-accuracy/README.md) archives an observed comparison between two fresh assistant sessions with different prompts on 32 new questions from eight primary issuer documents. Read its scored records, source hashes, blind assistant label review and limitations separately; it does not turn 48/48 metadata checks into LLM accuracy.
 
-## Next empirical evaluation — protocol, not a result
+Independent human accuracy assessment, production latency, cost saving, human research-time saving, investment alpha, empirical avoided loss, and regulatory compliance remain unmeasured. The project model is intentionally illustrative. Mathematical correctness does not make its assumptions true.
 
-Use 30–50 newly selected public issuer passages, preserve publication dates, and have a second reviewer label amount, unit, period, entity, scope and claim type without seeing the model's answers. Compare a simple extraction baseline with the structured workflow on the same held-out passages. Record disagreements, abstention, review time and failure cases. Keep this dataset separate from the engineered tests above and publish results only after execution.
+## Empirical evaluation protocol and observed execution
+
+The [issuer evaluation](../../evaluation/claim-accuracy/README.md) follows the separation principle with a frozen candidate corpus, a short-prompt assistant baseline, an explicit-scope prompt, archived raw responses and a deterministic scorer. A third fresh assistant labels the candidates without seeing author labels or predictions; this is not independent human adjudication. Eight unresolved fiscal/calendar period-token differences are reported with [both frozen reference scores](../../evaluation/claim-accuracy/REFERENCE_SENSITIVITY.md), rather than a consensus key. It evaluates numeric extraction and entity/unit/period/scope annotation on supplied fragments, not end-to-end retrieval or the workflow engine. Model revision and human review time were unavailable and are not inferred.
+
+For the next stronger evaluation, select new unseen-development documents, use independent human experts, retain natural extraction difficulties and run repeated matched sessions or models. Report label disagreements, abstentions and failure cases before inferring an accuracy or time-saving benefit.
 
 [Model](model.py) · [Metadata checker](claim_checks.py) · [Evidence and assumptions](evidence.json) · [Research memo](README.md)

@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "verification_kind": "session_ai_authored_artifacts_and_cli_host_run",
+  "embedded_model": false,
+  "new_source_retrieval": false,
+  "python_version": "3.12.14",
+  "initial_revision": 0,
+  "final_revision": 6,
+  "stale_revision_rejected": true,
+  "downstream_invalidated_and_archived": [
+    "evidence",
+    "exposure",
+    "mandate"
+  ],
+  "final_research_status": "NEEDS_DATA",
+  "mode": "research",
+  "open_material_issues": [
+    "evidence/ECONOMICS: Actual captured and stored volumes, realized premiums, executed support terms, retained carbon benefits and operating costs are unavailable in this single-source review.",
+    "exposure/ECONOMICS: Actual captured and stored volumes, realized premiums, executed support terms, retained carbon benefits and operating costs are unavailable in this single-source review."
+  ],
+  "human_review": null,
+  "execution_authorized": false,
+  "export_files": [
+    "claims.csv",
+    "evidence.csv",
+    "research-packet.json",
+    "research-packet.md"
+  ],
+  "source_document_ingestion_tested": false,
+  "provider_installation_tested": false,
+  "input_hashes": {
+    "evidence.json": "d490b93a65108ef06b236a0d1eaa3900f24004bd302a97baf753d26c03dbd3b4",
+    "exposure-needs-data.json": "7f8a836ea58e2aa872882890bac13818feb0d051b5c4ab880fc2562cbaaa6ba0",
+    "mandate-revised.json": "2de1e369c1c4e0043705d5223a06ea65f2d46918cd4c638064975951271c1831",
+    "mandate.json": "bc2dad287fee1d15963f80cc449ce8017a926882d65ed0bff018815c49abf4f1",
+    "request.json": "b465826402c913bd3a85a962e806bfadab7e7e7c880dd99069965618b4d00dc3"
+  },
+  "transcript_sha256": "7473e1f937ff0071d81d696e65d34e82c9e60d51e1251cf8ad786bdecde6ca3c",
+  "session_date": "2026-10-08",
+  "source_retrieval_by_session_ai": true,
+  "source_retrieval_mechanism": "Web retrieval tool; primary issuer HTML inspected before artifact authoring; no automated CLI ingestion",
+  "fresh_clone_verified": true,
+  "fresh_clone_method": "Local Git clone with --no-hardlinks, followed by overlay of the explicitly listed uncommitted host-example files",
+  "fresh_clone_base_commit": "5a00b938df498b2e68956b074e617613ce64688c",
+  "overlay_files": [
+    "scripts/verify_host_integration.py",
+    "examples/host-integration/request.json",
+    "examples/host-integration/mandate.json",
+    "examples/host-integration/mandate-revised.json",
+    "examples/host-integration/evidence.json",
+    "examples/host-integration/exposure-needs-data.json"
+  ],
+  "host": "ChatGPT Work / Codex session with filesystem and Python shell execution",
+  "exact_model_revision": "unavailable",
+  "separate_cli_processes": true
+}
