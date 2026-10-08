@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "producer": {
+    "name": "ChatGPT Work session AI; original artifacts authored from the retrieved issuer announcement",
+    "type": "ai"
+  },
+  "calculations": [],
+  "standards_considered": [],
+  "confidence": {
+    "value": 0.96,
+    "basis": "Subjective confidence in the scoped announcement reading; no confidence score for investment attractiveness."
+  },
+  "stage_id": "mandate",
+  "status": "COMPLETE",
+  "summary": "The task is a bounded public-document research review, with no trade or human research approval.",
+  "claims": [
+    {
+      "id": "SCOPE",
+      "kind": "ASSUMPTION",
+      "text": "This sample tests whether one reviewed issuer announcement can support valuation, under a zero-allocation research-only scope.",
+      "basis": "Explicit scoped objective and constraints in this host integration request.",
+      "scope": "HEIDELBERG-MATERIALS",
+      "period": "2026-10-08",
+      "evidence_ids": [],
+      "limitations": [
+        "This declared research scope is not an approved portfolio mandate."
+      ]
+    }
+  ],
+  "sections": {
+    "decision_question": {
+      "analysis": "Can announced CCS design capacity by itself support a project or equity value? The workflow must identify missing economics before valuation.",
+      "claim_ids": [
+        "SCOPE"
+      ]
+    },
+    "instrument_boundary": {
+      "analysis": "Heidelberg Materials ordinary equity is referenced only to distinguish the group from the Brevik project. Security terms, quotes and portfolio eligibility are outside this review.",
+      "claim_ids": [
+        "SCOPE"
+      ]
+    },
+    "mandate_constraints": {
+      "analysis": "Public information, zero capital allocation, no trading authorization, and no self-attestation of human review.",
+      "claim_ids": [
+        "SCOPE"
+      ]
+    }
+  },
+  "gaps": [],
+  "issues": []
+}

@@ -1,0 +1,19 @@
+{
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "frozen_at_utc": "2026-10-08T12:40:45.138884+00:00",
+  "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+  "candidate_canonical_sha256": "de4864c04ea964630bc6b6c0fc91eaa6712ddb9786e6f3de15ec46d8a4faf22f",
+  "sources_file_sha256": "ae9f99347d9808754f7e043d96ef48bf5e9c0a126b2a3e89cfc972b008cc196d",
+  "item_count": 32,
+  "source_count": 8,
+  "predictions_at_freeze": "none",
+  "policy": "Candidate questions, fragments and scoring rules must not be tuned after predictions; any later corpus correction requires a new dataset revision and new runs.",
+  "prompt_file_sha256": {
+    "baseline-prompt.md": "b39ebc2aaf29fff4ff9bbcebdad1764f35532ab2cbc5e7ff7c08a3c4f7de3b67",
+    "structured-prompt.md": "fab7f8e19edc117f9517d3bd39d9b49e6e6df577e05088e857bdbd7bcb4a15c1",
+    "SCORING.md": "0ab2e6abe5bf2317ee3ac952f2bb2d6d7549ed4c90238f01fa262e23f914dd89"
+  },
+  "answer_key_items_sha256": "8becf671b5997b9e1c5538f6c3410749283a1755becd79f1123e74f4913f591d",
+  "gold_labels_at_freeze": "Author assistant records frozen separately before prediction access; metadata review status may be updated without changing records.",
+  "answer_key_file_sha256": "ac2d04c6c71c16ca2024cd29343de52a8f9e6ae91b004153a88caf000d58170a"
+}

@@ -1,0 +1,4 @@
+scenario,operating_life_end_year,support_assumed_end_year,finite_life_forward_pv_eur_m,operating_pv_before_residual_capital_eur_m,residual_capital_eur_m,zero_forward_pv_premium_eur_per_tonne,fcf_2030_eur_m,fcf_2035_eur_m,finite_pv_per_issued_share_eur
+downside,2045,2034,-222.17541038,-212.17541038,10,99.82611355,-18.6856,-24.928,-1.25974728
+central_sensitivity,2045,2034,65.85702433,75.85702433,10,41.86879491,25.76422,-1.9829,0.37341309
+upside,2045,2034,356.84321237,366.84321237,10,8.20084464,59.875,30.25,2.02332141

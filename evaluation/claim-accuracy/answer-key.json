@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "review_status": "AUTHOR_AI_LABELS_PENDING_BLIND_AI_REVIEW",
+  "human_adjudication": false,
+  "items": [
+    {
+      "id": "AP01",
+      "decision": "supported",
+      "record": {
+        "value": 15.3,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AP",
+        "period": "FY2024",
+        "scope": "VALUE_CHAIN_GROSS"
+      },
+      "rationale": "2024 gross row is 15.3; offsets are separate."
+    },
+    {
+      "id": "AP02",
+      "decision": "contradicted",
+      "record": {
+        "value": 14.5,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AP",
+        "period": "FY2024",
+        "scope": "VALUE_CHAIN_NET"
+      },
+      "rationale": "Net row is 14.5, not the 15.3 gross row; published rounding is retained."
+    },
+    {
+      "id": "AP03",
+      "decision": "supported",
+      "record": {
+        "value": 38.4,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AP",
+        "period": "FY2015",
+        "scope": "VALUE_CHAIN_GROSS"
+      },
+      "rationale": "2015 column and gross row intersect at 38.4."
+    },
+    {
+      "id": "AP04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "Environmental tonnes are not currency or an issuer earnings attribution; no requested financial amount is present."
+    },
+    {
+      "id": "AZ01",
+      "decision": "supported",
+      "record": {
+        "value": 68.25,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AZ",
+        "period": "CY2024",
+        "scope": "VALUE_CHAIN_TOTAL_MARKET"
+      },
+      "rationale": "Total row is 68.25 and Scope 2 is on the source market-based basis."
+    },
+    {
+      "id": "AZ02",
+      "decision": "contradicted",
+      "record": {
+        "value": 2.8,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AZ",
+        "period": "CY2024",
+        "scope": "GROUP_S2_MARKET"
+      },
+      "rationale": "2.76 is comparative 2023; 2024 is 2.80."
+    },
+    {
+      "id": "AZ03",
+      "decision": "supported",
+      "record": {
+        "value": 2.8,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "AZ",
+        "period": "CY2024",
+        "scope": "GROUP_S2_MARKET"
+      },
+      "rationale": "The disclosed 2024 Scope 2 row gives 2.80."
+    },
+    {
+      "id": "AZ04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "The table reports a footprint, not a currency amount or causal earnings attribution."
+    },
+    {
+      "id": "SH01",
+      "decision": "supported",
+      "record": {
+        "value": 54687,
+        "unit": "USD_million",
+        "entity_id": "SH",
+        "period": "CY2024",
+        "scope": "GROUP_CFO"
+      },
+      "rationale": "Group CFO is 54,687; it is distinct from free cash flow."
+    },
+    {
+      "id": "SH02",
+      "decision": "contradicted",
+      "record": {
+        "value": 2549,
+        "unit": "USD_million",
+        "entity_id": "SH",
+        "period": "CY2024",
+        "scope": "SEGMENT_CASH_CAPEX"
+      },
+      "rationale": "21,085 is Group total; segment row is 2,549."
+    },
+    {
+      "id": "SH03",
+      "decision": "supported",
+      "record": {
+        "value": 39533,
+        "unit": "USD_million",
+        "entity_id": "SH",
+        "period": "CY2024",
+        "scope": "GROUP_FCF_NON_GAAP"
+      },
+      "rationale": "The asterisked free cash flow row is 39,533."
+    },
+    {
+      "id": "SH04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "Cash capital expenditure is an investment cash measure; it is not a tax-saving amount."
+    },
+    {
+      "id": "UL01",
+      "decision": "supported",
+      "record": {
+        "value": 9400,
+        "unit": "EUR_million",
+        "entity_id": "UL",
+        "period": "CY2024",
+        "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+      },
+      "rationale": "Statutory operating profit row is 9,400."
+    },
+    {
+      "id": "UL02",
+      "decision": "contradicted",
+      "record": {
+        "value": 9400,
+        "unit": "EUR_million",
+        "entity_id": "UL",
+        "period": "CY2024",
+        "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+      },
+      "rationale": "11,179 is underlying, not statutory operating profit."
+    },
+    {
+      "id": "UL03",
+      "decision": "supported",
+      "record": {
+        "value": -72,
+        "unit": "percent",
+        "entity_id": "UL",
+        "period": "CY2024_vs_2015",
+        "scope": "OPERATIONAL_S1_S2_TARGET"
+      },
+      "rationale": "The target table gives -72%; this is not an all-value-chain metric."
+    },
+    {
+      "id": "UL04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "The table supplies aggregate growth and definition, but no sole-cause sustainability attribution."
+    },
+    {
+      "id": "MA01",
+      "decision": "supported",
+      "record": {
+        "value": 83528,
+        "unit": "thousand_tonnes_CO2e",
+        "entity_id": "MA",
+        "period": "CY2024",
+        "scope": "VALUE_CHAIN_TOTAL_MARKET"
+      },
+      "rationale": "Market-based total is 83,528 in 1,000 tonnes units."
+    },
+    {
+      "id": "MA02",
+      "decision": "contradicted",
+      "record": {
+        "value": 83528,
+        "unit": "thousand_tonnes_CO2e",
+        "entity_id": "MA",
+        "period": "CY2024",
+        "scope": "VALUE_CHAIN_TOTAL_MARKET"
+      },
+      "rationale": "83,602 is the location-based total."
+    },
+    {
+      "id": "MA03",
+      "decision": "supported",
+      "record": {
+        "value": 33939,
+        "unit": "thousand_tonnes_CO2e",
+        "entity_id": "MA",
+        "period": "CY2024",
+        "scope": "GROUP_S1"
+      },
+      "rationale": "2024 Scope 1 row is 33,939; the comparative is separately restated."
+    },
+    {
+      "id": "MA04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "No EBIT attribution is present; emissions in thousands of tonnes cannot be relabelled dollars."
+    },
+    {
+      "id": "SE01",
+      "decision": "supported",
+      "record": {
+        "value": 7.55,
+        "unit": "score_out_of_10",
+        "entity_id": "SE",
+        "period": "Q4_2024",
+        "scope": "SSI_SCORE"
+      },
+      "rationale": "The observed score is 7.55; 7.40 is target."
+    },
+    {
+      "id": "SE02",
+      "decision": "contradicted",
+      "record": {
+        "value": 679,
+        "unit": "million_tonnes_CO2",
+        "entity_id": "SE",
+        "period": "CUMULATIVE_2018_2024",
+        "scope": "CUSTOMER_SAVED_AVOIDED_CUMULATIVE"
+      },
+      "rationale": "Footnote 3 says cumulated since 2018, not one-year 2024."
+    },
+    {
+      "id": "SE03",
+      "decision": "supported",
+      "record": {
+        "value": 40,
+        "unit": "percent",
+        "entity_id": "SE",
+        "period": "Q4_2024_vs_PROGRAM_BASELINE",
+        "scope": "TOP_1000_SUPPLIER_OPERATIONS"
+      },
+      "rationale": "Supplier operations row is 40%; the 50% column is 2025 ambition."
+    },
+    {
+      "id": "SE04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "The dashboard supplies cumulative physical outcomes, not company operating profit or attribution."
+    },
+    {
+      "id": "IB01",
+      "decision": "supported",
+      "record": {
+        "value": 5.612,
+        "unit": "EUR_billion",
+        "entity_id": "IB",
+        "period": "CY2024",
+        "scope": "GROUP_NET_PROFIT"
+      },
+      "rationale": "Net profit, not EBITDA or total investment, is 5.612 billion."
+    },
+    {
+      "id": "IB02",
+      "decision": "contradicted",
+      "record": {
+        "value": 12,
+        "unit": "EUR_billion",
+        "entity_id": "IB",
+        "period": "CY2024",
+        "scope": "ORGANIC_INVESTMENT"
+      },
+      "rationale": "17 billion total includes 5 billion corporate transactions; organic is 12 billion."
+    },
+    {
+      "id": "IB03",
+      "decision": "supported",
+      "record": {
+        "value": 38,
+        "unit": "g_CO2_per_kWh",
+        "entity_id": "IB",
+        "period": "CY2024",
+        "scope": "EUROPE_GENERATION_INTENSITY"
+      },
+      "rationale": "The original excerpt explicitly qualifies the figure as Europe."
+    },
+    {
+      "id": "IB04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "Intensity is a physical ratio; no corresponding carbon-tax saving appears."
+    },
+    {
+      "id": "VW01",
+      "decision": "supported",
+      "record": {
+        "value": 3,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "VW",
+        "period": "CY2024",
+        "scope": "GROUP_S1"
+      },
+      "rationale": "Group column is 3.0; additional operational-control column is 0.3."
+    },
+    {
+      "id": "VW02",
+      "decision": "contradicted",
+      "record": {
+        "value": 3,
+        "unit": "million_tonnes_CO2e",
+        "entity_id": "VW",
+        "period": "CY2024",
+        "scope": "GROUP_S1"
+      },
+      "rationale": "3.3 is the combined total, not the Group-only column."
+    },
+    {
+      "id": "VW03",
+      "decision": "supported",
+      "record": {
+        "value": 0.059,
+        "unit": "kWh_per_EUR",
+        "entity_id": "VW",
+        "period": "CY2024",
+        "scope": "GROUP_ENERGY_INTENSITY"
+      },
+      "rationale": "Source metric is 0.059 and excludes operational-control companies from this calculation."
+    },
+    {
+      "id": "VW04",
+      "decision": "insufficient",
+      "record": null,
+      "rationale": "The source gives revenue and physical intensity, not incremental efficiency profit."
+    }
+  ]
+}

@@ -35,3 +35,35 @@ These readings motivate questions; they do not validate this model, endorse HHFi
 **Population and denominator:** page 3 describes a proportion of US datacentres exposed to water stress; endnote 11 instead discusses proportions of two companies' freshwater withdrawals from stressed areas. Facility counts and water volumes are not interchangeable. Resolve with the underlying evidence before calibration.
 
 The [claim checks](claim_checks.py) demonstrate selected metadata controls inspired by such problems. They do not automatically read those reports or establish that arbitrary prose is supported by a citation.
+
+## MS4 — Arizona design history (extension)
+
+Microsoft Azure, [Expanding cloud services: Microsoft launches its sustainable datacenter region in Arizona](https://azure.microsoft.com/en-us/blog/expanding-cloud-services-microsoft-launches-its-sustainable-datacenter-region-in-arizona/), **15 June 2021**, reviewed 8 October 2026. Locators: “West US 3 region delivers highly resilient, secure cloud services”; “Sustainable datacenter design, operations”; “Beyond the datacenter.” The cooling description and regional availability-zone design are dated issuer statements. Neither quantifies historical outages, realized contribution or benefits caused by a later redesign.
+
+## MS5 — Arizona design-specific disclosure (extension)
+
+Microsoft Local, [Microsoft datacenters in Arizona](https://local.microsoft.com/wp-content/uploads/2024/04/Microsoft-datacenters-in-Arizona.pdf), **internally dated December 2024**, reviewed 8 October 2026. Locator: **PDF page 5, WATER bullets**; page image was also inspected. The document distinguishes existing direct evaporative cooling from planned air-cooled/direct-to-chip designs. The URL folder is not a reliable publication date. It does not provide a matched campus's capex, tariffs, measured new-design PUE or commercial economics. Only those cooling bullets are used; commitments elsewhere are not assumed achieved.
+
+## MS6 — Basin context (extension)
+
+Arizona Department of Water Resources, [Phoenix AMA Model FAQs](https://www.azwater.gov/sites/default/files/2023-11/PHX_Model_FAQs_new.pdf), **2023 model release**, reviewed 8 October 2026. Locator: **page 1, “What are the results of the Phoenix AMA model run?” and “Is growth going to slow…”**. This is a regional long-horizon groundwater projection and water-supply-program explanation, not the latest hydrology estimate, a Microsoft service contract, a site-specific restriction or an annual outage-frequency estimate. No permit or tariff conclusion is drawn. Later regional model versions require separate review for live underwriting.
+
+## Extension review record
+
+The additional passages were inspected by the AI assistant, including the Arizona PDF page image. No independent human attestation or site-economic verification is recorded. These sources establish design/basin context only. The six unresolved input gates are retained in [inputs.json](inputs.json) and [results.json](results.json); scenario completion cannot close them. Original sources, dates, records and methodological caveats above remain intact.
+
+## MS4 — Arizona design history (extension)
+
+Microsoft Azure, [Expanding cloud services: Microsoft launches its sustainable datacenter region in Arizona](https://azure.microsoft.com/en-us/blog/expanding-cloud-services-microsoft-launches-its-sustainable-datacenter-region-in-arizona/), **15 June 2021**, reviewed 8 October 2026. Locators: “West US 3 region delivers highly resilient, secure cloud services”; “Sustainable datacenter design, operations”; “Beyond the datacenter.” The cooling description and regional availability-zone design are dated issuer statements. Neither quantifies historical outages, realized contribution or benefits caused by a later redesign.
+
+## MS5 — Arizona design-specific disclosure (extension)
+
+Microsoft Local, [Microsoft datacenters in Arizona](https://local.microsoft.com/wp-content/uploads/2024/04/Microsoft-datacenters-in-Arizona.pdf), **internally dated December 2024**, reviewed 8 October 2026. Locator: **PDF page 5, WATER bullets**; page image was also inspected. The document distinguishes existing direct evaporative cooling from planned air-cooled/direct-to-chip designs. The URL folder is not a reliable publication date. It does not provide a matched campus's capex, tariffs, measured new-design PUE or commercial economics. Only those cooling bullets are used; commitments elsewhere are not assumed achieved.
+
+## MS6 — Basin context (extension)
+
+Arizona Department of Water Resources, [Phoenix AMA Model FAQs](https://www.azwater.gov/sites/default/files/2023-11/PHX_Model_FAQs_new.pdf), **2023 model release**, reviewed 8 October 2026. Locator: **page 1, “What are the results of the Phoenix AMA model run?” and “Is growth going to slow…”**. This is a regional long-horizon groundwater projection and water-supply-program explanation, not the latest hydrology estimate, a Microsoft service contract, a site-specific restriction or an annual outage-frequency estimate. No permit or tariff conclusion is drawn. Later regional model versions require separate review for live underwriting.
+
+## Extension review record
+
+The additional passages were inspected by the AI assistant, including the Arizona PDF page image. No independent human attestation or site-economic verification is recorded. These sources establish design/basin context only. The six unresolved input gates are retained in [inputs.json](inputs.json) and [results.json](results.json); scenario completion cannot close them. Original sources, dates, records and methodological caveats above remain intact.

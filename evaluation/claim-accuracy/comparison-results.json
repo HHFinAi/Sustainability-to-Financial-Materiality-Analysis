@@ -1,0 +1,2427 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+  "source_count": 8,
+  "gold_review": {
+    "method": "Two frozen assistant reference labels: author and fresh blind reviewer",
+    "human_adjudication": false,
+    "status": "UNADJUDICATED_REFERENCE_DISAGREEMENT",
+    "disagreement_ids": [
+      "SH01",
+      "SH02",
+      "SH03",
+      "UL01",
+      "UL02",
+      "IB01",
+      "IB02",
+      "IB03"
+    ],
+    "common_agreement_ids": [
+      "AP01",
+      "AP02",
+      "AP03",
+      "AP04",
+      "AZ01",
+      "AZ02",
+      "AZ03",
+      "AZ04",
+      "SH04",
+      "UL03",
+      "UL04",
+      "MA01",
+      "MA02",
+      "MA03",
+      "MA04",
+      "SE01",
+      "SE02",
+      "SE03",
+      "SE04",
+      "IB04",
+      "VW01",
+      "VW02",
+      "VW03",
+      "VW04"
+    ],
+    "common_agreement_count": 24,
+    "label_differences": [
+      {
+        "id": "SH01",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 54687,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "CY2024",
+            "scope": "GROUP_CFO"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 54687,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "FY2024",
+            "scope": "GROUP_CFO"
+          }
+        }
+      },
+      {
+        "id": "SH02",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 2549,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "CY2024",
+            "scope": "SEGMENT_CASH_CAPEX"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 2549,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "FY2024",
+            "scope": "SEGMENT_CASH_CAPEX"
+          }
+        }
+      },
+      {
+        "id": "SH03",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 39533,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "CY2024",
+            "scope": "GROUP_FCF_NON_GAAP"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 39533,
+            "unit": "USD_million",
+            "entity_id": "SH",
+            "period": "FY2024",
+            "scope": "GROUP_FCF_NON_GAAP"
+          }
+        }
+      },
+      {
+        "id": "UL01",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 9400,
+            "unit": "EUR_million",
+            "entity_id": "UL",
+            "period": "CY2024",
+            "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 9400,
+            "unit": "EUR_million",
+            "entity_id": "UL",
+            "period": "FY2024",
+            "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+          }
+        }
+      },
+      {
+        "id": "UL02",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 9400,
+            "unit": "EUR_million",
+            "entity_id": "UL",
+            "period": "CY2024",
+            "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 9400,
+            "unit": "EUR_million",
+            "entity_id": "UL",
+            "period": "FY2024",
+            "scope": "GROUP_STATUTORY_OPERATING_PROFIT"
+          }
+        }
+      },
+      {
+        "id": "IB01",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 5.612,
+            "unit": "EUR_billion",
+            "entity_id": "IB",
+            "period": "CY2024",
+            "scope": "GROUP_NET_PROFIT"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 5.612,
+            "unit": "EUR_billion",
+            "entity_id": "IB",
+            "period": "FY2024",
+            "scope": "GROUP_NET_PROFIT"
+          }
+        }
+      },
+      {
+        "id": "IB02",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 12,
+            "unit": "EUR_billion",
+            "entity_id": "IB",
+            "period": "CY2024",
+            "scope": "ORGANIC_INVESTMENT"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "contradicted",
+          "record": {
+            "value": 12,
+            "unit": "EUR_billion",
+            "entity_id": "IB",
+            "period": "FY2024",
+            "scope": "ORGANIC_INVESTMENT"
+          }
+        }
+      },
+      {
+        "id": "IB03",
+        "fields": [
+          "period"
+        ],
+        "author_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 38,
+            "unit": "g_CO2_per_kWh",
+            "entity_id": "IB",
+            "period": "CY2024",
+            "scope": "EUROPE_GENERATION_INTENSITY"
+          }
+        },
+        "reviewer_reference": {
+          "decision": "supported",
+          "record": {
+            "value": 38,
+            "unit": "g_CO2_per_kWh",
+            "entity_id": "IB",
+            "period": "FY2024",
+            "scope": "EUROPE_GENERATION_INTENSITY"
+          }
+        }
+      }
+    ],
+    "response_sha256": "dd0ec21ceff94b819c6904c4a86ab83251e61dc42d207f30267de404cf516801"
+  },
+  "scoring_policy": "Identical frozen exact-field scoring applied separately to both complete reference sets and to their common-agreement subset. No consensus labels, normalization or human adjudication are inferred.",
+  "not_measured": [
+    "Independent human accuracy",
+    "Production extraction accuracy",
+    "Investment alpha",
+    "Review-time saving",
+    "Cost saving"
+  ],
+  "runs": {
+    "baseline": {
+      "metadata": {
+        "run_id": "baseline-2026-10-08",
+        "run_kind": "baseline_session",
+        "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+        "prompt_file": "baseline-prompt.md",
+        "prompt_sha256": "b39ebc2aaf29fff4ff9bbcebdad1764f35532ab2cbc5e7ff7c08a3c4f7de3b67",
+        "response_file": "runs/baseline-response.json",
+        "response_sha256": "f5e4843f4229da4a1eaea90bb241209c5d03a9941aa44beb04833a51d56b0ecb",
+        "model_revision": "unavailable",
+        "system": "ChatGPT Work assistant session",
+        "context": "fresh fork-none; candidate-only evidence",
+        "answer_key_access": false,
+        "measured_wall_seconds": null,
+        "started_at_utc": "2026-10-08T12:43:37.395060Z",
+        "completed_at_utc": "2026-10-08T12:44:52.855309Z"
+      },
+      "metrics_by_reference": {
+        "author": {
+          "item_count": 32,
+          "counts": {
+            "correct_decisions": 32,
+            "abstentions": 0,
+            "accepted": 16,
+            "not_supported_gold": 16,
+            "unsupported_accepted": 0,
+            "answerable_requests": 24,
+            "exact_answerable_records": 16,
+            "complete_correct": 24,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 0.75,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 0.6666666666666666,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 0.6666666666666666,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 16,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 8,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 1
+            },
+            "UL": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 2
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 1
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "UL02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        },
+        "blind_reviewer": {
+          "item_count": 32,
+          "counts": {
+            "correct_decisions": 32,
+            "abstentions": 0,
+            "accepted": 16,
+            "not_supported_gold": 16,
+            "unsupported_accepted": 0,
+            "answerable_requests": 24,
+            "exact_answerable_records": 24,
+            "complete_correct": 32,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 1.0,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 1.0,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 1.0,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 16,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 8,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "UL": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        },
+        "common_agreement": {
+          "item_count": 24,
+          "counts": {
+            "correct_decisions": 24,
+            "abstentions": 0,
+            "accepted": 11,
+            "not_supported_gold": 13,
+            "unsupported_accepted": 0,
+            "answerable_requests": 16,
+            "exact_answerable_records": 16,
+            "complete_correct": 24,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 1.0,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 1.0,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 1.0,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 11,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 5,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 1,
+              "decision_correct": 1,
+              "complete_correct": 1
+            },
+            "UL": {
+              "items": 2,
+              "decision_correct": 2,
+              "complete_correct": 2
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 1,
+              "decision_correct": 1,
+              "complete_correct": 1
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        }
+      }
+    },
+    "structured": {
+      "metadata": {
+        "run_id": "structured-2026-10-08",
+        "run_kind": "structured_session",
+        "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+        "prompt_file": "structured-prompt.md",
+        "prompt_sha256": "fab7f8e19edc117f9517d3bd39d9b49e6e6df577e05088e857bdbd7bcb4a15c1",
+        "response_file": "runs/structured-response.json",
+        "response_sha256": "4d74c14abd4a2cd5bd8cbb6c12de12adbdbaede27e2ffc6822f56bec012c52af",
+        "model_revision": "unavailable",
+        "system": "ChatGPT Work assistant session",
+        "context": "fresh fork-none; candidate-only evidence",
+        "answer_key_access": false,
+        "measured_wall_seconds": null,
+        "started_at_utc": "2026-10-08T12:44:17Z",
+        "completed_at_utc": "2026-10-08T12:46:10Z"
+      },
+      "metrics_by_reference": {
+        "author": {
+          "item_count": 32,
+          "counts": {
+            "correct_decisions": 32,
+            "abstentions": 0,
+            "accepted": 16,
+            "not_supported_gold": 16,
+            "unsupported_accepted": 0,
+            "answerable_requests": 24,
+            "exact_answerable_records": 16,
+            "complete_correct": 24,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 0.75,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 0.6666666666666666,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 0.6666666666666666,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 16,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 8,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 1
+            },
+            "UL": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 2
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 1
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "UL02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": false,
+              "mismatched_fields": [
+                "period"
+              ]
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        },
+        "blind_reviewer": {
+          "item_count": 32,
+          "counts": {
+            "correct_decisions": 32,
+            "abstentions": 0,
+            "accepted": 16,
+            "not_supported_gold": 16,
+            "unsupported_accepted": 0,
+            "answerable_requests": 24,
+            "exact_answerable_records": 24,
+            "complete_correct": 32,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 1.0,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 1.0,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 1.0,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 16,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 8,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "UL": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        },
+        "common_agreement": {
+          "item_count": 24,
+          "counts": {
+            "correct_decisions": 24,
+            "abstentions": 0,
+            "accepted": 11,
+            "not_supported_gold": 13,
+            "unsupported_accepted": 0,
+            "answerable_requests": 16,
+            "exact_answerable_records": 16,
+            "complete_correct": 24,
+            "unanswerable_requests": 8,
+            "unsupported_numeric_records": 0,
+            "correct_null_records": 8
+          },
+          "decision_accuracy": 1.0,
+          "complete_item_accuracy": 1.0,
+          "abstention_rate": 0.0,
+          "decision_coverage": 1.0,
+          "selective_decision_accuracy": 1.0,
+          "answerable_extraction_accuracy": 1.0,
+          "extraction_field_accuracy": {
+            "value": 1.0,
+            "unit": 1.0,
+            "entity_id": 1.0,
+            "period": 1.0,
+            "scope": 1.0
+          },
+          "unsupported_acceptance_rate": 0.0,
+          "unsupported_fraction_of_accepted_claims": 0.0,
+          "unsupported_numeric_fabrication_rate": 0.0,
+          "confusion": {
+            "supported": {
+              "supported": 11,
+              "contradicted": 0,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "contradicted": {
+              "supported": 0,
+              "contradicted": 5,
+              "insufficient": 0,
+              "abstain": 0
+            },
+            "insufficient": {
+              "supported": 0,
+              "contradicted": 0,
+              "insufficient": 8,
+              "abstain": 0
+            }
+          },
+          "class_metrics": {
+            "supported": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "contradicted": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "insufficient": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            }
+          },
+          "source_groups": {
+            "AP": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "AZ": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SH": {
+              "items": 1,
+              "decision_correct": 1,
+              "complete_correct": 1
+            },
+            "UL": {
+              "items": 2,
+              "decision_correct": 2,
+              "complete_correct": 2
+            },
+            "MA": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "SE": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            },
+            "IB": {
+              "items": 1,
+              "decision_correct": 1,
+              "complete_correct": 1
+            },
+            "VW": {
+              "items": 4,
+              "decision_correct": 4,
+              "complete_correct": 4
+            }
+          },
+          "items": [
+            {
+              "id": "AP01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AP04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "AZ04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SH04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "UL04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "MA04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "SE04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "IB04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW01",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW02",
+              "gold_decision": "contradicted",
+              "predicted_decision": "contradicted",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW03",
+              "gold_decision": "supported",
+              "predicted_decision": "supported",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            },
+            {
+              "id": "VW04",
+              "gold_decision": "insufficient",
+              "predicted_decision": "insufficient",
+              "decision_correct": true,
+              "record_correct": true,
+              "mismatched_fields": []
+            }
+          ]
+        }
+      }
+    }
+  }
+}
