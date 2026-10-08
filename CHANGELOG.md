@@ -2,6 +2,7 @@
 
 ## 2026-10-08 — Research completion and reproducibility
 
+- Stabilized report reproduction across supported Python versions, with regressions for floating-point summation differences.
 - Extended Brevik with a finite-life cash waterfall, explicit grant/carbon timing, capital-recovery stresses, a conditional issuer equity bridge and reverse premium hurdles; preserved historical outputs and evidence cutoff.
 - Extended Microsoft with separate avoided-loss and added-capacity economics, hardware replacement, working capital and tax-deduction availability/timing; retained the original illustrative baseline.
 - Added a frozen 32-item source-extraction comparison with archived baseline/structured assistant responses, independent assistant label review and deterministic scoring; human adjudication and review-time gains remain unmeasured.

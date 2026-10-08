@@ -98,7 +98,7 @@ def calculate(p: dict[str, Any]) -> dict[str, Any]:
         flows[year] = flows.get(year, 0.0) + annual_before_shields
         shield_year = year + p["tax_deduction_delay_years"]
         flows[shield_year] = flows.get(shield_year, 0.0) + annual_shield
-    annuity = sum((1 + p["discount_rate"]) ** -(year + p["commissioning_delay_years"])
+    annuity = math.fsum((1 + p["discount_rate"]) ** -(year + p["commissioning_delay_years"])
                   for year in range(1, p["asset_life_years"] + 1))
     deduction_annuity = annuity / (1 + p["discount_rate"]) ** p["tax_deduction_delay_years"]
     shield_pv = annual_shield * deduction_annuity
@@ -114,7 +114,7 @@ def calculate(p: dict[str, Any]) -> dict[str, Any]:
         "annual_incremental_fcf_usd_m": flows[1 + p["commissioning_delay_years"]],
         "annuity_factor": annuity,
         "tax_deduction_present_value_usd_m": shield_pv,
-        "incremental_npv_usd_m": sum(fcf / (1 + p["discount_rate"]) ** year for year, fcf in flows.items()),
+        "incremental_npv_usd_m": math.fsum(fcf / (1 + p["discount_rate"]) ** year for year, fcf in flows.items()),
         "break_even_additional_pretax_benefit_usd_m_per_year": hurdle,
         "cash_flows": [{"year_from_initial_capex": y, "incremental_fcf_usd_m": flows[y]} for y in sorted(flows)],
     }
@@ -209,8 +209,8 @@ def capacity_expansion(p: dict[str, Any]) -> dict[str, Any]:
     last_year = g["project_life_years"] + g["commissioning_delay_years"]
     flows[last_year] += wc
     rate = p["discount_rate"]
-    annuity = sum((1 + rate) ** -(n + g["commissioning_delay_years"]) for n in range(1, g["project_life_years"] + 1))
-    npv = sum(v / (1 + rate) ** y for y, v in flows.items())
+    annuity = math.fsum((1 + rate) ** -(n + g["commissioning_delay_years"]) for n in range(1, g["project_life_years"] + 1))
+    npv = math.fsum(v / (1 + rate) ** y for y, v in flows.items())
     # WC scales with revenue; subtract its initial outlay less discounted release.
     revenue_pv_slope = (1 - tax) * annuity - g["working_capital_fraction_of_revenue"] * (1 - (1 + rate) ** -last_year)
     if revenue_pv_slope <= 0:
@@ -300,7 +300,7 @@ def render(p: dict[str, Any]) -> str:
               f"| Added facility electricity MWh/year | {show(g['annual_added_total_facility_mwh'])} |",
               f"| Added power / other operating costs/year | {show(g['annual_added_power_cost_usd_m'])} / {show(g['annual_other_operating_cost_usd_m'])} |",
               f"| Initial infrastructure and cooling / IT hardware capex | {show(g['initial_infrastructure_and_cooling_capex_usd_m'])} / {show(g['initial_hardware_capex_usd_m'])} |",
-              f"| Hardware replacement capex across project life | {show(sum(x['hardware_capex_usd_m'] for x in g['hardware_replacements']))} |",
+              f"| Hardware replacement capex across project life | {show(math.fsum(x['hardware_capex_usd_m'] for x in g['hardware_replacements']))} |",
               f"| Separate capacity-project NPV | {show(g['capacity_project_npv_usd_m'])} |",
               f"| Standalone break-even revenue per fully utilized MW-year | {show(g['break_even_revenue_usd_m_per_fully_utilized_mw_year'])} |",
               f"| Break-even revenue per fully utilized MW-year including existing cooling | {show(g['break_even_revenue_including_existing_cooling_usd_m_per_fully_utilized_mw_year'])} |",
