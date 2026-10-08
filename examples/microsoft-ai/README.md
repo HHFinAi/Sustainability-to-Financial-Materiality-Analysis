@@ -1,74 +1,79 @@
 # Microsoft: what must water-resilient AI infrastructure earn?
 
-**A real-issuer research context with an explicitly illustrative project model. Prepared 4 October 2026.** Financial context is FY2023–FY2025; the engineering disclosure is dated 9 December 2024. The linked stewardship assessment separately reviews Microsoft's 2026 responsible-AI disclosure. This is not a historical backtest, a current Microsoft financial forecast, or a valuation of a disclosed site.
+**Real-issuer context with illustrative project economics. Baseline prepared 4 October 2026; underwriting extension prepared 8 October 2026.** The FY2023–FY2025 accounts and December 2024 engineering disclosure remain the original financial/design baseline. The extension adds explicitly dated Phoenix design and basin evidence; it does not update the company forecast or treat earlier rollout expectations as achieved results.
 
 ## Research conclusion
 
-**Direct water-bill savings do not justify the reference cooling investment.** The illustrative design needs approximately **$3.16m of additional recurring pre-tax operating benefit per year** to achieve zero incremental NPV at an assumed 8% discount rate. With direct water and energy bills alone, modeled NPV is **−$15.90m**. These results are conditional arithmetic, not evidence that Microsoft's investments destroy value.
+**Direct water-bill savings do not justify the reference cooling investment.** Its unchanged illustrative inputs require **$3.16m/year** of additional pre-tax operating benefit to clear an 8% return hurdle; direct bills alone produce **−$15.90m NPV**. This conditional result does not establish a loss on Microsoft's actual investments.
 
-The useful investment question is whether reliability, avoided disruption, or profitable capacity enabled by water resilience can clear that hurdle. A design can reduce direct cooling-water demand while increasing electricity use. Neither a lower water metric nor a larger AI capital budget establishes an attractive return.
+The extension makes the missing benefit concrete. At an assumed $50,000/hour protected cash contribution and 25% workload recovery, the design must prevent **84.26 expected outage hours/year**. A 25%-probability, 48-hour event reduced by 80% prevents only 9.6 expected hours and supplies $0.36m/year of benefit. That duration would require a **219.43% event probability**, outside the supported probability range, to clear the hurdle. At the assumed 25% probability, the required event duration is 421.31 hours. These are breakpoints, not loss forecasts.
 
-[Results](RESULTS.md) · [Inputs](inputs.json) · [Model](model.py) · [Evidence register](evidence.json) · [Sources and challenges](SOURCES.md) · [Evaluation](EVALUATION.md) · [Proposed AI stewardship programme](https://github.com/HHFinAi/Stewardship-and-Controversy-Assessment/blob/main/examples/microsoft-ai/README.md)
+Expansion is a separate capital project. The illustrative added 10 MW includes infrastructure, cooling, IT hardware, recurring operating costs, working capital and a year-5 hardware replacement. It needs **$5.57m revenue per fully utilized MW-year** to break even alone, or **$6.02m** including recovery of the original cooling investment. This avoids treating gross new-capacity revenue as a free resilience benefit.
+
+**Issuer underwriting remains NEEDS_DATA.** Public design and basin evidence establish a researchable counterfactual, not site-specific outage probabilities, commercial losses or investment returns.
+
+[Results](RESULTS.md) · [Inputs](inputs.json) · [Model](model.py) · [Cash flows](results.json) · [Evidence register](evidence.json) · [Sources](SOURCES.md) · [Evaluation](EVALUATION.md) · [Proposed AI stewardship programme](https://github.com/HHFinAi/Stewardship-and-Controversy-Assessment/blob/main/examples/microsoft-ai/README.md)
 
 ## What the issuer evidence establishes
 
-Microsoft's December 2024 engineering disclosure describes closed-loop cooling, continued administrative water use, a mixed existing fleet and an energy/PUE trade-off. Its deployment dates were expectations at publication, not confirmed operating results. **MS2 does not supply the project capex, site tariffs or resilience benefits needed to price the investment.** [MS2](SOURCES.md#ms2--engineering-disclosure)
+The original engineering source describes closed-loop cooling, continued administrative water use, mixed existing designs and an energy/PUE trade-off. Its rollout dates are expectations stated on 9 December 2024. It does not disclose project economics. [MS2](SOURCES.md#ms2--engineering-disclosure)
 
-The FY2025 cash-flow statement reports consolidated cash from operations of **$136.162bn** and cash additions to property and equipment of **$64.551bn**, compared with **$118.548bn** and **$44.477bn** in FY2024. The simple CFO-minus-cash-capex residual therefore changes from **$74.071bn to $71.611bn**. This is a calculation from group accounts, not an AI-only cash-flow measure, and not the project model's FCFF. It does not deduct acquisitions, financing-lease principal or an economic charge for stock compensation. [MS1](SOURCES.md#ms1--financial-baseline)
+FY2025 consolidated cash from operations of $136.162bn less cash additions to property and equipment of $64.551bn leaves a simple $71.611bn residual, compared with $74.071bn in FY2024. This group-account calculation is scale context; it is neither AI-only expenditure nor project FCFF. It does not deduct acquisitions, financing-lease principal or an economic stock-compensation charge. [MS1](SOURCES.md#ms1--financial-baseline)
 
-**Inference:** those boundaries matter more than labeling all group capital expenditure as AI investment. The group figures are scale context only; they do not calibrate the hypothetical cooling design.
+## Dated extension: Phoenix design and basin counterfactual
 
-## Counterfactual and model
+| Evidence | Registered observation | Underwriting implication |
+|---|---|---|
+| West US 3 announcement, 15 June 2021 [MS4](SOURCES.md#ms4--arizona-design-history-extension) | Arizona cooling was described as using outside air below 85°F and evaporation above it; availability zones have independent cooling infrastructure | Existing redundancy/rerouting must be considered before pricing an avoided outage |
+| Arizona fact sheet, internally dated December 2024 [MS5](SOURCES.md#ms5--arizona-design-specific-disclosure-extension) | Existing facilities use direct evaporative cooling; new facilities are planned with air-cooled chillers and closed-loop direct-to-chip cooling | Establishes two design archetypes; does not identify a matched before/after site |
+| ADWR Phoenix AMA model FAQs, 2023 release [MS6](SOURCES.md#ms6--basin-context-extension) | The regional groundwater model projects unmet groundwater demand over a 100-year horizon; already approved water-supply certificates are not rescinded | Basin exposure warrants checking water delivery/source contracts; it cannot be converted into annual datacenter outage probability |
 
-Compare two cooling designs serving the **same assumed IT workload**. Hold underlying cloud revenue, IT hardware and non-cooling costs constant. The model measures only incremental cooling capex, avoided direct-water expense, additional electricity, maintenance and simplified cash taxes.
+These sources were reviewed for this extension on 8 October 2026. The Arizona PDF's publication date comes from its internal footer, not the older directory in its URL. The government observation is explicitly the 2023 model release; it is not represented as the latest basin projection or a finding about a particular Microsoft permit. No matched campus, supplier, tariff, source-water mix or curtailment history has been verified.
 
-| Reference assumption | Value | Classification |
-|---|---:|---|
-| IT capacity / average load | 100 MW / 70% | Analyst assumptions; not a Microsoft site |
-| Annual operating hours | 8,760 | Constant-load simplification |
-| Avoided direct cooling-water intensity | 0.30 L per IT kWh | Scenario input, not a calibrated issuer observation |
-| Incremental facility PUE | +0.02 | Analyst assumption |
-| Electricity / water price | $80/MWh / $3/m3 | Illustrative tariffs |
-| Incremental capex / maintenance | $15m / $0.25m annually | Analyst assumptions |
-| Cooling-asset life / discount rate / tax | 10 years / 8% / 25% | Analyst assumptions, not issuer guidance |
+**Counterfactual:** compare evaporative and closed-loop/mechanical designs for an identical assumed 100 MW workload under the same local delivery conditions. Weather, redundancy, water rights, power and workload must be matched. The fleet WUE value is not a Phoenix site coefficient. Separate initial fill and administrative water from recurring cooling consumption; pumping/replenishment or returning water does not itself establish avoided business loss.
 
-All these inputs are editable in [inputs.json](inputs.json). The 0.30 intensity is not treated as verified site data: the wording of MS2's WUE definition and its footnote needs reconciliation before calibration.
+## Route A: preserve an existing workload
 
-Annual IT MWh = capacity × average load × hours. Extra electricity = IT MWh × incremental PUE. Avoided direct water in m3 = IT MWh × avoided litres per IT kWh. That last equality includes both the 1,000 kWh/MWh and 1,000 litres/m3 conversions.
-
-Let **S** be recurring water-bill savings less incremental power and maintenance costs; **B** the additional recurring pre-tax operating benefit; **I** initial incremental capex; **D = I / asset life** annual tax depreciation; and **t** the assumed tax rate.
+The original physical/cash-flow assumptions remain: 100 MW, 70% average load, 8,760 hours; avoided direct-water intensity 0.30 L/IT-kWh; incremental PUE +0.02; electricity $80/MWh; water $3/m3; cooling capex $15m and incremental maintenance $0.25m/year; 10-year life, 8% discount rate and 25% tax. They are analyst assumptions, not Microsoft site inputs. Avoided direct water is 183,960 m3/year; savings of $0.552m are below extra electricity expense of $0.981m, before maintenance.
 
 ```text
-Incremental annual FCFF = (S + B) × (1 − t) + D × t
-Incremental NPV = −I + annual FCFF × discounted operating-year annuity
-Break-even B = [I / annuity − D × t] / (1 − t) − S
+Expected avoided pre-tax loss = annual event probability × event hours
+                              × risk-reduction fraction
+                              × protected cash contribution per hour
+                              × (1 − recoverable workload fraction)
+Required expected avoided hours = annual pre-tax benefit hurdle
+                                / nonrecoverable cash contribution per hour
 ```
 
-The model assumes all deductions are immediately usable against other taxable income. There is no terminal value, working-capital change, financing flow or separate ESG discount-rate adjustment. Commissioning delays postpone operating cash flow and depreciation, not initial capex. Delay holding costs are excluded. A real case needs asset-specific tax, useful life, replacement spending and residual value.
+The event model allows at most one water-linked event per year. Protected contribution is after costs avoided during shutdown; it is not gross revenue. Remove workload rerouted to other regions or recovered later, and assign costs/benefits to the party actually bearing them. The reduction fraction requires a causal water-design link; compound heat/power failures may persist after cooling redesign. No event probability, duration, recovery fraction or contribution has been inferred from the basin model.
 
-## What changes the decision?
+## Route B: add profitable capacity
 
-At the reference workload, avoided direct water is **183,960 m3/year**, but the assumed water saving of **$0.552m** is less than additional electricity cost of **$0.981m**, before maintenance. The model deliberately assigns **zero** unverified avoided-loss or growth benefit initially.
+The capacity route compares a new 10 MW project against **no new project**. It has its own assumed $43m infrastructure/cooling capex, $60m initial IT hardware, $60m year-5 hardware replacement and $1.4m initial working capital. At 70% billable utilization and $4m revenue per fully utilized MW-year, annual revenue is $28m; total facility power costs $5.64m and other operating costs $10m/year. Those costs include assumed maintenance, people/network and other non-power site costs; none is calibrated to an issuer campus.
 
-The additional-benefit hurdle rises to **$3.65m/year** at $120/MWh electricity and **$4.08m/year** with 25% higher capex and a one-year commissioning delay. Even $3m of recurring additional pre-tax benefit does not quite clear the reference hurdle. See [the complete sensitivities](RESULTS.md).
+The reference capacity NPV is −$55.05m, so adding more capacity with those same economics cannot fund the existing cooling investment. The results also show $6.00m and $6.20m revenue sensitivities; the latter produces positive combined NPV after both capital commitments. Pricing, utilization, marginal power, site permits, demand and replacement assumptions must support such a case before calling it profitable.
 
-**Strongest contrary case:** the reference design may understate resilience or expansion benefits, overstate incremental PUE, or miss lower capital costs. Conversely, a site with reliable low-cost water may have little avoided-loss benefit; delays, operating restrictions or unusable tax shields may worsen economics. These are hypotheses to investigate, not assigned probabilities.
+The original 100 MW cash flows stay fixed. New workload uses **total** facility PUE and carries all its own infrastructure/hardware cash outlays; its revenue is not also entered as the old design's benefit. Reliability and growth outputs are separate routes and are not added together. Even a positive capacity-project NPV is not attributable to water resilience unless cooling/water availability is shown to bind capacity expansion. No extra ESG discount-rate adjustment is used.
+
+## Tax and timing controls
+
+The original “No tax relief” sensitivity was misleadingly named: a zero tax rate removes both tax charges and shields. It is now labeled **“No taxes or tax shields.”** Genuine deduction-unavailable cases retain the 25% cash tax on savings/benefits while removing capital allowances or all cost deductions. A separate two-year delayed-deduction case retains tax charges and moves shields later, including tax-only receipts after asset life. All other deductions are assumed usable against other taxable income; no deduction expiry or actual US tax entitlement is asserted.
+
+Cooling capex is paid once at time zero. Commissioning delays move operating cash flows and depreciation, not the initial outlay. The expansion project depreciates infrastructure/cooling over ten years and hardware over two five-year cycles, includes replacement cash spending once, and releases working capital at the end. Zero residual asset value is assumed. Financing flows, delay holding costs, supply-chain water and a whole-company equity bridge remain outside this example.
 
 ## Evidence gates and stewardship handoff
 
-| Missing evidence | Why it changes underwriting | Proposed next step |
+| Missing evidence | Decision affected | Proposed verification |
 |---|---|---|
-| Site-specific direct-water definitions and basin context | A fleet ratio cannot establish local scarcity or availability | Reconcile withdrawal, consumption, water source and operating periods |
-| Realized energy trade-off and tariff allocation | Determines who pays and the incremental operating cost | Obtain comparable operating data and contracts for both designs |
-| Incremental capex, useful life and replacements | Determines the capital-recovery hurdle | Separate cooling from IT hardware and ordinary expansion |
-| Operational or expansion benefit | Determines whether the hurdle can be met | Establish a documented counterfactual; separate protected profit from added capacity |
-| Asset ownership, financing and customer terms | Prevents shifting costs or benefits to the wrong entity | Map operator, tenant, supplier and lender cash flows |
+| Matched campus/design, water source and delivery contract | Whether a local water problem can affect this workload | Identify counterpart designs and their legal/physical delivery conditions |
+| Metered direct-water definitions and realized PUE | Correct quantity, denominator and energy/water trade-off | Match IT load, weather, withdrawal/consumption and administrative use |
+| Cooling capex, useful life, replacements and tax treatment | Capital recovery and timing | Obtain cooling-specific bids, lifecycle costs and asset ownership |
+| Water-linked events and protected unrecovered contribution | Whether reliability clears the 84.26-hour breakpoint | Review event logs, rerouting/recovery, contractual loss allocation and marginal contribution |
+| Incremental demand and water as binding capacity constraint | Whether positive growth value is caused by redesign | Verify customer pricing/utilization, grid permits and all new hardware/infrastructure costs |
 
-The [linked programme](https://github.com/HHFinAi/Stewardship-and-Controversy-Assessment/blob/main/examples/microsoft-ai/README.md) converts these gaps into proposed questions and milestones. No issuer contact, reply or engagement success is represented.
+The [linked stewardship programme](https://github.com/HHFinAi/Stewardship-and-Controversy-Assessment/blob/main/examples/microsoft-ai/README.md) converts gaps into proposed questions and milestones. No issuer contact, reply or engagement success is represented.
 
-## Contribution, reproducibility and review boundary
-
-The original HHFinAi contribution is the incremental counterfactual, explicit break-even hurdle, unit and double-counting controls, source-scope challenges, and investment-to-engagement handoff. The implementation and narrative were prepared with AI assistance under Ed's portfolio-development brief. Independent human validation and workflow research approval are **not recorded**; publication is not approval to invest.
+## Reproducibility and review boundary
 
 ```bash
 python examples/microsoft-ai/model.py --check
@@ -76,4 +81,4 @@ python examples/microsoft-ai/claim_checks.py
 python -m unittest discover -s tests -p test_microsoft_ai_case.py -v
 ```
 
-No network or model API is required. Read [what the evaluation does and does not establish](EVALUATION.md). Whole-company valuation, current market evidence and mandate fit remain outside this sample.
+The read-only check compares both the rendered report and machine-readable annual cash flows with committed results. Tests cover physical units, tax charges/shields and timing, benefit breakpoints, replacement spending, double-counting controls, missing issuer data and invalid inputs. They establish arithmetic and explicit controls, not issuer data truth or causal validity. The original contribution is the counterfactual, breakpoints and investment-to-engagement handoff. AI assistance was used; independent human approval and live workflow research approval are not recorded. Publication is not approval to invest. See the separate [evaluation](EVALUATION.md).

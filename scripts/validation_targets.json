@@ -1,0 +1,41 @@
+{
+  "version": "1",
+  "checks": [
+    {
+      "name": "brevik-historical",
+      "arguments": [
+        "examples/heidelberg-brevik/model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "brevik-forward",
+      "arguments": [
+        "examples/heidelberg-brevik/forward_model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "microsoft-resilience",
+      "arguments": [
+        "examples/microsoft-ai/model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "host-cli-replay",
+      "arguments": [
+        "scripts/verify_host_integration.py",
+        "--out",
+        "{run_output}/host-replay"
+      ]
+    },
+    {
+      "name": "claim-accuracy-evaluation",
+      "arguments": [
+        "evaluation/claim-accuracy/score.py",
+        "--check"
+      ]
+    }
+  ]
+}

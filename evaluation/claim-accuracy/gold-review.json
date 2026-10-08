@@ -1,0 +1,19 @@
+{
+  "status": "BLIND_AI_REVIEW_COMPLETED",
+  "human_adjudication": false,
+  "response_file": "blind-gold-review.json",
+  "response_sha256": "dd0ec21ceff94b819c6904c4a86ab83251e61dc42d207f30267de404cf516801",
+  "metadata_file": "blind-gold-review-metadata.json",
+  "metadata_sha256": "9d7a445fc3bd4c13a65e68b7b994d08e6b7308dcb28f4781c39a8466926c4253",
+  "disagreement_ids": [
+    "SH01",
+    "SH02",
+    "SH03",
+    "UL01",
+    "UL02",
+    "IB01",
+    "IB02",
+    "IB03"
+  ],
+  "method": "Fresh assistant reviewed candidate corpus and primary PDFs, blind to author key and both predictions. Access declarations are attestations, not audited isolation proof."
+}

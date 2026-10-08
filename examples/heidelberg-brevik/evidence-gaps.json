@@ -1,0 +1,122 @@
+{
+  "information_cutoff": "2026-02-25",
+  "reviewed_on": "2026-10-08",
+  "status": "NEEDS_DATA_FOR_CONTRACTUAL_AND_SECURITY_UNDERWRITING",
+  "human_approval": "NOT_RECORDED",
+  "gaps": [
+    {
+      "gap_id": "BG01",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Realized cement premium",
+      "required_evidence": "Invoice-level net premium, rebates, comparable conventional selling prices and committed volumes",
+      "reviewed_source_ids": [
+        "HM3",
+        "HM5"
+      ],
+      "search_result": "First deliveries are evidenced; unit premiums and contracted offtake volumes remain undisclosed."
+    },
+    {
+      "gap_id": "BG02",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Amended grant and return waterfall",
+      "required_evidence": "Executed 2023 support amendment, operating-cost threshold, remaining ten-year cap, eligible costs and return-sharing/reconciliation",
+      "reviewed_source_ids": [
+        "NO1",
+        "NO2",
+        "NO3",
+        "GS1"
+      ],
+      "search_result": "Public architecture is found; thresholds/caps and larger retained-return percentage are not disclosed in reviewed documents."
+    },
+    {
+      "gap_id": "BG03",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Final gross and retained construction capital",
+      "required_evidence": "Dated final costs, capital-grant payments, startup-grant receipt and retained investor capital",
+      "reviewed_source_ids": [
+        "GS1",
+        "NO2",
+        "HM1"
+      ],
+      "search_result": "NOK 4.9bn is a 2024 forecast published in June 2025; EUR 73.6m is a consolidated FY2025 grant cash line, not Brevik-only receipt."
+    },
+    {
+      "gap_id": "BG04",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Physical production and credited attributes",
+      "required_evidence": "Monthly cement sales, captured/shipped/stored CO2, lifecycle deductions, certificates and assured allocation to product sales",
+      "reviewed_source_ids": [
+        "HM5",
+        "NL1"
+      ],
+      "search_result": "Delivery and storage-certificate milestones found; full quantities, certificate files and independent assurance report were not reviewed."
+    },
+    {
+      "gap_id": "BG05",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Net ETS cash benefits",
+      "required_evidence": "Stored fossil eligibility, allowance purchases/sales, free allocation, cash dates and grant adjustments",
+      "reviewed_source_ids": [
+        "NO1",
+        "NO3",
+        "HM3"
+      ],
+      "search_result": "Historical allowance-treatment framework found; actual monetization and post-amendment settlement unverified."
+    },
+    {
+      "gap_id": "BG06",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Residual and recurring project expenditure",
+      "required_evidence": "Fixed/variable cash ledger, subsidy eligibility, sustaining capital, transport/storage pricing after support and closure liabilities",
+      "reviewed_source_ids": [
+        "GS1",
+        "NO3"
+      ],
+      "search_result": "Cost support concept found; current EUR unit costs, after-support fees, capital and closure figures are explicit sensitivities."
+    },
+    {
+      "gap_id": "BG07",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Actual lifecycle return and tax",
+      "required_evidence": "Construction and grant cash dates; 2025 operating cash; tax depreciation, loss carryforwards and aid tax treatment",
+      "reviewed_source_ids": [
+        "HM1",
+        "GS1",
+        "NO2"
+      ],
+      "search_result": "No historical project IRR/NPV computed. The tax charge and capital-recovery cases are assumptions."
+    },
+    {
+      "gap_id": "BG08",
+      "status": "OPEN",
+      "materiality": "MATERIAL",
+      "dependency": "Issuer and observed-price underwriting",
+      "required_evidence": "Exact 25 February 2026 exchange close, reconciled future group forecast, existing CCS budget, pension/NCI/JV fair values and January\u2013February balance movements",
+      "reviewed_source_ids": [
+        "HM1",
+        "HM4"
+      ],
+      "search_result": "Reported baseline and issued shares verified in dated primary documents; valuation multiples, embedded Brevik and book-value proxies remain conditional. Exact quote not verified."
+    }
+  ],
+  "search_scope": [
+    "Issuer preliminary full-year results and mandatory share-cancellation notice available by cutoff",
+    "Q3 2025 investor presentation, October 2025 first-delivery announcement",
+    "Norwegian ministry original Longship framework and September 2023 amendment announcement",
+    "Gassnova June 2025 cost report and December 2025 storage-operator certificate announcement",
+    "Primary-source searches for current support terms, Brevik grant receipts, actual premium and exact historical exchange close"
+  ],
+  "excluded_post_cutoff_material": [
+    "March 2026 audited annual report",
+    "Mutable current issuer FAQ containing later disclosure",
+    "Later Brevik learning/operating reports covering first half of 2026"
+  ],
+  "method": "Document-level session review; primary sources parsed and PDF table screenshots requested. No independent human research attestation or immutable source-binary archive. Public documents may later be replaced."
+}

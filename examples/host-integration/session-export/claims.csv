@@ -1,0 +1,4 @@
+stage,claim_id,kind,claim,scope,period,evidence_ids
+mandate,SCOPE,ASSUMPTION,"The bounded task tests design-capacity evidence and explicitly separates captured, stored and avoided emissions before any economics or equity valuation.",HEIDELBERG-MATERIALS,2026-10-08,
+evidence,CAPACITY,FACT,"Heidelberg Materials announced annual Brevik CCS capture design capacity of around 400,000 tonnes of CO2.",HEIDELBERG-MATERIALS,announced design capacity on 2025-06-18,HM-OPENING-2025
+exposure,CAPACITY,FACT,"Heidelberg Materials announced annual Brevik CCS capture design capacity of around 400,000 tonnes of CO2.",HEIDELBERG-MATERIALS,announced design capacity on 2025-06-18,HM-OPENING-2025

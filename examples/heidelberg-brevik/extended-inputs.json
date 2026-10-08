@@ -1,0 +1,229 @@
+{
+  "case": "Brevik finite-life forward cash waterfall and issuer bridge",
+  "prepared_on": "2026-10-08",
+  "information_cutoff": "2026-02-25",
+  "valuation_date": "2026-02-25",
+  "classification": "CONDITIONAL_ANALYST_SENSITIVITY",
+  "readiness": "screen-grade; contractual cash reconciliation NEEDS_DATA",
+  "facts": {
+    "capture_capacity_tonnes_per_year": {
+      "value": 400000,
+      "source": "HM2",
+      "classification": "FACT_OF_DESIGN_CAPACITY"
+    },
+    "group_rcobd_2025_eur_m": {
+      "value": 4679,
+      "source": "HM1",
+      "note": "Rounded preliminary headline RCOBD; detailed income statement reports EUR4,679.3m. Model consistently uses rounded EUR4,679m.",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "group_revenue_2025_eur_m": {
+      "value": 21460,
+      "source": "HM1",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "group_fcf_2025_eur_m": {
+      "value": 2109,
+      "source": "HM1",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "net_debt_2025_eur_m": {
+      "value": 5715,
+      "source": "HM1",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "pension_provisions_2025_eur_m": {
+      "value": 624.2,
+      "source": "HM1",
+      "note": "Noncurrent EUR569.3m plus current EUR54.9m: gross book provision proxy, not an appraised pension deficit.",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "nci_book_equity_2025_eur_m": {
+      "value": 1136.3,
+      "source": "HM1",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "jv_associate_book_values_2025_eur_m": {
+      "value": 2296.5,
+      "source": "HM1",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "shares_post_january_2026_cancellation": {
+      "value": 176365065,
+      "source": "HM4",
+      "note": "Issued shares after cancellation; not FY2025 weighted-average EPS denominator. No later buybacks assumed.",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "construction_forecast_autumn_2024_nok_m": {
+      "value": 4900,
+      "source": "GS1",
+      "note": "June 2025 publication: NOK2,200m integration plus NOK2,700m capture/compression/intermediate storage. Forecast, not audited final cost or Heidelberg retained capital.",
+      "classification": "FACT_OF_PUBLISHED_COST_FORECAST"
+    },
+    "original_2020_construction_estimate_nok_m": {
+      "value": 3200,
+      "source": "GS1",
+      "classification": "FACT_OF_HISTORICAL_COST_ESTIMATE"
+    },
+    "startup_grant_ceiling_nok_m": {
+      "value": 150,
+      "source": "NO2",
+      "note": "Ceiling conditional on readiness to ship first load; not evidence cash receipt.",
+      "classification": "FACT_OF_CONDITIONAL_GRANT_CEILING"
+    },
+    "group_government_grants_2025_eur_m": {
+      "value": 73.6,
+      "source": "HM1",
+      "note": "Consolidated investing cash-flow grant line; cannot allocate to Brevik from this document. Never treat all group grants as Brevik receipts.",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    },
+    "equity_accounted_result_2025_eur_m": {
+      "value": 191.2,
+      "source": "HM1",
+      "note": "Income statement result from equity-accounted investments enters reported RCOBD; subtract before applying consolidated operating multiple and separately adding JV/associate value proxy.",
+      "classification": "FACT_OF_DATED_PRIMARY_DISCLOSURE"
+    }
+  },
+  "commercial_plan": {
+    "years": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "cement_production_tonnes": [
+      350000,
+      450000,
+      500000,
+      550000,
+      550000
+    ],
+    "source": "HM3",
+    "classification": "FACT_OF_MANAGEMENT_EXPECTATION",
+    "note": "Production expectations, not observed sales, captured CO2 or invoiced premium tonnes."
+  },
+  "assumptions": {
+    "first_year": 2026,
+    "last_year": 2045,
+    "support_last_year": 2034,
+    "discount_rate": 0.08,
+    "cash_tax_rate": 0.25,
+    "annual_sustaining_capex_eur_m": 5,
+    "residual_capital_at_valuation_eur_m": 10,
+    "closure_cost_2045_eur_m": 20,
+    "opening_working_capital_eur_m": 0,
+    "premium_working_capital_fraction": 0.05,
+    "fixed_capture_cost_eur_m_per_full_year": 8,
+    "capture_variable_cost_eur_per_tonne": 70,
+    "transport_storage_cost_eur_per_stored_tonne_during_support": 0,
+    "transport_storage_cost_eur_per_stored_tonne_after_support": 30,
+    "operating_aid_threshold_eur_m_per_full_year": 10,
+    "operating_aid_above_threshold_share": 0.75,
+    "operating_aid_total_remaining_cap_eur_m": 150,
+    "eligible_fixed_cost_fraction": 1,
+    "eligible_variable_cost_fraction": 1,
+    "non_ets_share_of_stored_co2": 0.12,
+    "non_ets_aid_cash_realization": 1,
+    "carbon_attribute_tonnes_per_tonne_premium_cement": 0.65,
+    "carbon_price_2026_eur_per_tonne": 80,
+    "carbon_price_2030_eur_per_tonne": 100,
+    "post_2030_carbon_price_annual_growth": 0,
+    "post_2030_cement_production_tonnes": 550000,
+    "post_2030_premium_annual_growth": 0,
+    "carbon_cash_timing_lag_years": 1,
+    "note": "All numerical assumptions in this section are analyst scenarios, except management carbon-price endpoints attributed to HM3. The original ten-year support concept is sourced, but 2034 is an assumed expiry, not a verified amended date. EUR thresholds, remaining aid cap and unit costs are unverified. Carbon price is held flat after 2030. First-year flows are uniformly prorated from cutoff and placed at year-end. Residual capital is future spending, not construction to date. No depreciation tax shield, loss refund, financing, perpetual terminal value, replication or discount-rate reduction."
+  },
+  "scenarios": {
+    "downside": {
+      "cement_sell_through_fraction": 0.6,
+      "capture_availability_2026_to_2030": [
+        0.45,
+        0.5,
+        0.55,
+        0.6,
+        0.6
+      ],
+      "steady_capture_availability": 0.6,
+      "stored_fraction_of_captured": 0.9,
+      "incremental_premium_eur_per_cement_tonne": 20,
+      "ets_cash_realization_fraction": 0.25,
+      "operating_grants_enabled": false,
+      "non_ets_aid_enabled": false
+    },
+    "central_sensitivity": {
+      "cement_sell_through_fraction": 0.85,
+      "capture_availability_2026_to_2030": [
+        0.65,
+        0.8,
+        0.85,
+        0.9,
+        0.9
+      ],
+      "steady_capture_availability": 0.9,
+      "stored_fraction_of_captured": 0.98,
+      "incremental_premium_eur_per_cement_tonne": 60,
+      "ets_cash_realization_fraction": 0.5,
+      "operating_grants_enabled": true,
+      "non_ets_aid_enabled": true
+    },
+    "upside": {
+      "cement_sell_through_fraction": 1,
+      "capture_availability_2026_to_2030": [
+        0.8,
+        0.9,
+        0.95,
+        1,
+        1
+      ],
+      "steady_capture_availability": 1,
+      "stored_fraction_of_captured": 1,
+      "incremental_premium_eur_per_cement_tonne": 100,
+      "ets_cash_realization_fraction": 1,
+      "operating_grants_enabled": true,
+      "non_ets_aid_enabled": true
+    }
+  },
+  "issuer_bridge": {
+    "core_ev_to_2025_rcobd_multiples": [
+      7,
+      9,
+      11
+    ],
+    "brevik_embedded_reference_scenario": "central_sensitivity",
+    "brevik_embedded_reference_fraction": 1,
+    "pension_debtlike_adjustment_fraction": 1,
+    "nci_value_to_book_multiplier": 1,
+    "jv_associate_value_to_book_multiplier": 1,
+    "historical_price_eur": null,
+    "price_status": "NEEDS_DATA: no verified exact 25 February 2026 exchange close; no upside-to-spot computed.",
+    "note": "Multiples and book-value proxies are assumptions. Deduct equity-accounted result from reported RCOBD before applying operating multiple; add JV/associate book-value proxy separately, avoiding double-counting. Group operating results include Brevik. Remove central embedded project PV before adding scenario PV; a zero embedded fraction requires an ex-Brevik baseline. Reported net debt is deducted once, without separate cash, lease or debt subtraction. Pension proxy includes current and noncurrent provisions. No early 2026 balance-sheet roll-forward or current-price target."
+  },
+  "reverse_targets": {
+    "incremental_value_eur_per_share": [
+      0,
+      1,
+      2
+    ],
+    "premium_search_max_eur_per_tonne": 1000
+  },
+  "lifecycle": {
+    "net_retained_construction_capital_eur_m_sensitivities": [
+      0,
+      100,
+      200,
+      300
+    ],
+    "capital_reference_date": "2025-01-01",
+    "status": "NEEDS_DATA: final gross spend, dated grants, startup-grant receipt, investor retained capital, 2025 operating cash, amended aid terms, tax shields and original investment timing unverified. Capital-recovery sensitivities are not historical lifecycle NPV or IRR."
+  },
+  "double_counting_rules": [
+    "Premium excludes conventional cement revenue and ordinary carbon-price pass-through.",
+    "Operating aid is computed from gross eligible capture cost once; never use already-net opex as its base.",
+    "ETS savings apply only to eligible stored fossil CO2; non-ETS aid applies only to separate non-ETS tonnes during the support period.",
+    "Carbon cash is realized after a specified lag; retained fractions represent free-allocation/monetization/aid adjustment uncertainty, not asserted contract terms.",
+    "No assumed startup grant receipt or historical construction subsidy enters future FCF.",
+    "Future value subtracts residual capital once; lifecycle capital sensitivities are shown separately, never subtracted twice.",
+    "No separate green multiple or lower discount rate is added."
+  ]
+}

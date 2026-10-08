@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "producer": {
+    "name": "ChatGPT Work session AI; original artifacts authored from the retrieved issuer announcement",
+    "type": "ai"
+  },
+  "calculations": [],
+  "standards_considered": [],
+  "confidence": {
+    "value": 0.96,
+    "basis": "Subjective confidence in the scoped announcement reading; no confidence score for investment attractiveness."
+  },
+  "stage_id": "evidence",
+  "status": "COMPLETE",
+  "summary": "The bounded evidence register and entity boundary are reconciled; material missing economics remain OPEN, so downstream research is not approved.",
+  "claims": [
+    {
+      "id": "CAPACITY",
+      "kind": "FACT",
+      "text": "Heidelberg Materials announced annual Brevik CCS capture design capacity of around 400,000 tonnes of CO2.",
+      "scope": "HEIDELBERG-MATERIALS",
+      "period": "announced design capacity on 2025-06-18",
+      "evidence_ids": [
+        "HM-OPENING-2025"
+      ],
+      "metric": {
+        "evidence_id": "HM-OPENING-2025",
+        "metric_id": "DESIGN-CAPACITY",
+        "value": 400000,
+        "unit": "tonnes_CO2_per_year"
+      },
+      "limitations": [
+        "An issuer design-capacity announcement is not verified annual delivered capture, permanent storage or avoided emissions.",
+        "It does not establish realized cement premiums, retained allowance savings, grant proceeds or operating costs."
+      ]
+    }
+  ],
+  "sections": {
+    "source_register_review": {
+      "analysis": "One primary issuer announcement was read by the session AI and registered with its publication date, retrieval date and capacity locator. This is not independent human review.",
+      "claim_ids": [
+        "CAPACITY"
+      ]
+    },
+    "boundary_reconciliation": {
+      "analysis": "The metric belongs to Brevik announced design capacity within Heidelberg Materials. It is not group emissions, realized capture, avoided emissions or a financial input.",
+      "claim_ids": [
+        "CAPACITY"
+      ]
+    },
+    "material_gaps": {
+      "analysis": "No realized volumes, premium contracts, current executed grant terms, operating costs or market quotes are registered. OPEN MATERIAL issue ECONOMICS preserves those gaps. COMPLETE describes the scoped intake structure only.",
+      "claim_ids": [
+        "CAPACITY"
+      ]
+    }
+  },
+  "gaps": [],
+  "issues": [
+    {
+      "id": "ECONOMICS",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "description": "Actual captured and stored volumes, realized premiums, executed support terms, retained carbon benefits and operating costs are unavailable in this single-source review."
+    }
+  ]
+}

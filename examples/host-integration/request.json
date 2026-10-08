@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "mode": "research",
+  "as_of": "2026-10-08",
+  "route": "issuer-review",
+  "subject": {
+    "id": "HEIDELBERG-MATERIALS",
+    "name": "Heidelberg Materials: Brevik CCS evidence review"
+  },
+  "mandate": {
+    "objective": "Assess the boundary between Brevik announced capture design capacity and financial valuation inputs; demonstrate the host packet loop and stop on missing economics.",
+    "base_currency": "EUR",
+    "horizon": "Historical 18 June 2025 announcement reviewed on 8 October 2026; no current valuation horizon asserted.",
+    "constraints": "Public-document research sample; no investment committee mandate or trading authorization.",
+    "risk_budget": "No capital allocation; portfolio suitability is not assessed.",
+    "jurisdiction": "Public issuer research; legal access and mandate eligibility are unresolved."
+  },
+  "freshness_policy": {
+    "market_max_age_days": 1,
+    "standard_review_max_age_days": 90
+  },
+  "instruments": [
+    {
+      "id": "HM-ORDINARY",
+      "name": "Heidelberg Materials ordinary equity; instrument terms not reviewed in this sample",
+      "asset_type": "equity",
+      "currency": "EUR",
+      "market_access": "public",
+      "label": "none"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "HM-OPENING-2025",
+      "title": "Brevik CCS opening announcement",
+      "publisher": "Heidelberg Materials",
+      "uri": "https://www.heidelbergmaterials.com/en/pr-2025-06-18",
+      "locator": "Announcement capacity paragraph, followed by the Longship transport and storage paragraph.",
+      "kind": "issuer",
+      "review_status": "REVIEWED",
+      "scope": [
+        "HEIDELBERG-MATERIALS"
+      ],
+      "observed_on": "2025-06-18",
+      "available_on": "2025-06-18",
+      "retrieved_on": "2026-10-08",
+      "review_basis": "Session AI read the primary issuer announcement through the web retrieval tool. Review is scoped to announced capacity, not operating delivery, economics or human certification.",
+      "metrics": [
+        {
+          "id": "DESIGN-CAPACITY",
+          "value": 400000,
+          "unit": "tonnes_CO2_per_year",
+          "period": "announced design capacity on 2025-06-18",
+          "scope": "HEIDELBERG-MATERIALS"
+        }
+      ]
+    }
+  ]
+}
