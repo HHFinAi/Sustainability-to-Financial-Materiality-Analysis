@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-08 — Research completion and reproducibility
+
+- Stabilized report reproduction across supported Python versions, with regressions for floating-point summation differences.
+- Extended Brevik with a finite-life cash waterfall, explicit grant/carbon timing, capital-recovery stresses, a conditional issuer equity bridge and reverse premium hurdles; preserved historical outputs and evidence cutoff.
+- Extended Microsoft with separate avoided-loss and added-capacity economics, hardware replacement, working capital and tax-deduction availability/timing; retained the original illustrative baseline.
+- Added a frozen 32-item source-extraction comparison with archived baseline/structured assistant responses, independent assistant label review and deterministic scoring; human adjudication and review-time gains remain unmeasured.
+- Archived an actual bounded filesystem-host research session and a clearly labelled fixed-artifact CLI replay. Added full-directory onboarding, consolidated validation logs and unsigned release-inventory verification.
+
 ## 2026-10-03 — Issuer case and publication documentation
 - Added a dated Heidelberg Materials / Brevik research case with a source register, explicit scenario assumptions, cash-flow bridge, premium hurdle and reproducible valuation sensitivities.
 - Preserved the original synthetic stress and the methodology-only NEEDS_DATA fixture.

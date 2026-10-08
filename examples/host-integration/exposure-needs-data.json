@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "producer": {
+    "name": "ChatGPT Work session AI; original artifacts authored from the retrieved issuer announcement",
+    "type": "ai"
+  },
+  "calculations": [],
+  "standards_considered": [],
+  "confidence": {
+    "value": 0.96,
+    "basis": "Subjective confidence in the scoped announcement reading; no confidence score for investment attractiveness."
+  },
+  "stage_id": "exposure",
+  "status": "NEEDS_DATA",
+  "summary": "Design capacity alone cannot establish financial materiality. Stop before translating it into unsupported cash flows or valuation.",
+  "claims": [
+    {
+      "id": "CAPACITY",
+      "kind": "FACT",
+      "text": "Heidelberg Materials announced annual Brevik CCS capture design capacity of around 400,000 tonnes of CO2.",
+      "scope": "HEIDELBERG-MATERIALS",
+      "period": "announced design capacity on 2025-06-18",
+      "evidence_ids": [
+        "HM-OPENING-2025"
+      ],
+      "metric": {
+        "evidence_id": "HM-OPENING-2025",
+        "metric_id": "DESIGN-CAPACITY",
+        "value": 400000,
+        "unit": "tonnes_CO2_per_year"
+      },
+      "limitations": [
+        "An issuer design-capacity announcement is not verified annual delivered capture, permanent storage or avoided emissions.",
+        "It does not establish realized cement premiums, retained allowance savings, grant proceeds or operating costs."
+      ]
+    }
+  ],
+  "sections": {
+    "business_model": {
+      "analysis": "Capture design capacity is a physical project parameter. The announcement does not establish the economic rights and realized cash flows required for a financial bridge.",
+      "claim_ids": [
+        "CAPACITY"
+      ]
+    }
+  },
+  "gaps": [
+    "Actual captured and permanently stored volumes with period and verification boundary.",
+    "Executed grant/support terms, realized premiums, retained allowance economics and operating costs.",
+    "Issuer/instrument baseline, shares, current market prices and approved portfolio mandate."
+  ],
+  "issues": [
+    {
+      "id": "ECONOMICS",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "description": "Actual captured and stored volumes, realized premiums, executed support terms, retained carbon benefits and operating costs are unavailable in this single-source review."
+    }
+  ]
+}

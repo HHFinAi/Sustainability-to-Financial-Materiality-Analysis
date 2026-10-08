@@ -25,3 +25,9 @@ Validated locally on Python 3.12.14 (Linux):
 - Original source-study packet and research approval controls are preserved.
 
 This validates software behavior and the stated arithmetic. It does not validate unobserved commercial inputs, legal terms, market quotes, impact attribution or human approval. GitHub Actions results are reported separately for each published commit.
+
+## 2026-10-08 filesystem-host integration
+
+The [host integration record](../examples/host-integration/README.md) archives a session AI’s bounded source review, authored artifacts and actual research-mode CLI run in a fresh local checkout. Current packet identifiers were submitted, a stale revision was rejected, upstream revision invalidated and archived downstream artifacts, and the evidence/gap packet was exported. The final status is `NEEDS_DATA`; no human review or execution authority was asserted.
+
+The replay helper verifies the local CLI handoff without generating research or retrieving sources. This adds a narrow filesystem-host integration check to the historical build records above; it does not establish provider installation, automatic document ingestion or completed investment diligence.

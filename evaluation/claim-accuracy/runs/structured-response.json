@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+  "answer_key_access": false,
+  "items": [
+    {
+      "id": "AP01",
+      "decision": "supported",
+      "record": {"value": 15.3, "unit": "million_tonnes_CO2e", "entity_id": "AP", "period": "FY2024", "scope": "VALUE_CHAIN_GROSS"},
+      "reason": "The fiscal 2024 gross emissions row reports 15.3 million tonnes CO2e for the whole footprint."
+    },
+    {
+      "id": "AP02",
+      "decision": "contradicted",
+      "record": {"value": 14.5, "unit": "million_tonnes_CO2e", "entity_id": "AP", "period": "FY2024", "scope": "VALUE_CHAIN_NET"},
+      "reason": "The fiscal 2024 net row reports 14.5; 15.3 is gross emissions. The displayed net value is retained despite rounding."
+    },
+    {
+      "id": "AP03",
+      "decision": "supported",
+      "record": {"value": 38.4, "unit": "million_tonnes_CO2e", "entity_id": "AP", "period": "FY2015", "scope": "VALUE_CHAIN_GROSS"},
+      "reason": "The fiscal 2015 gross emissions cell is 38.4 million tonnes CO2e."
+    },
+    {
+      "id": "AP04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The fragment reports avoided physical emissions but supplies no attributable EBITDA increase or financial conversion."
+    },
+    {
+      "id": "AZ01",
+      "decision": "supported",
+      "record": {"value": 68.25, "unit": "million_tonnes_CO2e", "entity_id": "AZ", "period": "CY2024", "scope": "VALUE_CHAIN_TOTAL_MARKET"},
+      "reason": "The 2024 total carbon footprint is 68.25 MMT CO2e; the footnote specifies market-based Scope 2 and 3."
+    },
+    {
+      "id": "AZ02",
+      "decision": "contradicted",
+      "record": {"value": 2.8, "unit": "million_tonnes_CO2e", "entity_id": "AZ", "period": "CY2024", "scope": "GROUP_S2_MARKET"},
+      "reason": "The market-based purchased-electricity row reports 2.80 for 2024; 2.76 belongs to 2023."
+    },
+    {
+      "id": "AZ03",
+      "decision": "supported",
+      "record": {"value": 2.8, "unit": "million_tonnes_CO2e", "entity_id": "AZ", "period": "CY2024", "scope": "GROUP_S2_MARKET"},
+      "reason": "The 2024 purchased-electricity Scope 2 cell is 2.80 MMT CO2e, calculated using the market-based method."
+    },
+    {
+      "id": "AZ04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The fragment supplies emissions quantities and no incremental EBITDA attributable to carbon programs."
+    },
+    {
+      "id": "SH01",
+      "decision": "supported",
+      "record": {"value": 54687, "unit": "USD_million", "entity_id": "SH", "period": "FY2024", "scope": "GROUP_CFO"},
+      "reason": "Group cash flow from operating activities is reported as USD 54,687 million for 2024."
+    },
+    {
+      "id": "SH02",
+      "decision": "contradicted",
+      "record": {"value": 2549, "unit": "USD_million", "entity_id": "SH", "period": "FY2024", "scope": "SEGMENT_CASH_CAPEX"},
+      "reason": "The segment cash capital expenditure is USD 2,549 million; USD 21,085 million is the Group total."
+    },
+    {
+      "id": "SH03",
+      "decision": "supported",
+      "record": {"value": 39533, "unit": "USD_million", "entity_id": "SH", "period": "FY2024", "scope": "GROUP_FCF_NON_GAAP"},
+      "reason": "The 2024 free cash flow row reports USD 39,533 million and its asterisk identifies a non-GAAP measure."
+    },
+    {
+      "id": "SH04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "USD 2,549 million is segment cash capital expenditure; the fragment discloses no incremental carbon-tax saving."
+    },
+    {
+      "id": "UL01",
+      "decision": "supported",
+      "record": {"value": 9400, "unit": "EUR_million", "entity_id": "UL", "period": "FY2024", "scope": "GROUP_STATUTORY_OPERATING_PROFIT"},
+      "reason": "The 2024 Group operating profit row reports EUR 9,400 million, separately from underlying operating profit."
+    },
+    {
+      "id": "UL02",
+      "decision": "contradicted",
+      "record": {"value": 9400, "unit": "EUR_million", "entity_id": "UL", "period": "FY2024", "scope": "GROUP_STATUTORY_OPERATING_PROFIT"},
+      "reason": "Statutory operating profit is EUR 9,400 million; EUR 11,179 million is underlying operating profit."
+    },
+    {
+      "id": "UL03",
+      "decision": "supported",
+      "record": {"value": -72, "unit": "percent", "entity_id": "UL", "period": "CY2024_vs_2015", "scope": "OPERATIONAL_S1_S2_TARGET"},
+      "reason": "The operational market-based Scope 1 and 2 target row reports a -72% change in 2024 versus 2015 under its stated exclusions."
+    },
+    {
+      "id": "UL04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The 4.2% underlying sales growth is reported, but the fragment supplies no sole causal attribution to sustainability initiatives."
+    },
+    {
+      "id": "MA01",
+      "decision": "supported",
+      "record": {"value": 83528, "unit": "thousand_tonnes_CO2e", "entity_id": "MA", "period": "CY2024", "scope": "VALUE_CHAIN_TOTAL_MARKET"},
+      "reason": "The 2024 total market-based emissions row reports 83,528 in units of 1,000 tonnes CO2e under financial consolidation."
+    },
+    {
+      "id": "MA02",
+      "decision": "contradicted",
+      "record": {"value": 83528, "unit": "thousand_tonnes_CO2e", "entity_id": "MA", "period": "CY2024", "scope": "VALUE_CHAIN_TOTAL_MARKET"},
+      "reason": "The market-based total is 83,528 thousand tonnes; 83,602 is the location-based total."
+    },
+    {
+      "id": "MA03",
+      "decision": "supported",
+      "record": {"value": 33939, "unit": "thousand_tonnes_CO2e", "entity_id": "MA", "period": "CY2024", "scope": "GROUP_S1"},
+      "reason": "The 2024 gross Scope 1 cell reports 33,939 thousand tonnes CO2e under the stated financial consolidation boundary."
+    },
+    {
+      "id": "MA04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The emissions cells disclose no EBIT generated by emissions initiatives or supported emissions-to-currency bridge."
+    },
+    {
+      "id": "SE01",
+      "decision": "supported",
+      "record": {"value": 7.55, "unit": "score_out_of_10", "entity_id": "SE", "period": "Q4_2024", "scope": "SSI_SCORE"},
+      "reason": "The observed Q4 2024 SSI composite score is 7.55 out of ten; 7.40 is the target."
+    },
+    {
+      "id": "SE02",
+      "decision": "contradicted",
+      "record": {"value": 679, "unit": "million_tonnes_CO2", "entity_id": "SE", "period": "CUMULATIVE_2018_2024", "scope": "CUSTOMER_SAVED_AVOIDED_CUMULATIVE"},
+      "reason": "The 679 million tonnes CO2 saved and avoided figure is cumulative since 2018, not an amount during 2024 alone."
+    },
+    {
+      "id": "SE03",
+      "decision": "supported",
+      "record": {"value": 40, "unit": "percent", "entity_id": "SE", "period": "Q4_2024_vs_PROGRAM_BASELINE", "scope": "TOP_1000_SUPPLIER_OPERATIONS"},
+      "reason": "The Q4 2024 dashboard reports a 40% reduction for the top 1,000 suppliers' operations against the program baseline."
+    },
+    {
+      "id": "SE04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The customer emissions quantity supplies neither Schneider operating profit nor causal financial attribution for 2024."
+    },
+    {
+      "id": "IB01",
+      "decision": "supported",
+      "record": {"value": 5.612, "unit": "EUR_billion", "entity_id": "IB", "period": "FY2024", "scope": "GROUP_NET_PROFIT"},
+      "reason": "The FY2024 net profit disclosure is EUR 5.612 billion."
+    },
+    {
+      "id": "IB02",
+      "decision": "contradicted",
+      "record": {"value": 12, "unit": "EUR_billion", "entity_id": "IB", "period": "FY2024", "scope": "ORGANIC_INVESTMENT"},
+      "reason": "Organic investment is EUR 12 billion; EUR 17 billion is total investment including separately reported corporate transactions."
+    },
+    {
+      "id": "IB03",
+      "decision": "supported",
+      "record": {"value": 38, "unit": "g_CO2_per_kWh", "entity_id": "IB", "period": "FY2024", "scope": "EUROPE_GENERATION_INTENSITY"},
+      "reason": "The FY2024 highlights report 38 grams CO2 per kWh specifically in Europe."
+    },
+    {
+      "id": "IB04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The European physical intensity is disclosed, but a corresponding 2024 carbon-tax saving is absent."
+    },
+    {
+      "id": "VW01",
+      "decision": "supported",
+      "record": {"value": 3.0, "unit": "million_tonnes_CO2e", "entity_id": "VW", "period": "CY2024", "scope": "GROUP_S1"},
+      "reason": "The Volkswagen Group column reports 3.0 million tonnes CO2e for Scope 1, with operationally controlled companies shown separately."
+    },
+    {
+      "id": "VW02",
+      "decision": "contradicted",
+      "record": {"value": 3.0, "unit": "million_tonnes_CO2e", "entity_id": "VW", "period": "CY2024", "scope": "GROUP_S1"},
+      "reason": "The requested Group column is 3.0 million tonnes; 3.3 is the combined total including the separately shown companies."
+    },
+    {
+      "id": "VW03",
+      "decision": "supported",
+      "record": {"value": 0.059, "unit": "kWh_per_EUR", "entity_id": "VW", "period": "CY2024", "scope": "GROUP_ENERGY_INTENSITY"},
+      "reason": "The 2024 energy intensity is 0.059 kWh per EUR on the stated vehicle-production coverage excluding operationally controlled companies."
+    },
+    {
+      "id": "VW04",
+      "decision": "insufficient",
+      "record": null,
+      "reason": "The table discloses sales revenue and physical energy intensity, but no incremental operating profit caused by energy efficiency."
+    }
+  ]
+}

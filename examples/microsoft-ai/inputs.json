@@ -5,9 +5,9 @@
   "money_unit": "million",
   "scope": "Illustrative incremental cooling design, not a disclosed Microsoft site or company valuation",
   "it_capacity_mw": 100.0,
-  "average_it_load_fraction": 0.70,
+  "average_it_load_fraction": 0.7,
   "hours_per_year": 8760,
-  "avoided_cooling_water_l_per_it_kwh": 0.30,
+  "avoided_cooling_water_l_per_it_kwh": 0.3,
   "incremental_pue": 0.02,
   "electricity_usd_per_mwh": 80.0,
   "water_usd_per_m3": 3.0,
@@ -23,8 +23,46 @@
     "water_intensity": "Illustrative avoided direct cooling-water intensity; the similar 0.30 figure in MS2 has consumption/withdrawal wording ambiguity and is not treated as a calibrated site input.",
     "electricity": "Constant IT load; extra facility electricity equals IT MWh times incremental PUE. No renewable matching or carbon-credit value assumed.",
     "benefit": "Recurring pre-tax incremental operating cash benefit. Zero initially; break-even is solved, not forecast. Avoided disruption and enabled profit must not be double counted.",
-    "tax": "Straight-line tax depreciation over cooling-asset life, zero residual; all incremental deductions immediately usable against other taxable income. This is an assumption, not tax advice.",
+    "tax": "25% illustrative cash tax on water expense savings/benefits; costs/depreciation deductible by stated fractions. Delayed deduction cases shift shields by whole years, retaining charges, and include tax-only receipts beyond asset life. No deduction expiry or jurisdiction-specific law asserted.",
     "timing": "All incremental capex at time zero; operating cash flow and tax depreciation start after commissioning; benefits occur at year-end for the full asset life.",
-    "exclusions": "No terminal value, working-capital change, financing flows, delay holding costs, hardware replacement, carbon externality pricing, or quantified supply-chain water. These omissions require reassessment for actual underwriting."
-  }
+    "exclusions": "Existing cooling route excludes terminal value, financing, holding costs, new IT hardware and working capital. Added-capacity route includes its own hardware replacements and working capital but assumes zero residual value, constant unit economics and no financing. Neither route quantifies supply-chain water or claims actual issuer economics.",
+    "reliability": "At most one water-linked event/year. Expected avoided loss = probability \u00d7 duration \u00d7 risk reduction \u00d7 protected pre-tax cash contribution/hour \u00d7 unrecoverable workload fraction. Protected contribution is after avoidable costs, not revenue. No Microsoft probability, loss or site forecast.",
+    "capacity": "Separate incremental new-capacity project with infrastructure/cooling and IT hardware capex, recurring total facility power and other costs, five-year hardware replacements, working capital and taxes. No terminal hardware value. New-capacity economics must not be counted again as an existing-workload benefit."
+  },
+  "extension_date": "2026-10-08",
+  "operating_deduction_fraction": 1.0,
+  "depreciation_deduction_fraction": 1.0,
+  "tax_deduction_delay_years": 0,
+  "reliability": {
+    "classification": "ANALYST_ASSUMPTIONS_NOT_ISSUER_GUIDANCE",
+    "event_model": "AT_MOST_ONE_WATER_LINKED_EVENT_PER_YEAR",
+    "annual_event_probability": 0.25,
+    "disruption_duration_hours": 48.0,
+    "risk_reduction_fraction": 0.8,
+    "protected_cash_contribution_usd_m_per_hour": 0.05,
+    "recoverable_workload_fraction": 0.25
+  },
+  "capacity_expansion": {
+    "classification": "ANALYST_ASSUMPTIONS_NOT_ISSUER_GUIDANCE",
+    "added_it_capacity_mw": 10.0,
+    "average_billable_load_fraction": 0.7,
+    "revenue_usd_m_per_fully_utilized_mw_year": 4.0,
+    "total_facility_pue": 1.15,
+    "infrastructure_capex_usd_m_per_mw": 4.0,
+    "cooling_capex_usd_m_per_mw": 0.3,
+    "hardware_capex_usd_m_per_mw": 6.0,
+    "nonpower_operating_cost_usd_m_per_mw_year": 1.0,
+    "hardware_life_years": 5,
+    "project_life_years": 10,
+    "commissioning_delay_years": 0,
+    "working_capital_fraction_of_revenue": 0.05
+  },
+  "issuer_evidence_gaps": [
+    "Matched site/design pair, withdrawal versus consumption definitions, water source and delivery contract",
+    "Cooling-specific incremental capex, realized PUE, maintenance, useful life and tax treatment",
+    "Water-linked disruption probability/duration before and after cooling change, including correlated power/heat events",
+    "Protected nonrecoverable cash contribution after rerouting/recovery and avoidable costs; contractual loss allocation",
+    "Water design demonstrably binding for new capacity, plus billable demand, prices and grid/power permits",
+    "All added-capacity infrastructure, hardware replacement, operating costs, working capital and taxes"
+  ]
 }

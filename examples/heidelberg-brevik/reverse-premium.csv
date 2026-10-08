@@ -1,0 +1,10 @@
+scenario,variant_value_target_eur_per_share,required_project_pv_eur_m,required_premium_eur_per_cement_tonne
+downside,0,65.85702433,128.65818514
+downside,1,242.22208933,205.87045265
+downside,2,418.58715433,283.08272016
+central_sensitivity,0,65.85702433,60.0
+central_sensitivity,1,242.22208933,114.45155729
+central_sensitivity,2,418.58715433,168.95433436
+upside,0,65.85702433,23.56410247
+upside,1,242.22208933,69.89146298
+upside,2,418.58715433,116.21882348

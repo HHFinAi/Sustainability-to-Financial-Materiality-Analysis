@@ -1,0 +1,157 @@
+{
+  "case_id": "MSFT-COOLING-2026-10-04",
+  "extension_date": "2026-10-08",
+  "issuer_underwriting_status": "NEEDS_DATA",
+  "scenario_arithmetic_status": "COMPLETE",
+  "issuer_evidence_gaps": [
+    "Matched site/design pair, withdrawal versus consumption definitions, water source and delivery contract",
+    "Cooling-specific incremental capex, realized PUE, maintenance, useful life and tax treatment",
+    "Water-linked disruption probability/duration before and after cooling change, including correlated power/heat events",
+    "Protected nonrecoverable cash contribution after rerouting/recovery and avoidable costs; contractual loss allocation",
+    "Water design demonstrably binding for new capacity, plus billable demand, prices and grid/power permits",
+    "All added-capacity infrastructure, hardware replacement, operating costs, working capital and taxes"
+  ],
+  "fixed_workload_cooling": {
+    "it_mwh_per_year": 613200.0,
+    "extra_electricity_mwh_per_year": 12264.0,
+    "avoided_direct_water_m3_per_year": 183960.0,
+    "extra_power_cost_usd_m_per_year": 0.98112,
+    "water_bill_saving_usd_m_per_year": 0.55188,
+    "direct_operating_delta_usd_m_per_year": -0.67924,
+    "capex_usd_m": 15.0,
+    "annual_incremental_fcf_usd_m": -0.13443000000000005,
+    "annuity_factor": 6.710081398941442,
+    "tax_deduction_present_value_usd_m": 4.581509377569238,
+    "incremental_npv_usd_m": -15.902036242459697,
+    "break_even_additional_pretax_benefit_usd_m_per_year": 3.159829773941509,
+    "cash_flows": [
+      {
+        "year_from_initial_capex": 0,
+        "incremental_fcf_usd_m": -15.0
+      },
+      {
+        "year_from_initial_capex": 1,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 2,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 3,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 4,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 5,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 6,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 7,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 8,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 9,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      },
+      {
+        "year_from_initial_capex": 10,
+        "incremental_fcf_usd_m": -0.13443000000000005
+      }
+    ]
+  },
+  "fixed_workload_reliability": {
+    "classification": "ILLUSTRATIVE_CALCULATION_NOT_ISSUER_LOSS_FORECAST",
+    "expected_avoided_outage_hours_per_year": 9.600000000000001,
+    "nonrecoverable_cash_contribution_usd_m_per_hour": 0.037500000000000006,
+    "expected_avoided_pretax_cash_loss_usd_m_per_year": 0.3600000000000001,
+    "required_expected_avoided_hours_per_year": 84.26212730510689,
+    "required_event_probability_at_assumed_duration": 2.194326231903825,
+    "required_disruption_duration_hours_at_assumed_probability": 421.31063652553445,
+    "break_even_feasibility_at_assumed_duration": "OUTSIDE_PROBABILITY_RANGE",
+    "cooling_plus_reliability_npv_usd_m": -14.090314264745508
+  },
+  "separate_added_capacity": {
+    "classification": "ILLUSTRATIVE_SEPARATE_CAPACITY_PROJECT_NOT_ISSUER_FORECAST",
+    "added_it_capacity_mw": 10.0,
+    "annual_added_revenue_usd_m": 28.0,
+    "annual_added_it_mwh": 61320.0,
+    "annual_added_total_facility_mwh": 70518.0,
+    "annual_added_power_cost_usd_m": 5.64144,
+    "annual_other_operating_cost_usd_m": 10.0,
+    "initial_infrastructure_and_cooling_capex_usd_m": 43.0,
+    "initial_hardware_capex_usd_m": 60.0,
+    "initial_working_capital_usd_m": 1.4000000000000001,
+    "hardware_replacements": [
+      {
+        "year_from_initial_capex": 5,
+        "hardware_capex_usd_m": 60.0
+      }
+    ],
+    "capacity_project_npv_usd_m": -55.04773155774394,
+    "break_even_annual_revenue_usd_m": 38.99696419300864,
+    "break_even_revenue_usd_m_per_fully_utilized_mw_year": 5.570994884715519,
+    "cooling_plus_separate_capacity_npv_usd_m": -70.94976780020363,
+    "break_even_annual_revenue_including_existing_cooling_usd_m": 42.17373675394179,
+    "break_even_revenue_including_existing_cooling_usd_m_per_fully_utilized_mw_year": 6.024819536277398,
+    "required_added_mw_to_offset_existing_cooling_npv_at_constant_unit_economics": null,
+    "cash_flows": [
+      {
+        "year_from_initial_capex": 0,
+        "incremental_fcf_usd_m": -104.4
+      },
+      {
+        "year_from_initial_capex": 1,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 2,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 3,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 4,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 5,
+        "incremental_fcf_usd_m": -46.65608
+      },
+      {
+        "year_from_initial_capex": 6,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 7,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 8,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 9,
+        "incremental_fcf_usd_m": 13.34392
+      },
+      {
+        "year_from_initial_capex": 10,
+        "incremental_fcf_usd_m": 14.743920000000001
+      }
+    ]
+  },
+  "aggregation_boundary": "Reliability and expansion are separate routes. No combined resilience-and-growth NPV or issuer valuation is asserted."
+}

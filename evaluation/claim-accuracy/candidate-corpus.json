@@ -1,0 +1,786 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "created_at_utc": "2026-10-08T12:40:45.137906+00:00",
+  "item_count": 32,
+  "source_count": 8,
+  "task": "For each proposed claim, give supported, contradicted, insufficient, or abstain based only on the supplied source fragment. Also extract the requested reported fact, even when the proposed claim is contradicted. Use null when the requested fact is not supplied.",
+  "held_out_definition": "New questions and fragments selected after existing project prompts and engineered metadata tests were written; not guaranteed unseen in model pretraining. This corpus is now public development material, not a reusable secret test.",
+  "entity_ids": {
+    "AP": "Apple Inc.",
+    "AZ": "Amazon.com Inc.",
+    "IB": "Iberdrola S.A.",
+    "MA": "A.P. Moller - Maersk A/S",
+    "SE": "Schneider Electric SE",
+    "SH": "Shell plc",
+    "UL": "Unilever PLC",
+    "VW": "Volkswagen Group"
+  },
+  "unit_vocabulary": [
+    "million_tonnes_CO2e",
+    "thousand_tonnes_CO2e",
+    "million_tonnes_CO2",
+    "percent",
+    "USD_million",
+    "EUR_million",
+    "EUR_billion",
+    "score_out_of_10",
+    "g_CO2_per_kWh",
+    "kWh_per_EUR"
+  ],
+  "scope_vocabulary": {
+    "VALUE_CHAIN_GROSS": "Entire reported value-chain gross footprint",
+    "VALUE_CHAIN_NET": "Entire reported value-chain footprint after reported offsets",
+    "VALUE_CHAIN_TOTAL_MARKET": "Reported all-scope footprint using market-based Scope 2",
+    "VALUE_CHAIN_TOTAL_LOCATION": "Reported all-scope footprint using location-based Scope 2",
+    "GROUP_CFO": "Consolidated Group cash flow from operating activities",
+    "GROUP_FCF_NON_GAAP": "Consolidated Group non-GAAP free cash flow",
+    "SEGMENT_CASH_CAPEX": "Named segment non-GAAP cash capital expenditure",
+    "GROUP_STATUTORY_OPERATING_PROFIT": "Consolidated statutory operating profit",
+    "OPERATIONAL_S1_S2_TARGET": "Operational Scope 1/2 market-based target coverage vs stated baseline",
+    "GROUP_S1": "Group Scope 1 with stated consolidation boundary",
+    "GROUP_S2_MARKET": "Group market-based Scope 2",
+    "SSI_SCORE": "Schneider Sustainability Impact composite score",
+    "CUSTOMER_SAVED_AVOIDED_CUMULATIVE": "Cumulative customer CO2 saved and avoided",
+    "TOP_1000_SUPPLIER_OPERATIONS": "Top 1,000 suppliers operational CO2 reduction",
+    "GROUP_NET_PROFIT": "Consolidated issuer net profit",
+    "ORGANIC_INVESTMENT": "Organic issuer investment, excluding separately reported corporate transactions",
+    "EUROPE_GENERATION_INTENSITY": "Reported Europe emissions per kWh",
+    "GROUP_ENERGY_INTENSITY": "Group intensity excluding separately reported operationally controlled companies"
+  },
+  "period_vocabulary": [
+    "FY2015",
+    "FY2024",
+    "CY2024",
+    "CY2024_vs_2015",
+    "CUMULATIVE_2018_2024",
+    "Q4_2024",
+    "Q4_2024_vs_PROGRAM_BASELINE"
+  ],
+  "fragments": {
+    "AP-table": {
+      "source_id": "AP",
+      "locator": {
+        "pdf_page": 11,
+        "printed_page": "11",
+        "section": "Apple progress toward carbon neutrality; historical emissions table"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Million metric tons CO2e per fiscal year",
+        "2015",
+        "2019",
+        "2024"
+      ],
+      "rows": [
+        [
+          "Gross emissions",
+          "38.4",
+          "25.1",
+          "15.3"
+        ],
+        [
+          "Carbon offsets/removal",
+          "—",
+          "—",
+          "0.7"
+        ],
+        [
+          "Net emissions",
+          "38.4",
+          "25.1",
+          "14.5"
+        ]
+      ],
+      "source_quote": "Totals might not add up due to rounding.",
+      "context": "Historical whole-footprint emissions; the report uses a fiscal-year basis. Selected cells, no forward projection included.",
+      "fragment_sha256": "1c6b720bffda760919f82bd1fad5fe42b760139217cfba377cf61a7e7ede6007"
+    },
+    "AP-avoided": {
+      "source_id": "AP",
+      "locator": {
+        "pdf_page": 12,
+        "printed_page": "12",
+        "section": "Comprehensive carbon footprint; reported progress"
+      },
+      "kind": "selected_chart_cells",
+      "headers": [
+        "2024",
+        "million metric tons CO2e"
+      ],
+      "rows": [
+        [
+          "Total avoided emissions",
+          "41"
+        ],
+        [
+          "Net Greenhouse Gas Emissions",
+          "14.5"
+        ]
+      ],
+      "context": "Issuer-estimated avoided emissions across all scopes, distinct from the reported gross footprint. No issuer earnings amount appears in this fragment.",
+      "fragment_sha256": "c4909d983c5f23af8e0791fc9cfb54d66739060652a65bb11725aa5b5f36a63d"
+    },
+    "AZ-table": {
+      "source_id": "AZ",
+      "locator": {
+        "pdf_page": 50,
+        "printed_page": "50",
+        "section": "Data Tables — Amazon carbon footprint"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Emissions Category (MMT CO2e)",
+        "2023",
+        "2024",
+        "YoY%"
+      ],
+      "rows": [
+        [
+          "Emissions from Direct Operations (Scope 1)",
+          "14.22",
+          "15.13",
+          "6%"
+        ],
+        [
+          "Emissions from Purchased Electricity (Scope 2)*",
+          "2.76",
+          "2.80",
+          "1%"
+        ],
+        [
+          "Emissions from Indirect Sources (Scope 3)*",
+          "47.40",
+          "50.32",
+          "6%"
+        ],
+        [
+          "Amazon carbon footprint",
+          "64.38",
+          "68.25",
+          "6%"
+        ]
+      ],
+      "source_quote": "Scope 2 and 3 carbon emissions are calculated using a market-based method.",
+      "context": "The table restates 2022 and 2023 under the updated carbon methodology. It does not supply an emissions-to-earnings attribution.",
+      "fragment_sha256": "c6b7b940b679a7c1d116b6fbe67fc7773e5c4d989704997a5201102b5d22cc45"
+    },
+    "SH-group": {
+      "source_id": "SH",
+      "locator": {
+        "pdf_page": 20,
+        "printed_page": "21",
+        "section": "Group results — Key metrics"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "$ million",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        [
+          "Cash flow from operating activities",
+          "54,687",
+          "54,191",
+          "68,414"
+        ],
+        [
+          "Free cash flow*",
+          "39,533",
+          "36,457",
+          "45,965"
+        ],
+        [
+          "Cash capital expenditure*",
+          "21,085",
+          "24,392",
+          "24,833"
+        ]
+      ],
+      "source_quote": "Non-GAAP measure (see page 445).",
+      "context": "Asterisks identify the report non-GAAP measures; cash flow from operating activities is not marked with an asterisk.",
+      "fragment_sha256": "f520edfa81fa4024bc66e6f999990ba936772df77c6307c763e3a2be76b28235"
+    },
+    "SH-segment": {
+      "source_id": "SH",
+      "locator": {
+        "pdf_page": 24,
+        "printed_page": "25",
+        "section": "Liquidity and capital resources — cash capital expenditure split by segment"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Cash capital expenditure*; $ million",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        [
+          "Renewables and Energy Solutions",
+          "2,549",
+          "2,681",
+          "3,469"
+        ],
+        [
+          "Total cash capital expenditure",
+          "21,085",
+          "24,392",
+          "24,833"
+        ]
+      ],
+      "context": "Segment cash capital expenditure is a cash investment measure, not a disclosed incremental carbon-tax saving or investment return.",
+      "fragment_sha256": "84658fc72bede80127a833b4dc66384e349c5fd54e91517d3148bf9b03fde68a"
+    },
+    "UL-profit": {
+      "source_id": "UL",
+      "locator": {
+        "pdf_page": 47,
+        "printed_page": "45",
+        "section": "Underlying operating profit and underlying operating margins — Group reconciliation"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "EUR million",
+        "2024",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        [
+          "Operating profit",
+          "9,400",
+          "9,758",
+          "10,755"
+        ],
+        [
+          "Non-underlying items within operating profit",
+          "1,779",
+          "173",
+          "(1,072)"
+        ],
+        [
+          "Underlying operating profit",
+          "11,179",
+          "9,931",
+          "9,683"
+        ]
+      ],
+      "context": "The reconciliation separates statutory operating profit from underlying operating profit.",
+      "fragment_sha256": "9e422716bf6fdae6fbc8b25d93c7206798330f80669f47515b1619ffd165dc50"
+    },
+    "UL-emissions": {
+      "source_id": "UL",
+      "locator": {
+        "pdf_page": 246,
+        "printed_page": "244",
+        "section": "Scope 1 and 2 target performance"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Operational Scope 1 and 2 target",
+        "2030 target",
+        "2015 baseline (million tonnes CO2e)",
+        "2024 change vs 2015",
+        "2023 change vs 2015"
+      ],
+      "rows": [
+        [
+          "Absolute operational GHG emissions",
+          "-100%",
+          "2.01",
+          "-72%",
+          "-70%"
+        ]
+      ],
+      "source_quote": "Scope 1 and 2 market-based GHG emissions",
+      "context": "This is operational Scope 1 and 2 target performance, not all value-chain emissions. Target coverage excludes biogenic fuels and controlled owned/leased vehicles under the stated SBTi minimum scope.",
+      "fragment_sha256": "b605352b8f730a20f01c738988e72aa2ed4c86257d8e3decdccb69ec1c82789b"
+    },
+    "UL-sales": {
+      "source_id": "UL",
+      "locator": {
+        "pdf_page": 45,
+        "printed_page": "43",
+        "section": "Underlying sales growth — reconciliation; Group column"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Group",
+        "2024 vs 2023"
+      ],
+      "rows": [
+        [
+          "Turnover growth",
+          "1.9%"
+        ],
+        [
+          "Underlying sales growth",
+          "4.2%"
+        ],
+        [
+          "Turnover; EUR million; 2024",
+          "60,761"
+        ]
+      ],
+      "context": "The report defines underlying sales growth by excluding specified acquisitions, disposals, currency and extreme hyperinflation price effects. The table does not attribute all sales growth to sustainability.",
+      "fragment_sha256": "ac9803d0eeaa040c3c4d0fe54068b58f9555ba01236979b1a37af50f07fcd9f4"
+    },
+    "MA-emissions": {
+      "source_id": "MA",
+      "locator": {
+        "pdf_page": 89,
+        "printed_page": "89",
+        "section": "Performance data — Gross scopes 1, 2, 3 and total GHG emissions"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "1,000 tonnes CO2e",
+        "Comparative (2023)",
+        "2024",
+        "2024/2023 change"
+      ],
+      "rows": [
+        [
+          "Gross scope 1 GHG emissions",
+          "32,404",
+          "33,939",
+          "5%"
+        ],
+        [
+          "Gross location-based scope 2 GHG emissions",
+          "375",
+          "431",
+          "15%"
+        ],
+        [
+          "Gross market-based scope 2 GHG emissions",
+          "335",
+          "356",
+          "6%"
+        ],
+        [
+          "Total gross indirect (scope 3) GHG emissions",
+          "44,938",
+          "49,232",
+          "10%"
+        ],
+        [
+          "Total GHG emissions (location-based)",
+          "77,717",
+          "83,602",
+          "8%"
+        ],
+        [
+          "Total GHG emissions (market-based)",
+          "77,677",
+          "83,528",
+          "8%"
+        ]
+      ],
+      "source_quote": "Numbers restated due to improved reporting processes.",
+      "context": "The report consolidates GHG emissions under financial consolidation; comparative 2023 values carry the restatement footnote. No EBIT saving is disclosed in these selected cells.",
+      "fragment_sha256": "9f1c91e79730f0c29d981753cdb852e554c63296c2e90880374fb6b94ad789ba"
+    },
+    "SE-score": {
+      "source_id": "SE",
+      "locator": {
+        "pdf_page": 4,
+        "printed_page": "4",
+        "section": "Q4 2024 Results — score"
+      },
+      "kind": "selected_dashboard_cells",
+      "headers": [
+        "2024 Q4 Score",
+        "2024 Target"
+      ],
+      "rows": [
+        [
+          "7.55",
+          "7.40"
+        ]
+      ],
+      "context": "SSI is a composite score on a 0–10 scale, not a percentage of emissions reduction.",
+      "fragment_sha256": "2c6c59c04735d34cffec5c052e7e6f39bcf4fbcf13b70bdaa40c68db4ee9c92f"
+    },
+    "SE-climate": {
+      "source_id": "SE",
+      "locator": {
+        "pdf_page": 4,
+        "printed_page": "4",
+        "section": "Q4 2024 Results — Climate commitments 2 and 3"
+      },
+      "kind": "selected_dashboard_cells",
+      "headers": [
+        "Metric",
+        "Baseline",
+        "Q4 2024",
+        "2025 Ambition"
+      ],
+      "rows": [
+        [
+          "Customer emissions saved and avoided; million tonnes CO2",
+          "263M",
+          "679M",
+          "800M"
+        ],
+        [
+          "CO2 reduction from top 1,000 supplier operations",
+          "0%",
+          "40%",
+          "50%"
+        ]
+      ],
+      "source_quote": "cumulated since 2018",
+      "context": "Footnote 3 applies to the customer saved/avoided emissions. The supplier row covers top 1,000 supplier operations, not Schneider own operating emissions. Dashboard baseline is current-cycle baseline unless a specific footnote says otherwise.",
+      "fragment_sha256": "262727b2816ae505967617c81494084e7eb805dd946bb4a4cb0cff2a1d4aae7d"
+    },
+    "IB-investment": {
+      "source_id": "IB",
+      "locator": {
+        "pdf_page": 1,
+        "printed_page": "1",
+        "section": "Full-Year Results 2024 Highlights — accelerating growth and record investments"
+      },
+      "kind": "selected_numeric_disclosures",
+      "headers": [
+        "FY2024 measure",
+        "Amount"
+      ],
+      "rows": [
+        [
+          "Net Profit",
+          "EUR 5.612 billion"
+        ],
+        [
+          "EBITDA",
+          "EUR 16.848 billion"
+        ],
+        [
+          "Total investment",
+          "EUR 17 billion"
+        ],
+        [
+          "Organic investment",
+          "EUR 12 billion"
+        ],
+        [
+          "Corporate transactions (ENW and Avangrid minorities)",
+          "EUR 5 billion"
+        ]
+      ],
+      "context": "Original press-release numerical disclosures transcribed as cells. Net profit and investment are distinct measures. Organic and corporate investment are separately disclosed.",
+      "fragment_sha256": "9e40951987ca0676a4d9e563acb10e23f7319f57119fbb3119013df6e9ac2566"
+    },
+    "IB-intensity": {
+      "source_id": "IB",
+      "locator": {
+        "pdf_page": 2,
+        "printed_page": "2",
+        "section": "Strong boost to the social dividend"
+      },
+      "kind": "short_original_excerpt",
+      "source_quote": "Emissions of 38 grams of CO2 per kWh in Europe",
+      "context": "FY2024 highlights. The release does not disclose a corresponding tax saving amount. The geographic qualifier is Europe.",
+      "fragment_sha256": "0ef11585b66d9d27bacaa32a638f671f1be0193dd12476def6e0905418bd0425"
+    },
+    "VW-emissions": {
+      "source_id": "VW",
+      "locator": {
+        "pdf_page": 291,
+        "printed_page": "289",
+        "section": "Climate change — Scope 1 and 2 GHG emissions"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "Metric; million tons CO2e",
+        "2024 Volkswagen Group",
+        "2024 Companies with operational control",
+        "2024 Combined total"
+      ],
+      "rows": [
+        [
+          "Scope 1 GHG emissions",
+          "3.0",
+          "0.3",
+          "3.3"
+        ],
+        [
+          "Scope 2 GHG emissions (location-based)",
+          "2.6",
+          "1.6",
+          "4.2"
+        ],
+        [
+          "Scope 2 GHG emissions (market-based)",
+          "0.5",
+          "0.7",
+          "1.1"
+        ]
+      ],
+      "context": "The combined total is printed as 1.1 for market-based Scope 2; independently rounded component values need not sum exactly. Source row boundaries retained.",
+      "fragment_sha256": "ec390f2c727375eb064320b38944d52296af035f5685f5667af1fb544ffcf2da"
+    },
+    "VW-energy": {
+      "source_id": "VW",
+      "locator": {
+        "pdf_page": 290,
+        "printed_page": "288",
+        "section": "Energy intensity in high climate impact sectors"
+      },
+      "kind": "selected_table_cells",
+      "headers": [
+        "2024 metric",
+        "Unit",
+        "Value"
+      ],
+      "rows": [
+        [
+          "Energy intensity",
+          "kWh/EUR",
+          "0.059"
+        ],
+        [
+          "Total energy consumption",
+          "million MWh",
+          "19.0"
+        ],
+        [
+          "Sales revenue",
+          "EUR million",
+          "324,656"
+        ]
+      ],
+      "context": "Source definition excludes companies with operational control from this intensity metric and uses Group activities associated with vehicle production. No incremental earnings attribution is disclosed.",
+      "fragment_sha256": "74c2c39b1267034ceb13e4748db35e337842856754acc5744877b6a906e9bddc"
+    }
+  },
+  "items": [
+    {
+      "id": "AP01",
+      "source_id": "AP",
+      "fragment_id": "AP-table",
+      "claim": "Apple gross whole-footprint emissions were 15.3 million tonnes CO2e in fiscal 2024.",
+      "extract_request": "Extract the fiscal 2024 gross footprint."
+    },
+    {
+      "id": "AP02",
+      "source_id": "AP",
+      "fragment_id": "AP-table",
+      "claim": "Apple net whole-footprint emissions were 15.3 million tonnes CO2e in fiscal 2024.",
+      "extract_request": "Extract the fiscal 2024 net footprint."
+    },
+    {
+      "id": "AP03",
+      "source_id": "AP",
+      "fragment_id": "AP-table",
+      "claim": "Apple gross whole-footprint emissions were 38.4 million tonnes CO2e in fiscal 2015.",
+      "extract_request": "Extract the fiscal 2015 gross footprint."
+    },
+    {
+      "id": "AP04",
+      "source_id": "AP",
+      "fragment_id": "AP-avoided",
+      "claim": "Avoiding 41 million tonnes of emissions increased Apple fiscal 2024 EBITDA by USD 41 million.",
+      "extract_request": "Extract the EBITDA increase attributable to these avoided emissions."
+    },
+    {
+      "id": "AZ01",
+      "source_id": "AZ",
+      "fragment_id": "AZ-table",
+      "claim": "Amazon reported a 2024 carbon footprint of 68.25 million tonnes CO2e.",
+      "extract_request": "Extract the total 2024 carbon footprint."
+    },
+    {
+      "id": "AZ02",
+      "source_id": "AZ",
+      "fragment_id": "AZ-table",
+      "claim": "Amazon 2024 market-based Scope 2 emissions were 2.76 million tonnes CO2e.",
+      "extract_request": "Extract 2024 purchased-electricity Scope 2 emissions."
+    },
+    {
+      "id": "AZ03",
+      "source_id": "AZ",
+      "fragment_id": "AZ-table",
+      "claim": "Amazon 2024 market-based Scope 2 emissions were 2.80 million tonnes CO2e.",
+      "extract_request": "Extract 2024 purchased-electricity Scope 2 emissions."
+    },
+    {
+      "id": "AZ04",
+      "source_id": "AZ",
+      "fragment_id": "AZ-table",
+      "claim": "Amazon carbon programs generated USD 68.25 million of incremental EBITDA in 2024.",
+      "extract_request": "Extract the 2024 incremental EBITDA from carbon programs."
+    },
+    {
+      "id": "SH01",
+      "source_id": "SH",
+      "fragment_id": "SH-group",
+      "claim": "Shell Group operating cash flow was USD 54,687 million in 2024.",
+      "extract_request": "Extract 2024 Group cash flow from operating activities."
+    },
+    {
+      "id": "SH02",
+      "source_id": "SH",
+      "fragment_id": "SH-segment",
+      "claim": "Shell Renewables and Energy Solutions cash capital expenditure was USD 21,085 million in 2024.",
+      "extract_request": "Extract the segment 2024 cash capital expenditure."
+    },
+    {
+      "id": "SH03",
+      "source_id": "SH",
+      "fragment_id": "SH-group",
+      "claim": "Shell Group non-GAAP free cash flow was USD 39,533 million in 2024.",
+      "extract_request": "Extract 2024 Group non-GAAP free cash flow."
+    },
+    {
+      "id": "SH04",
+      "source_id": "SH",
+      "fragment_id": "SH-segment",
+      "claim": "Shell Renewables and Energy Solutions investments saved USD 2,549 million in carbon taxes in 2024.",
+      "extract_request": "Extract the segment 2024 incremental carbon-tax saving."
+    },
+    {
+      "id": "UL01",
+      "source_id": "UL",
+      "fragment_id": "UL-profit",
+      "claim": "Unilever statutory Group operating profit was EUR 9,400 million in 2024.",
+      "extract_request": "Extract 2024 statutory operating profit."
+    },
+    {
+      "id": "UL02",
+      "source_id": "UL",
+      "fragment_id": "UL-profit",
+      "claim": "Unilever statutory Group operating profit was EUR 11,179 million in 2024.",
+      "extract_request": "Extract 2024 statutory operating profit."
+    },
+    {
+      "id": "UL03",
+      "source_id": "UL",
+      "fragment_id": "UL-emissions",
+      "claim": "Unilever operational Scope 1 and 2 market-based target emissions changed by -72% in 2024 versus the 2015 baseline.",
+      "extract_request": "Extract the 2024 percentage change versus the 2015 baseline for this operational target."
+    },
+    {
+      "id": "UL04",
+      "source_id": "UL",
+      "fragment_id": "UL-sales",
+      "claim": "Unilever sustainability initiatives alone caused its 4.2% underlying sales growth in 2024.",
+      "extract_request": "Extract the 2024 sales growth caused solely by sustainability initiatives."
+    },
+    {
+      "id": "MA01",
+      "source_id": "MA",
+      "fragment_id": "MA-emissions",
+      "claim": "Maersk total market-based GHG emissions were 83,528 thousand tonnes CO2e in 2024.",
+      "extract_request": "Extract 2024 total market-based GHG emissions."
+    },
+    {
+      "id": "MA02",
+      "source_id": "MA",
+      "fragment_id": "MA-emissions",
+      "claim": "Maersk total market-based GHG emissions were 83,602 thousand tonnes CO2e in 2024.",
+      "extract_request": "Extract 2024 total market-based GHG emissions."
+    },
+    {
+      "id": "MA03",
+      "source_id": "MA",
+      "fragment_id": "MA-emissions",
+      "claim": "Maersk gross Scope 1 GHG emissions were 33,939 thousand tonnes CO2e in 2024.",
+      "extract_request": "Extract 2024 gross Scope 1 GHG emissions."
+    },
+    {
+      "id": "MA04",
+      "source_id": "MA",
+      "fragment_id": "MA-emissions",
+      "claim": "Maersk emissions initiatives increased its 2024 EBIT by USD 83.528 million.",
+      "extract_request": "Extract 2024 EBIT generated by emissions initiatives."
+    },
+    {
+      "id": "SE01",
+      "source_id": "SE",
+      "fragment_id": "SE-score",
+      "claim": "Schneider Electric SSI composite score was 7.55 out of ten for Q4 2024.",
+      "extract_request": "Extract the observed Q4 2024 SSI score."
+    },
+    {
+      "id": "SE02",
+      "source_id": "SE",
+      "fragment_id": "SE-climate",
+      "claim": "Schneider customers saved and avoided 679 million tonnes CO2 during 2024 alone.",
+      "extract_request": "Extract the disclosed customer saved and avoided emissions and its measurement period."
+    },
+    {
+      "id": "SE03",
+      "source_id": "SE",
+      "fragment_id": "SE-climate",
+      "claim": "Schneider top 1,000 suppliers operational CO2 emissions reduction reached 40% at Q4 2024 under this program.",
+      "extract_request": "Extract the reported reduction for the top 1,000 suppliers operational emissions."
+    },
+    {
+      "id": "SE04",
+      "source_id": "SE",
+      "fragment_id": "SE-climate",
+      "claim": "Schneider customer avoided emissions created EUR 679 million of Schneider 2024 operating profit.",
+      "extract_request": "Extract Schneider operating profit caused by customer avoided emissions in 2024."
+    },
+    {
+      "id": "IB01",
+      "source_id": "IB",
+      "fragment_id": "IB-investment",
+      "claim": "Iberdrola net profit was EUR 5.612 billion in 2024.",
+      "extract_request": "Extract 2024 issuer net profit."
+    },
+    {
+      "id": "IB02",
+      "source_id": "IB",
+      "fragment_id": "IB-investment",
+      "claim": "Iberdrola organic investment was EUR 17 billion in 2024.",
+      "extract_request": "Extract 2024 organic investment."
+    },
+    {
+      "id": "IB03",
+      "source_id": "IB",
+      "fragment_id": "IB-intensity",
+      "claim": "Iberdrola reported European emissions intensity of 38 grams CO2 per kWh in its 2024 results.",
+      "extract_request": "Extract the European emissions intensity."
+    },
+    {
+      "id": "IB04",
+      "source_id": "IB",
+      "fragment_id": "IB-intensity",
+      "claim": "Iberdrola low emissions intensity saved EUR 38 million in 2024 carbon taxes.",
+      "extract_request": "Extract the 2024 carbon-tax saving from this emissions intensity."
+    },
+    {
+      "id": "VW01",
+      "source_id": "VW",
+      "fragment_id": "VW-emissions",
+      "claim": "Volkswagen Group Scope 1 GHG emissions, excluding the separately shown operationally controlled companies, were 3.0 million tonnes CO2e in 2024.",
+      "extract_request": "Extract 2024 Scope 1 for the Volkswagen Group column."
+    },
+    {
+      "id": "VW02",
+      "source_id": "VW",
+      "fragment_id": "VW-emissions",
+      "claim": "Volkswagen Group Scope 1 GHG emissions, excluding the separately shown operationally controlled companies, were 3.3 million tonnes CO2e in 2024.",
+      "extract_request": "Extract 2024 Scope 1 for the Volkswagen Group column."
+    },
+    {
+      "id": "VW03",
+      "source_id": "VW",
+      "fragment_id": "VW-energy",
+      "claim": "Volkswagen reported 2024 Group energy intensity of 0.059 kWh per EUR of sales revenue on this stated coverage.",
+      "extract_request": "Extract the disclosed 2024 Group energy intensity."
+    },
+    {
+      "id": "VW04",
+      "source_id": "VW",
+      "fragment_id": "VW-energy",
+      "claim": "Volkswagen energy efficiency generated EUR 324.656 million of incremental 2024 operating profit.",
+      "extract_request": "Extract 2024 incremental operating profit caused by energy efficiency."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "dataset_id": "hhfinai-issuer-claim-accuracy-2026-10-08",
+  "method": "Fresh blind assistant checked the issuer PDF. Original candidate bytes remain unchanged.",
+  "human_verification": false,
+  "effect_on_supplied_values_or_predictions": "none; PDF pages correct, printed-page locator labels corrected separately",
+  "items": [
+    {"source_id": "UL", "fragment_id": "UL-profit", "pdf_page": 47, "frozen_printed_page": "45", "verified_printed_page": "44"},
+    {"source_id": "UL", "fragment_id": "UL-emissions", "pdf_page": 246, "frozen_printed_page": "244", "verified_printed_page": "243"},
+    {"source_id": "UL", "fragment_id": "UL-sales", "pdf_page": 45, "frozen_printed_page": "43", "verified_printed_page": "42"}
+  ]
+}

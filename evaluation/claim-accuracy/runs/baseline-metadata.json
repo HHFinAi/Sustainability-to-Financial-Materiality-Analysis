@@ -1,0 +1,16 @@
+{
+  "run_id": "baseline-2026-10-08",
+  "run_kind": "baseline_session",
+  "candidate_file_sha256": "e7d40836f26db033b4fcaa2f50f07f3e86da2d1691ff0dc8b34269261e5334f7",
+  "prompt_file": "baseline-prompt.md",
+  "prompt_sha256": "b39ebc2aaf29fff4ff9bbcebdad1764f35532ab2cbc5e7ff7c08a3c4f7de3b67",
+  "response_file": "runs/baseline-response.json",
+  "response_sha256": "f5e4843f4229da4a1eaea90bb241209c5d03a9941aa44beb04833a51d56b0ecb",
+  "model_revision": "unavailable",
+  "system": "ChatGPT Work assistant session",
+  "context": "fresh fork-none; candidate-only evidence",
+  "answer_key_access": false,
+  "measured_wall_seconds": null,
+  "started_at_utc": "2026-10-08T12:43:37.395060Z",
+  "completed_at_utc": "2026-10-08T12:44:52.855309Z"
+}
