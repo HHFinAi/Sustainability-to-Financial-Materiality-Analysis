@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "issuer": "Microsoft",
+  "source_ids": ["MS-10K-FY2026"],
+  "review_status": "assistant-reviewed",
+  "retrieved_date": "2026-10-16",
+  "metrics": {
+    "cash_from_operations": {
+      "type": "FACT",
+      "value": 182935,
+      "unit": "USD million",
+      "period": "FY ended 2026-06-30",
+      "scope": "Consolidated",
+      "locator": "Cash Flows Statements, p53"
+    },
+    "cash_property_equipment_additions": {
+      "type": "FACT",
+      "value": 115948,
+      "unit": "USD million",
+      "sign_convention": "Positive spending magnitude; financial statement presents an investing cash outflow",
+      "period": "FY ended 2026-06-30",
+      "scope": "Consolidated",
+      "locator": "Cash Flows Statements, p53"
+    },
+    "cfo_less_cash_property_equipment_additions": {
+      "type": "CALCULATION",
+      "value": 66987,
+      "unit": "USD million",
+      "period": "FY ended 2026-06-30",
+      "formula": "182935 - 115948",
+      "limitation": "Narrow cash-flow scale measure; not adjusted for all lease economics, acquisitions, stock compensation or project cash flows."
+    },
+    "common_shares_outstanding": {
+      "type": "FACT",
+      "value": 7425545491,
+      "unit": "shares",
+      "as_of": "2026-07-23",
+      "scope": "Actual common shares; not weighted-average diluted EPS denominator",
+      "locator": "10-K cover, p1"
+    }
+  },
+  "permitted_use": "METHOD: A hypothetical project NPV in USD million divided by 7425.545491 million shares produces a scale illustration in USD per share. Project NPV divided by annual cash-flow measures compares a stock with a flow and is only a size reference.",
+  "limitations": [
+    "An illustrative after-tax unlevered project NPV is not a calibrated incremental common-equity value: actual taxes, financing, ownership, net debt, leases, contractual costs and other corporate effects need reconciliation.",
+    "No share-price target, current share count, company forecast, or Microsoft project valuation follows from these denominators.",
+    "Do not multiply a hypothetical unit-project result by the number of tracker records."
+  ]
+}

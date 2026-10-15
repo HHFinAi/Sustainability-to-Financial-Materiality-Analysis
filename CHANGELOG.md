@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-16 — Original AI infrastructure research
+
+- Added a common-horizon grid/gas project model with delivery delay, replacement cash flows, separate economic/tax lives, cancellation, recovery and conditional operational disruption.
+- Added a dated primary-source project/phase and policy register, a bounded issuer-scale bridge, and explicit open underwriting issues.
+- Recalculated EIA annual price trends from 21 frozen source observations; retained the access limit on independent reconstruction of LBNL's raw queue data.
+- Added source challenges, cross-repository diligence handoffs and a case validation target; preserved the existing extraction evaluation and its null result.
+- Removed a duplicated source/review block from the earlier Microsoft case without changing its historical inputs or model results.
+
 ## 2026-10-08 — Research completion and reproducibility
 
 - Stabilized report reproduction across supported Python versions, with regressions for floating-point summation differences.

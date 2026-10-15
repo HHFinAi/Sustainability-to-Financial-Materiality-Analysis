@@ -2,6 +2,12 @@
   "version": "1",
   "checks": [
     {
+      "name": "ai-infrastructure",
+      "arguments": [
+        "examples/ai-infrastructure/check_case.py"
+      ]
+    },
+    {
       "name": "brevik-historical",
       "arguments": [
         "examples/heidelberg-brevik/model.py",
