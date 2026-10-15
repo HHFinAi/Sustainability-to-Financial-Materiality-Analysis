@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-10-16",
+  "classification": "CALCULATION",
+  "electricity": [
+    {
+      "state": "US",
+      "name": "United States",
+      "prices_cents_per_kwh": {
+        "2015": 10.41,
+        "2020": 10.59,
+        "2025": 13.56
+      },
+      "price_cagr_2015_2020_pct": 0.34345399596609205,
+      "price_cagr_2020_2025_pct": 5.0685517111478395,
+      "price_cagr_2015_2025_pct": 2.6788263716057026,
+      "price_growth_2020_2025_pct": 28.045325779036823,
+      "recent_price_cagr_minus_us_pp": 0.0,
+      "retail_sales_cagr_2020_2025_pct": 1.8769256565963843,
+      "price_2025_usd_per_kwh": 0.1356,
+      "price_2025_usd_per_mwh": 135.6
+    },
+    {
+      "state": "VA",
+      "name": "Virginia",
+      "prices_cents_per_kwh": {
+        "2015": 9.31,
+        "2020": 9.16,
+        "2025": 11.61
+      },
+      "price_cagr_2015_2020_pct": -0.3243311585624742,
+      "price_cagr_2020_2025_pct": 4.854566531349458,
+      "price_cagr_2015_2025_pct": 2.232328791294136,
+      "price_growth_2020_2025_pct": 26.746724890829675,
+      "recent_price_cagr_minus_us_pp": -0.2139851797983816,
+      "retail_sales_cagr_2020_2025_pct": 4.709442854801549,
+      "price_2025_usd_per_kwh": 0.1161,
+      "price_2025_usd_per_mwh": 116.1
+    },
+    {
+      "state": "TX",
+      "name": "Texas",
+      "prices_cents_per_kwh": {
+        "2015": 8.7,
+        "2020": 8.36,
+        "2025": 9.97
+      },
+      "price_cagr_2015_2020_pct": -0.79412202900071,
+      "price_cagr_2020_2025_pct": 3.585216043903383,
+      "price_cagr_2015_2025_pct": 1.3719009511564684,
+      "price_growth_2020_2025_pct": 19.25837320574164,
+      "recent_price_cagr_minus_us_pp": -1.4833356672444564,
+      "retail_sales_cagr_2020_2025_pct": 4.551465613612549,
+      "price_2025_usd_per_kwh": 0.09970000000000001,
+      "price_2025_usd_per_mwh": 99.7
+    },
+    {
+      "state": "OH",
+      "name": "Ohio",
+      "prices_cents_per_kwh": {
+        "2015": 9.98,
+        "2020": 9.44,
+        "2025": 12.37
+      },
+      "price_cagr_2015_2020_pct": -1.1063763396772064,
+      "price_cagr_2020_2025_pct": 5.555177665139266,
+      "price_cagr_2015_2025_pct": 2.1701229098545882,
+      "price_growth_2020_2025_pct": 31.03813559322033,
+      "recent_price_cagr_minus_us_pp": 0.4866259539914264,
+      "retail_sales_cagr_2020_2025_pct": 2.570209281976177,
+      "price_2025_usd_per_kwh": 0.12369999999999999,
+      "price_2025_usd_per_mwh": 123.69999999999999
+    },
+    {
+      "state": "GA",
+      "name": "Georgia",
+      "prices_cents_per_kwh": {
+        "2015": 9.62,
+        "2020": 9.93,
+        "2025": 12.06
+      },
+      "price_cagr_2015_2020_pct": 0.6363403645814225,
+      "price_cagr_2020_2025_pct": 3.963193582068958,
+      "price_cagr_2015_2025_pct": 2.2862421575548852,
+      "price_growth_2020_2025_pct": 21.450151057401822,
+      "recent_price_cagr_minus_us_pp": -1.1053581290788816,
+      "retail_sales_cagr_2020_2025_pct": 2.7907297962994404,
+      "price_2025_usd_per_kwh": 0.1206,
+      "price_2025_usd_per_mwh": 120.60000000000001
+    },
+    {
+      "state": "OR",
+      "name": "Oregon",
+      "prices_cents_per_kwh": {
+        "2015": 8.75,
+        "2020": 8.82,
+        "2025": 11.29
+      },
+      "price_cagr_2015_2020_pct": 0.15949044392058465,
+      "price_cagr_2020_2025_pct": 5.061856646270058,
+      "price_cagr_2015_2025_pct": 2.5813922053246507,
+      "price_growth_2020_2025_pct": 28.004535147392275,
+      "recent_price_cagr_minus_us_pp": -0.006695064877781931,
+      "retail_sales_cagr_2020_2025_pct": 3.822479909989829,
+      "price_2025_usd_per_kwh": 0.11289999999999999,
+      "price_2025_usd_per_mwh": 112.89999999999999
+    },
+    {
+      "state": "WA",
+      "name": "Washington",
+      "prices_cents_per_kwh": {
+        "2015": 7.4,
+        "2020": 8.33,
+        "2025": 11.12
+      },
+      "price_cagr_2015_2020_pct": 2.3959209338705323,
+      "price_cagr_2020_2025_pct": 5.947803446446787,
+      "price_cagr_2015_2025_pct": 4.156722801841362,
+      "price_growth_2020_2025_pct": 33.49339735894357,
+      "recent_price_cagr_minus_us_pp": 0.8792517352989471,
+      "retail_sales_cagr_2020_2025_pct": 0.7742876361343631,
+      "price_2025_usd_per_kwh": 0.1112,
+      "price_2025_usd_per_mwh": 111.19999999999999
+    }
+  ],
+  "max_revenue_sales_vs_price_difference_cents_per_kwh": 0.00486708150801185,
+  "queue": {
+    "sum_of_rounded_active_capacity_gw": 2061,
+    "storage_share_of_rounded_capacity_pct": 36.341581756428916,
+    "draft_or_executed_ia_share_of_rounded_capacity_pct": 26.637554585152838,
+    "unallocated_outcome_percentage_points": 2
+  }
+}

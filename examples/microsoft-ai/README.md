@@ -1,5 +1,7 @@
 # Microsoft: what must water-resilient AI infrastructure earn?
 
+**16 October follow-up:** [AI infrastructure delivery and capital recovery](../ai-infrastructure/README.md) adds primary-source project evidence, power-route scenarios and public-data calculations. The original October 4/8 case below retains its own assumptions and results.
+
 **Real-issuer context with illustrative project economics. Baseline prepared 4 October 2026; underwriting extension prepared 8 October 2026.** The FY2023–FY2025 accounts and December 2024 engineering disclosure remain the original financial/design baseline. The extension adds explicitly dated Phoenix design and basin evidence; it does not update the company forecast or treat earlier rollout expectations as achieved results.
 
 ## Research conclusion

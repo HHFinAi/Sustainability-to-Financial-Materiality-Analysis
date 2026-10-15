@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "retrieved_date": "2026-10-16",
+  "retrieval_timezone": "Asia/Almaty",
+  "retrieved_date_utc": "2026-10-15",
+  "review_status_definition": "assistant-reviewed means the cited primary-source passages were retrieved and checked by an AI research assistant. It is not human approval or independent assurance.",
+  "usage": "Paraphrased primary-source evidence only. Publication, observation and retrieval dates are separate. Company disclosures are attributed company statements; no permit or valuation is independently certified.",
+  "sources": [
+    {
+      "id": "MS-MP-20260623",
+      "publisher": "Microsoft",
+      "title": "Microsoft completes construction on first datacenter facility in Mount Pleasant, Wisconsin",
+      "url": "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/",
+      "published_date": "2026-06-23",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Status reported June 23, 2026; second-facility completion forecast for 2028",
+      "locator": "Opening paragraph; paragraph beginning Construction of Microsoft's second facility",
+      "scope": "Microsoft's Mount Pleasant facilities, Wisconsin",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft reported its first facility operational and construction continuing on its second facility, with completion targeted for 2028."}
+      ],
+      "limitations": ["Company announcement, not permit-file verification.", "No project-level MW, utilization, cash flow, or audited construction-cost allocation established by the cited passages.", "The first facility's status cannot be assigned to the second facility."]
+    },
+    {
+      "id": "MS-WI-DESIGN-20250918",
+      "publisher": "Microsoft",
+      "title": "Made in Wisconsin: The world's most powerful AI datacenter",
+      "url": "https://blogs.microsoft.com/on-the-issues/2025/09/18/made-in-wisconsin-the-worlds-most-powerful-ai-datacenter/",
+      "published_date": "2025-09-18",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Design and commitments described September 18, 2025",
+      "locator": "Designed and built for sustainability, first two substantive paragraphs",
+      "scope": "Mount Pleasant design and Microsoft's stated power commitments",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft described closed-loop liquid cooling for over 90% of the facility, with a different cooling approach for the remainder."},
+        {"type": "FACT", "text": "Microsoft said it was prepaying for its energy and electrical infrastructure and described one-for-one carbon-free energy matching."}
+      ],
+      "limitations": ["Design and commitments are not measured site outcomes.", "Cooling description is not proof of zero total site water use.", "No hourly matching, additionality, tariff price, or binding contract terms verified here.", "The referenced 250 MW solar project is not the datacenter's electrical load."]
+    },
+    {
+      "id": "MS-CALEDONIA-20251010",
+      "publisher": "Microsoft Local",
+      "title": "Village of Caledonia datacenter project overview",
+      "url": "https://local.microsoft.com/blog/village-of-caledonia-datacenter-project-overview/",
+      "published_date": "2025-10-10",
+      "publication_date_basis": "Date of selected update; page also retains earlier planning text",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "October 10, 2025 site decision",
+      "locator": "October 10th, 2025, Village of Caledonia datacenter project update",
+      "scope": "The particular Caledonia site discussed in that update",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft said it would not proceed with that site, while remaining interested in Southeast Wisconsin and alternative locations."}
+      ],
+      "limitations": ["Does not establish a regulator's permit rejection or the sole cause of the company's decision.", "Does not establish a cancellation loss or the status of a replacement site.", "Older planning paragraphs are superseded for this site's decision by the dated October update."]
+    },
+    {
+      "id": "MS-ATL-20251112",
+      "publisher": "Microsoft",
+      "title": "Infinite scale: The architecture behind the Azure AI superfactory",
+      "url": "https://blogs.microsoft.com/blog/2025/11/12/infinite-scale-the-architecture-behind-the-azure-ai-superfactory/",
+      "published_date": "2025-11-12",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Architecture described November 12, 2025",
+      "locator": "Maximum density of compute; High-availability, low-cost power",
+      "scope": "Fairwater design and Atlanta GPU-fleet power architecture",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft described a two-storey design and said Atlanta's grid resilience allowed the GPU fleet to omit traditional on-site generation and UPS arrangements."}
+      ],
+      "limitations": ["Not evidence that every facility load has no backup power.", "Claimed design availability is not independently observed uptime.", "Exact municipal site identity, MW capacity, permit numbers and tariff terms were not established.", "Do not identify this facility with Palmetto or East Point without additional evidence."]
+    },
+    {
+      "id": "MS-EASTPOINT",
+      "publisher": "Microsoft Local",
+      "title": "East Point, Georgia datacenter project update",
+      "url": "https://local.microsoft.com/blog/east-point-georgia-datacenter-project-update/",
+      "published_date": null,
+      "publication_date_basis": "Rolling page; selected dated entries shown below",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "March 1, 2023 design update; March 13 and April 11, 2024 construction communications",
+      "locator": "March 1, 2023, site-plan bullets; March 13, 2024; April 11, 2024",
+      "scope": "East Point campus plan and construction communications",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft described reducing the proposed campus from three buildings to two while relocating the substation in response to community feedback."},
+        {"type": "FACT", "text": "The 2024 updates discuss rock-excavation activity and community engagement."}
+      ],
+      "limitations": ["No commissioning confirmation from the selected updates.", "Building-count reduction cannot be converted into an equivalent percentage reduction in MW or project value.", "Issuer discussion of permitted work is not independent inspection of permits."]
+    },
+    {
+      "id": "MS-PALMETTO",
+      "publisher": "Microsoft Local",
+      "title": "Palmetto datacenter construction update",
+      "url": "https://local.microsoft.com/blog/palmetto-datacenter-construction-update/",
+      "published_date": null,
+      "publication_date_basis": "No explicit page publication date; July 23, 2024 meeting recap supplies a dated event",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "April 2024 start; July 23, 2024 meeting; historical October 2025 completion estimate",
+      "locator": "Opening paragraph; Recap: Palmetto Datacenter Project Information Session; Construction timeline",
+      "scope": "Microsoft Palmetto construction project, Georgia",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Microsoft reported construction beginning in April 2024; its page retained an estimate of completion at the start of October 2025."}
+      ],
+      "limitations": ["An elapsed forecast is not confirmation of completion or evidence of delay.", "No current operational status, actual completion date, or verified MW capacity established.", "Do not join this record to Atlanta Fairwater solely because both concern Greater Atlanta."]
+    },
+    {
+      "id": "TX-TCEQ-20260921",
+      "publisher": "Office of the Governor of Texas",
+      "title": "September 21, 2026 letter to TCEQ Executive Director Kelly Keel",
+      "url": "https://gov.texas.gov/uploads/files/press/TCEQ_Data_Center.pdf",
+      "published_date": "2026-09-21",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Directive issued September 21, 2026",
+      "locator": "Page 1, permitting directive; page 2, compliance-update date",
+      "scope": "Texas state agency permitting direction; applicability to a particular project requires its permit record",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "The governor directed a TCEQ permitting pause linked to ERCOT's review; see policies.json for the operative scope and next milestone."}
+      ],
+      "limitations": ["No project-specific legal determination made.", "No blanket exemption or MW threshold is inferred from a different audit instrument.", "Announced future legislation is not recorded as enacted law.", "Subsequent implementation or amendment is not comprehensively verified."]
+    },
+    {
+      "id": "NY-EO62-20260714",
+      "publisher": "Governor of New York State",
+      "title": "Executive Order No. 62: Establishing a Temporary Moratorium on Data Centers",
+      "url": "https://www.governor.ny.gov/executive-order/no-62-establishing-temporary-moratorium-data-centers-new-york-while-state-develops",
+      "published_date": "2026-07-14",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Order issued July 14, 2026",
+      "locator": "Section 1, DEC abeyance and GEIS; Section 6, definition and exclusions",
+      "scope": "Specified New York DEC applications; not a project-specific permit determination",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "The operative order conditions DEC application abeyance on the GEIS process and contains explicit scope limits, recorded in policies.json."}
+      ],
+      "limitations": ["Subsequent implementation and any amendment require a fresh check before project underwriting.", "No actual project application or completeness determination reviewed."]
+    },
+    {
+      "id": "NIST-OT-R3-20230928",
+      "publisher": "National Institute of Standards and Technology",
+      "title": "SP 800-82 Revision 3: Guide to Operational Technology Security",
+      "url": "https://csrc.nist.gov/pubs/sp/800/82/r3/final",
+      "published_date": "2023-09-28",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Revision 3 final; landing-page planning note dated September 21, 2026",
+      "locator": "Abstract; Document History; Planning Note",
+      "scope": "General OT security guidance, including building automation and physical-environment control systems",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "METHOD", "text": "OT security analysis should account for physical processes and reliability and safety constraints; building automation is within the guide's scope."},
+        {"type": "FACT", "text": "The retrieved page links Revision 4 as an initial public draft, not a replacement final standard."}
+      ],
+      "limitations": ["No Microsoft-specific incident, vulnerability, outage probability, loss severity, or control effectiveness is established.", "Use as a diligence framework, not a statistical calibration."]
+    },
+    {
+      "id": "MS-10K-FY2026",
+      "publisher": "Microsoft Investor Relations",
+      "title": "Microsoft Form 10-K for fiscal year ended June 30, 2026",
+      "url": "https://microsoft.gcs-web.com/static-files/8a9beeed-0e9e-48e6-b4fb-593d558e2693",
+      "published_date": "2026-07-29",
+      "retrieved_date": "2026-10-16",
+      "observation_period": "Fiscal year ended June 30, 2026; cover share count as of July 23, 2026",
+      "locator": "Cover p1; Cash Flows Statements p53; Note 1 Property and Equipment p61; Note 6 p69 (printed and PDF page numbers coincide)",
+      "scope": "Microsoft consolidated accounting policies and property/equipment disclosures",
+      "review_status": "assistant-reviewed",
+      "claims": [
+        {"type": "FACT", "text": "Estimated accounting lives are generally 2–6 years for servers/network equipment and 5–15 years for buildings/improvements; land is not depreciated."},
+        {"type": "FACT", "text": "At June 30, 2026, net property and equipment was USD313.076 billion; fiscal-year depreciation expense was USD34.3 billion."},
+        {"type": "FACT", "text": "Consolidated CFO was USD182,935 million and cash PP&E additions were USD115,948 million in FY2026; common shares outstanding were 7,425,545,491 on July 23, 2026."}
+      ],
+      "limitations": ["Accounting lives are not verified economic lives for an individual GPU generation or building.", "Consolidated balances cannot allocate investment or depreciation to a named campus.", "No residual values, replacement schedule, or project-specific capex mix established."]
+    }
+  ]
+}
