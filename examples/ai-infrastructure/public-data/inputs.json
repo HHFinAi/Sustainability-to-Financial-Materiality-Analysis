@@ -1,0 +1,257 @@
+{
+  "as_of": "2026-10-16",
+  "time_zone": "Asia/Almaty",
+  "source_review": "AI-assisted primary-source extraction; no human review attested",
+  "fact_classification": "FACT: observed EIA cells and LBNL published summary statistics; derived fields are calculated separately",
+  "eia": {
+    "source_id": "EIA-861-HIST-2026",
+    "url": "https://www.eia.gov/electricity/data/state/xls/861/HS861%202010-.xlsx",
+    "landing_url": "https://www.eia.gov/electricity/data/state/",
+    "published_date": "2026-10-07",
+    "retrieved_date": "2026-10-16",
+    "source_file_bytes": 487659,
+    "source_file_sha256": "e4c74d03f4a6b8c68045e3d2d3392b81bb5230f5d9989edd3c7046611092af16",
+    "worksheet": "Total Electric Industry",
+    "unit": "nominal US cents/kWh",
+    "scope": "all end-use sectors and provider types, annual, revenue/sales weighted",
+    "years": [
+      2015,
+      2020,
+      2025
+    ],
+    "states": [
+      "US",
+      "VA",
+      "TX",
+      "OH",
+      "GA",
+      "OR",
+      "WA"
+    ],
+    "observations": [
+      {
+        "year": 2015,
+        "state": "US",
+        "total_revenue_thousand_usd": 391341468,
+        "total_sales_mwh": 3758992390,
+        "price_cents_per_kwh": 10.41,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A575:V575; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "US",
+        "total_revenue_thousand_usd": 393639421,
+        "total_sales_mwh": 3717674481,
+        "price_cents_per_kwh": 10.59,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A315:V315; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "US",
+        "total_revenue_thousand_usd": 553164058,
+        "total_sales_mwh": 4079909354,
+        "price_cents_per_kwh": 13.56,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A55:V55; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "VA",
+        "total_revenue_thousand_usd": 10425468,
+        "total_sales_mwh": 112009045,
+        "price_cents_per_kwh": 9.31,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A569:V569; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "VA",
+        "total_revenue_thousand_usd": 10739813,
+        "total_sales_mwh": 117254388,
+        "price_cents_per_kwh": 9.16,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A309:V309; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "VA",
+        "total_revenue_thousand_usd": 17134129,
+        "total_sales_mwh": 147590481,
+        "price_cents_per_kwh": 11.61,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A49:V49; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "TX",
+        "total_revenue_thousand_usd": 34124300,
+        "total_sales_mwh": 392337354,
+        "price_cents_per_kwh": 8.7,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A567:V567; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "TX",
+        "total_revenue_thousand_usd": 35705757,
+        "total_sales_mwh": 426863267,
+        "price_cents_per_kwh": 8.36,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A307:V307; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "TX",
+        "total_revenue_thousand_usd": 53160437,
+        "total_sales_mwh": 533260493,
+        "price_cents_per_kwh": 9.97,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A47:V47; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "OH",
+        "total_revenue_thousand_usd": 14885537,
+        "total_sales_mwh": 149213224,
+        "price_cents_per_kwh": 9.98,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A559:V559; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "OH",
+        "total_revenue_thousand_usd": 13459729,
+        "total_sales_mwh": 142615199,
+        "price_cents_per_kwh": 9.44,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A299:V299; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "OH",
+        "total_revenue_thousand_usd": 20027634,
+        "total_sales_mwh": 161909384,
+        "price_cents_per_kwh": 12.37,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A39:V39; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "GA",
+        "total_revenue_thousand_usd": 13069830,
+        "total_sales_mwh": 135878215,
+        "price_cents_per_kwh": 9.62,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A534:V534; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "GA",
+        "total_revenue_thousand_usd": 13247089,
+        "total_sales_mwh": 133470142,
+        "price_cents_per_kwh": 9.93,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A274:V274; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "GA",
+        "total_revenue_thousand_usd": 18471484,
+        "total_sales_mwh": 153163002,
+        "price_cents_per_kwh": 12.06,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A14:V14; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "OR",
+        "total_revenue_thousand_usd": 4133956,
+        "total_sales_mwh": 47263974,
+        "price_cents_per_kwh": 8.75,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A561:V561; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "OR",
+        "total_revenue_thousand_usd": 4501783,
+        "total_sales_mwh": 51019313,
+        "price_cents_per_kwh": 8.82,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A301:V301; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "OR",
+        "total_revenue_thousand_usd": 6949242,
+        "total_sales_mwh": 61544833,
+        "price_cents_per_kwh": 11.29,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A41:V41; price V, revenue S, sales T"
+      },
+      {
+        "year": 2015,
+        "state": "WA",
+        "total_revenue_thousand_usd": 6669084,
+        "total_sales_mwh": 90116086,
+        "price_cents_per_kwh": 7.4,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A571:V571; price V, revenue S, sales T"
+      },
+      {
+        "year": 2020,
+        "state": "WA",
+        "total_revenue_thousand_usd": 7225703,
+        "total_sales_mwh": 86706144,
+        "price_cents_per_kwh": 8.33,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A311:V311; price V, revenue S, sales T"
+      },
+      {
+        "year": 2025,
+        "state": "WA",
+        "total_revenue_thousand_usd": 10018626,
+        "total_sales_mwh": 90115305,
+        "price_cents_per_kwh": 11.12,
+        "source_id": "EIA-861-HIST-2026",
+        "locator": "'Total Electric Industry'!A51:V51; price V, revenue S, sales T"
+      }
+    ]
+  },
+  "lbnl": {
+    "source_id": "LBNL-QUEUED-2026",
+    "url": "https://emp.lbl.gov/publications/queued-2026-edition-characteristics",
+    "context_url": "https://emp.lbl.gov/queues",
+    "data_file_url": "https://eta-publications.lbl.gov/sites/default/files/2026-05/lbnl_ix_queue_data_file_thru2025.xlsx",
+    "data_file_last_updated": "2026-05",
+    "slide_deck_published": "2026-06",
+    "retrieved_date": "2026-10-16",
+    "observation_date": "2025-12-31",
+    "extraction_mode": "Manually transcribed numeric facts from official publication landing page; raw workbook download returned HTTP 403. No independent project-level reaggregation.",
+    "source_file_sha256": null,
+    "license": "Underlying data file: CC BY 4.0, Lawrence Berkeley National Laboratory and GridTracker; this extract transcribes public summary facts.",
+    "active_generation_gw": 1312,
+    "active_storage_gw": 749,
+    "active_projects_approx": 8200,
+    "draft_or_executed_ia_not_operational_gw": 549,
+    "median_ir_to_cod_years": {
+      "comparison": ">",
+      "value": 5,
+      "completion_year": 2025,
+      "sample": "Projects built in 2025, regions with available duration data; not all queued projects or data-center load connections"
+    },
+    "request_cohort_capacity_outcome_pct": {
+      "request_year_start": 2000,
+      "request_year_end": 2020,
+      "status_as_of": "2025-12-31",
+      "operational": 13,
+      "withdrawn": 75,
+      "active": 10,
+      "rounding": "Published whole-percent summaries; listed categories total 98%. Remaining 2 percentage points are not assigned or normalized here."
+    },
+    "scope": "Transmission-connected generation and storage requests; excludes load interconnection requests, distribution-connected projects and behind-the-meter projects",
+    "locator": "Publication page: abstract scope and key highlights bullets 1, 4, 5, 6; landing page publication timing paragraphs"
+  }
+}

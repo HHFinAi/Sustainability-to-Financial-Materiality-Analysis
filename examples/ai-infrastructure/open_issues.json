@@ -1,0 +1,16 @@
+{
+  "case_id": "AI-INFRASTRUCTURE-2026-10-16",
+  "issuer_underwriting": "NEEDS_DATA",
+  "workflow_research_approval_recorded": false,
+  "human_review_recorded": false,
+  "issues": [
+    {"id":"I01","severity":"MATERIAL","status":"OPEN","dependency":"Site ownership, customer contracts, tariffs, capex and utilization","consequence":"All project cash-flow inputs remain illustrative; no issuer project return."},
+    {"id":"I02","severity":"MATERIAL","status":"OPEN","dependency":"Named project permit, phase MW, applicable authority conditions and service dates","consequence":"Policy examples and issuer updates cannot calibrate delay probabilities."},
+    {"id":"I03","severity":"MATERIAL","status":"OPEN","dependency":"Economic equipment life, tax basis, replacements and market-supported resale","consequence":"Finite-horizon and recovery assumptions can change scenario ranking."},
+    {"id":"I04","severity":"MATERIAL","status":"OPEN","dependency":"Gas supply, generation delivery, redundancy, emissions permissions and schedule","consequence":"Immediate alternative power is an assumption, not an executable option."},
+    {"id":"I05","severity":"MATERIAL","status":"OPEN","dependency":"Site-specific loss frequency, recoverability, liability and controls","consequence":"Cyber/operational results are conditional severity only, not expected annual losses."},
+    {"id":"I06","severity":"MATERIAL","status":"OPEN","dependency":"LBNL raw workbook and cohort details","consequence":"Summary arithmetic is reproduced; raw aggregation and duration distribution are not."},
+    {"id":"I07","severity":"MATERIAL","status":"OPEN","dependency":"Issuer-wide cash-flow bridge, current shares, price and expectations","consequence":"No stock recommendation, price target or mispricing estimate."},
+    {"id":"I08","severity":"MATERIAL","status":"OPEN","dependency":"Independent human source/model review","consequence":"Software checks and AI review cannot establish human research approval."}
+  ]
+}
