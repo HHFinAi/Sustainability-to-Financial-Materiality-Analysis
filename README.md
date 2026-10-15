@@ -6,6 +6,14 @@ Which sustainability issues change cash flow, by how much, and what evidence wou
 
 ## Start with the research
 
+### AI infrastructure — when does earlier capacity justify extra capital?
+
+**New research, 16 October 2026:** value the delivery window and contractual cost allocation before underwriting a power workaround. A hypothetical 100 MW comparison tests commissioning delay, grid versus dedicated gas, hardware replacement, capital recovery and operational disruption. A narrow positive reference gas NPV turns negative with a six-month delay; this is an illustrative finding, not Microsoft site economics.
+
+The case combines independently calculated EIA electricity-price trends, a dated six-record project/phase tracker, scoped policy texts and a source-linked issuer-scale illustration. Unknown permits, capacity and commercial terms remain explicit. Original primary sources support the evidence; project financial inputs are labelled assumptions.
+
+[Read the new memo](examples/ai-infrastructure/README.md) · [Model results](examples/ai-infrastructure/RESULTS.md) · [Primary-data analysis](examples/ai-infrastructure/public-data/RESULTS.md) · [Project tracker](examples/ai-infrastructure/evidence/PROJECT_TRACKER.md) · [Research update](examples/ai-infrastructure/UPDATE_2026-10-16.md)
+
 ### Heidelberg Materials — what Brevik CCS must earn to matter
 
 **Research assessment: WATCH.** The extended case separates cement sales, captured/stored carbon, retained carbon cash, operating aid and costs through a finite operating life. Capital-recovery stresses, a conditional enterprise-to-equity bridge and reverse premium hurdles show what must be earned. Realized premiums and executed grant economics remain unknown.
@@ -37,6 +45,7 @@ The Microsoft release was prepared with AI assistance under Ed's portfolio-devel
 From the repository root, using Python 3.10 or later:
 
 ```bash
+python examples/ai-infrastructure/check_case.py
 python examples/heidelberg-brevik/model.py --check
 python examples/heidelberg-brevik/forward_model.py --check
 python examples/microsoft-ai/model.py --check

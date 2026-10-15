@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-10-16",
+  "review_timezone": "Asia/Almaty",
+  "status": "DATED_INSTRUMENTS_REVIEWED_PROJECT_APPLICATION_NEEDS_DATA",
+  "interpretation_rule": "Use operative instruments, applicable agency and project facts. These are dated records, not a complete current-law service or legal conclusions about any named project.",
+  "policies": [
+    {
+      "id": "TX-TCEQ-PAUSE",
+      "jurisdiction": "Texas, United States",
+      "authority": "Governor; Texas Commission on Environmental Quality",
+      "instrument": "Governor's letter to TCEQ Executive Director",
+      "instrument_date": "2026-09-21",
+      "effective_date_basis": "Directive dated September 21, 2026; implementation at individual permit level not verified",
+      "source_ids": ["TX-TCEQ-20260921"],
+      "type": "FACT",
+      "scope": "TCEQ issuance of permits related to data-center projects; letter also addresses other state approvals pending required audit information.",
+      "capacity_threshold_mw": null,
+      "threshold_status": "No numerical threshold specified in this letter; do not import a separate audit threshold.",
+      "exceptions": "No express on-site-generation exception established by this letter.",
+      "release_condition": "ERCOT completes its review; broader direction refers to acquiring PUC/ERCOT/TWDB information.",
+      "next_dated_milestone": "2026-10-19",
+      "milestone_meaning": "TCEQ compliance update due, not an automatic end date.",
+      "subsequent_status_verified": false,
+      "named_project_impact_verified": false,
+      "model_link": "METHOD: Add a timing branch only after confirming an affected application; do not assume on-site generation bypasses the pause.",
+      "evidence_gap": "Agency implementation, amendments, audit outcome and project-specific permit docket."
+    },
+    {
+      "id": "NY-EO62",
+      "jurisdiction": "New York, United States",
+      "authority": "Governor; Department of Environmental Conservation; Department of Public Service",
+      "instrument": "Executive Order 62",
+      "instrument_date": "2026-07-14",
+      "source_ids": ["NY-EO62-20260714"],
+      "type": "FACT",
+      "scope": "Section 1 holds pending/new discretionary DEC construction/expansion applications not deemed complete before the order in abeyance.",
+      "capacity_threshold_mw": 50,
+      "threshold_operator": ">=",
+      "threshold_status": "Section 6 also specifies facility characteristics; MW alone does not determine coverage.",
+      "exceptions": "Local permissions are outside this provision; Section 6 excludes facilities primarily for manufacturing, research, education or medical care.",
+      "release_condition": "DPS submits the final GEIS report and associated findings statement.",
+      "automatic_calendar_expiry_verified": false,
+      "next_dated_milestone": null,
+      "subsequent_status_verified": false,
+      "named_project_impact_verified": false,
+      "model_link": "METHOD: Check use, capacity, agency and application completeness before adding a delay; do not assume automatic expiry after twelve months.",
+      "evidence_gap": "Application records, later amendments and final GEIS/findings submission."
+    }
+  ]
+}
