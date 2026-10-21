@@ -6,15 +6,15 @@
     ".gitattributes": "8b3061c2db5ab6691f20a53e080b561333e04b1168e8be513984edebf4fe689f",
     ".github/workflows/validate.yml": "ef198667619fe3a0abb7808d319e07446409de184372ea5004837aeb7d51d445",
     ".gitignore": "dce4109a357e474eb41a5e3fac2bc1b249baa4b97cdf641d811d9bd2850bbec7",
-    "AGENTS.md": "3b36a34f0bc6f367d992e1c0b1ef8d6e048d2c2c4096064ad85b40d8763418d8",
-    "CHANGELOG.md": "b52d11c23f369b1f040e6bcc56ce7a9ea6c124c8b6372d5eb79ba4418461661b",
+    "AGENTS.md": "0b4664f1400768a679979560d956fc6379120dc0ee6b821fd810745e4aaeac2c",
+    "CHANGELOG.md": "5f8fba308741ea6680868e60b928d7897256fcd17c0988163f7148ccedf373d9",
     "CITATION.cff": "e4b501ded7715a949601e64a33e45d39e89d6e37c467f84daf2afce1119b37b9",
     "COMMON_CORE_MANIFEST.json": "3fadb1efbc423eb519e409be5bdf1fb33dc0a9b25a35a446be1512ba2e6ee364",
-    "CONTRIBUTING.md": "43183fc73dbec1ed3539c9b20a916b18ed5d16b1a849c3c8dd0422f0f14d3ac8",
+    "CONTRIBUTING.md": "b5ba238e30fcb247643fcfde4d7b2c85decea65dc06e2f6526c0a896335ae7ad",
     "LICENSE": "0096c6f4b18e36749e9652b24d63dbe9d2f36ef66e2ea80e61660c7d3f10b7fd",
     "NOTICE.md": "de20315d76e21da66212781043f66d9ec282041cb8752bb22c169f5029559fb1",
     "PROMPTS.md": "c317fece420dc255cd68871bea1789f30f161767e19f8117a3cc29f78e049533",
-    "README.md": "bc46320fc8b0d22fe699904a05bd8e8111fab3b06bb7242cae2bab6a142d5e16",
+    "README.md": "032e1cb171edbb53b638c2f9864359246225eba137facf5204311a458a332530",
     "SECURITY.md": "0a73124a23b3c34faf2dc0350c5b9873fdebcaf15ccc0eaf43a99e8ecc5b61a2",
     "SKILL.md": "7806994a21f2cb4c55693ce9cbb59ff2395ababb13e02c45c3b5a1d32f1c6191",
     "START_HERE.md": "68f850cfe5e2fcb0725810d165ee54231d5cff4705bd294638a5dc5ad38557d0",
@@ -207,9 +207,14 @@
     "tests/test_metadata.py": "08512563116643e106c3e9e9e58e263a4d99ebdc188ef360384fe858928ea85b",
     "tests/test_microsoft_ai_case.py": "d2ef70018a61178f71f11734e8e363bdbe0392f27eede10cc5b01d0e1bfb12e9",
     "tests/test_public_cases.py": "80e988b9a01e277f660c946cac94851271bea15f4401208d16c7521270f30165",
-    "tests/test_release_inventory.py": "9eef0f81f9b6ca27d57d2a4f50fbba79bdfcbe8b8d8134d022b2ed36db5c6d49"
+    "tests/test_release_inventory.py": "9eef0f81f9b6ca27d57d2a4f50fbba79bdfcbe8b8d8134d022b2ed36db5c6d49",
+    "RESPONSIBLE_AI.md": "eb066bf68078dbfef2560a579723d2cb341df9c218b0a71b9ef2440e4031525b"
   },
   "inventory_reviewed_on": "2026-10-21",
   "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification.",
-  "inventory_updated_by": "AI assistant; byte inventory check, not independent human source validation."
+  "inventory_updated_by": "AI assistant; byte inventory check, not independent human source validation.",
+  "responsible_ai_documentation_update": {
+    "date": "2026-10-22",
+    "scope": "Only the policy and documentation paths in this commit were updated; no runtime validation or human research approval is inferred."
+  }
 }

@@ -1,5 +1,7 @@
 # Sustainability to Financial Materiality
 
+> **Responsible AI:** Analyst-controlled research; verify evidence, disclose AI assistance and protect confidential information. [Policy and project-specific checks](RESPONSIBLE_AI.md).
+
 **Investment research by HHFinAi: company economics, capital allocation and valuation, supported by reproducible calculations.**
 
 Which sustainability issues change cash flow, by how much, and what evidence would change the investment judgment?
