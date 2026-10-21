@@ -1,0 +1,9 @@
+{
+  "frozen_on": "2026-10-21",
+  "scope": "Integrity check only; public commit history supplies publication context. Not authenticated tamper-proof preregistration.",
+  "sha256": {
+    "evaluation/prospective-research/predictions.json": "420cfcf1df935b57fd2c691e2ea8ce2a0f12ca29310af0378f1f85ca6429df8e",
+    "examples/water-waste/inputs.json": "e7fe301d789ca5b5431be871ab45e435823432e70894bde18b16e273475ef3e8",
+    "examples/water-waste/sources.json": "3ec8f67a6a07d278aaff17ce4e1330d96ae70c2c2dbdf5ce86245b5008013eee"
+  }
+}

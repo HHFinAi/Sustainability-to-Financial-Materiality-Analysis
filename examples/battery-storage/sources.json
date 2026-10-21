@@ -1,0 +1,59 @@
+{
+  "evidence_cutoff": "2026-10-21",
+  "extraction": "Manual bounded factual extracts checked by assistant; original documents not redistributed.",
+  "sources": [
+    {
+      "id": "IRENA2025",
+      "publisher": "IRENA",
+      "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2026/Jul/IRENA_TEC_RPGC_2025_Executive_summary_2026.pdf",
+      "publication_date": "2026-07",
+      "observation_period": "2025",
+      "retrieved_on": "2026-10-21",
+      "locator": "PDF pp. 3 and 8; four-hour utility-scale battery installed cost",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "installed_cost": {
+          "value": 140,
+          "unit": "USD_2025/kWh",
+          "kind": "REPORTED"
+        },
+        "duration": {
+          "value": 4,
+          "unit": "hours",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Approximate global benchmark, not a site quote. Month-level publication precision. All modeled money is held in constant 2025 USD."
+    },
+    {
+      "id": "ATB2025",
+      "publisher": "National Laboratory of the Rockies (formerly NREL)",
+      "url": "https://atb.nlr.gov/electricity/2025/utility-scale_battery_storage",
+      "publication_date": "2025",
+      "observation_period": "2025 ATB assumptions",
+      "retrieved_on": "2026-10-21",
+      "locator": "Roundtrip Efficiency; Operation and Maintenance; Capacity Factor",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "roundtrip_efficiency": {
+          "value": 0.85,
+          "unit": "fraction",
+          "kind": "PUBLISHED_MODEL_ASSUMPTION"
+        },
+        "annual_fom": {
+          "value": 0.04,
+          "unit": "fraction_of_initial_capex",
+          "kind": "PUBLISHED_MODEL_ASSUMPTION"
+        },
+        "lifetime": {
+          "value": 15,
+          "unit": "years",
+          "kind": "PUBLISHED_MODEL_ASSUMPTION"
+        }
+      },
+      "notes": "ATB fixed O&M includes augmentation to maintain capacity. This case adopts that convention; it does not also charge annual capacity fade or replacement. Alternative local costs are analyst scenarios."
+    }
+  ]
+}

@@ -42,6 +42,34 @@
         "evaluation/claim-accuracy/score.py",
         "--check"
       ]
+    },
+    {
+      "name": "battery-storage",
+      "arguments": [
+        "examples/battery-storage/model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "climate-staples",
+      "arguments": [
+        "examples/climate-staples/model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "water-waste",
+      "arguments": [
+        "examples/water-waste/model.py",
+        "--check"
+      ]
+    },
+    {
+      "name": "prospective-research",
+      "arguments": [
+        "evaluation/prospective-research/score.py",
+        "--check"
+      ]
     }
   ]
 }

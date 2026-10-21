@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="396pt" viewBox="0 0 720 396" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 396 
+L 720 396 
+L 720 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 54.56 307.96 
+L 708.12 307.96 
+L 708.12 27.96 
+L 54.56 27.96 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mbde4657a93" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mbde4657a93" x="112.559913" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="112.559913" y="323.318281" transform="rotate(-0 112.559913 323.318281)">150</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mbde4657a93" x="254.023117" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="254.023117" y="323.318281" transform="rotate(-0 254.023117 323.318281)">200</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mbde4657a93" x="395.48632" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="395.48632" y="323.318281" transform="rotate(-0 395.48632 323.318281)">250</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mbde4657a93" x="536.949524" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="536.949524" y="323.318281" transform="rotate(-0 536.949524 323.318281)">300</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mbde4657a93" x="678.412727" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="678.412727" y="323.318281" transform="rotate(-0 678.412727 323.318281)">350</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="381.34" y="337.964219" transform="rotate(-0 381.34 337.964219)">Installed cost (constant 2025 USD/kWh)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <defs>
+       <path id="m05d27e93f7" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m05d27e93f7" x="54.56" y="307.96" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="47.56" y="312.139141" transform="rotate(-0 47.56 312.139141)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m05d27e93f7" x="54.56" y="249.012632" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="47.56" y="253.191772" transform="rotate(-0 47.56 253.191772)">100</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m05d27e93f7" x="54.56" y="190.065263" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="47.56" y="194.244404" transform="rotate(-0 47.56 194.244404)">200</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m05d27e93f7" x="54.56" y="131.117895" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="47.56" y="135.297035" transform="rotate(-0 47.56 135.297035)">300</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m05d27e93f7" x="54.56" y="72.170526" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="47.56" y="76.349667" transform="rotate(-0 47.56 76.349667)">400</text>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="20.276094" y="167.96" transform="rotate(-90 20.276094 167.96)">Required net margin (USD/MWh)</text>
+    </g>
+   </g>
+   <g id="line2d_11">
+    <path d="M 84.267273 255.960309 
+L 310.608398 226.2462 
+L 678.412727 177.960773 
+" clip-path="url(#pe9e404375e)" style="fill: none; stroke: #267d8d; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="md14cbfd347" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #267d8d"/>
+    </defs>
+    <g clip-path="url(#pe9e404375e)">
+     <use xlink:href="#md14cbfd347" x="84.267273" y="255.960309" style="fill: #267d8d; stroke: #267d8d"/>
+     <use xlink:href="#md14cbfd347" x="310.608398" y="226.2462" style="fill: #267d8d; stroke: #267d8d"/>
+     <use xlink:href="#md14cbfd347" x="678.412727" y="177.960773" style="fill: #267d8d; stroke: #267d8d"/>
+    </g>
+   </g>
+   <g id="line2d_12">
+    <path d="M 84.267273 238.627078 
+L 310.608398 199.008267 
+L 678.412727 134.627697 
+" clip-path="url(#pe9e404375e)" style="fill: none; stroke: #17365d; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m776690f57c" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #17365d"/>
+    </defs>
+    <g clip-path="url(#pe9e404375e)">
+     <use xlink:href="#m776690f57c" x="84.267273" y="238.627078" style="fill: #17365d; stroke: #17365d"/>
+     <use xlink:href="#m776690f57c" x="310.608398" y="199.008267" style="fill: #17365d; stroke: #17365d"/>
+     <use xlink:href="#m776690f57c" x="678.412727" y="134.627697" style="fill: #17365d; stroke: #17365d"/>
+    </g>
+   </g>
+   <g id="line2d_13">
+    <path d="M 84.267273 203.960618 
+L 310.608398 144.5324 
+L 678.412727 47.961545 
+" clip-path="url(#pe9e404375e)" style="fill: none; stroke: #be6d20; stroke-width: 1.5; stroke-linecap: square"/>
+    <defs>
+     <path id="m38eae26206" d="M 0 3 
+C 0.795609 3 1.55874 2.683901 2.12132 2.12132 
+C 2.683901 1.55874 3 0.795609 3 0 
+C 3 -0.795609 2.683901 -1.55874 2.12132 -2.12132 
+C 1.55874 -2.683901 0.795609 -3 0 -3 
+C -0.795609 -3 -1.55874 -2.683901 -2.12132 -2.12132 
+C -2.683901 -1.55874 -3 -0.795609 -3 0 
+C -3 0.795609 -2.683901 1.55874 -2.12132 2.12132 
+C -1.55874 2.683901 -0.795609 3 0 3 
+z
+" style="stroke: #be6d20"/>
+    </defs>
+    <g clip-path="url(#pe9e404375e)">
+     <use xlink:href="#m38eae26206" x="84.267273" y="203.960618" style="fill: #be6d20; stroke: #be6d20"/>
+     <use xlink:href="#m38eae26206" x="310.608398" y="144.5324" style="fill: #be6d20; stroke: #be6d20"/>
+     <use xlink:href="#m38eae26206" x="678.412727" y="47.961545" style="fill: #be6d20; stroke: #be6d20"/>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <path d="M 54.56 283.687554 
+L 708.12 283.687554 
+" clip-path="url(#pe9e404375e)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #777777; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 54.56 307.96 
+L 54.56 27.96 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 54.56 307.96 
+L 708.12 307.96 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 13.2px; font-family: 'DejaVu Sans'; text-anchor: middle" x="381.34" y="21.96" transform="rotate(-0 381.34 21.96)">Storage: backup reserve raises the dispatch hurdle</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_15">
+     <path d="M 64.46 42.368281 
+L 75.46 42.368281 
+L 86.46 42.368281 
+" style="fill: none; stroke: #267d8d; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#md14cbfd347" x="75.46" y="42.368281" style="fill: #267d8d; stroke: #267d8d"/>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="95.26" y="46.218281" transform="rotate(-0 95.26 46.218281)">0% backup reserve</text>
+    </g>
+    <g id="line2d_16">
+     <path d="M 64.46 58.514219 
+L 75.46 58.514219 
+L 86.46 58.514219 
+" style="fill: none; stroke: #17365d; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m776690f57c" x="75.46" y="58.514219" style="fill: #17365d; stroke: #17365d"/>
+     </g>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="95.26" y="62.364219" transform="rotate(-0 95.26 62.364219)">25% backup reserve</text>
+    </g>
+    <g id="line2d_17">
+     <path d="M 64.46 74.660156 
+L 75.46 74.660156 
+L 86.46 74.660156 
+" style="fill: none; stroke: #be6d20; stroke-width: 1.5; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m38eae26206" x="75.46" y="74.660156" style="fill: #be6d20; stroke: #be6d20"/>
+     </g>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="95.26" y="78.510156" transform="rotate(-0 95.26 78.510156)">50% backup reserve</text>
+    </g>
+    <g id="line2d_18">
+     <path d="M 64.46 90.806094 
+L 75.46 90.806094 
+L 86.46 90.806094 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #777777; stroke-width: 1.5"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start" x="95.26" y="94.656094" transform="rotate(-0 95.26 94.656094)">Assumed net dispatch margin</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_18">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #526170" transform="translate(57.6 376.021969)">Sources: IRENA 2025 costs; 2025 ATB. Original ten-year scenario; 21 Oct 2026.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #526170" transform="translate(57.6 386.1)">Price/dispatch/reserve assumptions are hypothetical. Not a site return forecast.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pe9e404375e">
+   <rect x="54.56" y="27.96" width="653.56" height="280"/>
+  </clipPath>
+ </defs>
+</svg>

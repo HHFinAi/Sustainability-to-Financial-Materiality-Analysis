@@ -1,0 +1,18 @@
+{
+  "prepared_on": "2026-10-21",
+  "status": "PUBLIC_EVIDENCE_WITH_LABELLED_SCENARIOS",
+  "assumptions": {
+    "revenue_index": 100,
+    "months": 12,
+    "exposed_share_of_cogs": 0.1,
+    "commodity_price_shock": 0.2,
+    "input_fx_shock": 0,
+    "hedged_fraction": 0.5,
+    "hedge_protection_months": 6,
+    "inventory_lag_months": 3,
+    "pricing_lag_months": 3,
+    "pass_through_fraction": 0.6,
+    "price_elasticity": 0.5
+  },
+  "assumption_note": "Identical hypothetical procurement shock for all issuers, not estimated commodity weights or calibrated ENSO forecasts. Baseline uses H1 2026 mix on normalized revenue; no H2 or 2027 forecasts or issuer ranking."
+}

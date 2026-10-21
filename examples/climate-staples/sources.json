@@ -1,0 +1,146 @@
+{
+  "evidence_cutoff": "2026-10-21",
+  "extraction": "Manual bounded factual extracts checked by assistant; original documents not redistributed.",
+  "sources": [
+    {
+      "id": "NESN_H126",
+      "publisher": "Nestle",
+      "url": "https://www.nestle.com/media/pressreleases/allpressreleases/half-year-results-2026",
+      "publication_date": "2026-07-23",
+      "observation_period": "H1 2026",
+      "retrieved_on": "2026-10-21",
+      "locator": "Results performance summary; gross profit and operating profit",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "sales": {
+          "value": 43109,
+          "unit": "CHF_m",
+          "kind": "REPORTED"
+        },
+        "underlying_profit": {
+          "value": 7081,
+          "unit": "CHF_m",
+          "kind": "REPORTED"
+        },
+        "gross_margin": {
+          "value": 46.4,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "underlying_margin": {
+          "value": 16.4,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "rig": {
+          "value": 1.5,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "pricing": {
+          "value": 2.1,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Use disclosed rounded margins for normalized sensitivity. Do not interpret 2026 costs as effects of a future ENSO harvest shock."
+    },
+    {
+      "id": "ULVR_H126",
+      "publisher": "Unilever",
+      "url": "https://www.unilever.com/news/press-and-media/press-releases/2026/desire-at-scale-powering-strong-h1-performance/",
+      "publication_date": "2026-07-28",
+      "observation_period": "H1 2026",
+      "retrieved_on": "2026-10-21",
+      "locator": "Highlights; Profitability; Foods combination",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "sales": {
+          "value": 25600,
+          "unit": "EUR_m_rounded",
+          "kind": "REPORTED"
+        },
+        "gross_margin": {
+          "value": 46.8,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "underlying_margin": {
+          "value": 20.3,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "volume": {
+          "value": 4.2,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "pricing": {
+          "value": 0.6,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Continuing reported portfolio at the H1 date. Proposed Foods transaction could change 2027 exposure; do not apply this perimeter after separation without recasting."
+    },
+    {
+      "id": "DANO_H126",
+      "publisher": "Danone",
+      "url": "https://www.danone.com/content/dam/corp/global/danonecom/investors/en-all-publications/2026/interim-financial-report/2026interimfinancialreport.pdf",
+      "publication_date": "2026-07-29",
+      "observation_period": "H1 2026",
+      "retrieved_on": "2026-10-21",
+      "locator": "PDF p.16 / printed p.14 income statement; PDF p.26 / printed p.24 Note 1.4",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "sales": {
+          "value": 13936,
+          "unit": "EUR_m",
+          "kind": "REPORTED"
+        },
+        "cogs": {
+          "value": 8677,
+          "unit": "EUR_m",
+          "kind": "REPORTED"
+        },
+        "recurring_profit": {
+          "value": 1854,
+          "unit": "EUR_m",
+          "kind": "REPORTED"
+        },
+        "recurring_margin": {
+          "value": 13.3,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "logistics_reclassified": {
+          "value": 1681,
+          "unit": "EUR_m",
+          "kind": "REPORTED"
+        },
+        "industrial_costs_reclassified": {
+          "value": 128,
+          "unit": "EUR_m",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "2026 COGS includes logistics and selected industrial costs formerly in selling/admin. Prior-year figures were restated. Higher COGS share is not proof of higher commodity exposure."
+    },
+    {
+      "id": "NOAA_OCT26",
+      "publisher": "NOAA CPC",
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_disc_oct2026/ensodisc.shtml",
+      "publication_date": "2026-10-08",
+      "observation_period": "2026-27 forecast",
+      "retrieved_on": "2026-10-21",
+      "locator": "Synopsis and probabilistic strength discussion",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {},
+      "notes": "Weather context only. NOAA probabilities are not probabilities of a company's earnings miss or a commodity return. No estimated ENSO-to-price coefficient is imported."
+    }
+  ]
+}

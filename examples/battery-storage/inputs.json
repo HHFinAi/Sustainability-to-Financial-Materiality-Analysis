@@ -1,0 +1,26 @@
+{
+  "prepared_on": "2026-10-21",
+  "status": "PUBLIC_EVIDENCE_WITH_LABELLED_SCENARIOS",
+  "assumptions": {
+    "power_mw": 100,
+    "duration_hours": 4,
+    "years": 10,
+    "cycles_per_year": 300,
+    "discount_rate_real": 0.08,
+    "backup_reserve_fraction": 0.25,
+    "charge_price_usd_per_mwh": 50,
+    "discharge_price_usd_per_mwh": 100,
+    "site_cost_scenarios_usd_per_kwh": [
+      140,
+      220,
+      350
+    ],
+    "reserve_scenarios": [
+      0,
+      0.25,
+      0.5
+    ],
+    "terminal_recovery_fraction": 0
+  },
+  "assumption_note": "All listed inputs are analyst scenario choices. 140 USD/kWh, 85% efficiency and 4% annual FOM are adopted from the source register. Other prices/costs are not observed market quotes. Pre-tax real unlevered diagnostic; 10-year common horizon."
+}

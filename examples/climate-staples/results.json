@@ -1,0 +1,448 @@
+{
+  "danone_presentation_control": {
+    "alternative_scenario": {
+      "baseline_profit_index": 13.3,
+      "margin_change_bps": -46.41144,
+      "months": [
+        {
+          "month": 1,
+          "price_change": 0,
+          "profit": 1.1083333333333334,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0,
+          "volume_index": 1.0
+        },
+        {
+          "month": 2,
+          "price_change": 0,
+          "profit": 1.1083333333333334,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0,
+          "volume_index": 1.0
+        },
+        {
+          "month": 3,
+          "price_change": 0,
+          "profit": 1.1083333333333334,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0,
+          "volume_index": 1.0
+        },
+        {
+          "month": 4,
+          "price_change": 0.0,
+          "profit": 1.0672646383467281,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0.009999999999999998,
+          "volume_index": 1.0
+        },
+        {
+          "month": 5,
+          "price_change": 0.0,
+          "profit": 1.0672646383467281,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0.009999999999999998,
+          "volume_index": 1.0
+        },
+        {
+          "month": 6,
+          "price_change": 0.0,
+          "profit": 1.0672646383467281,
+          "sales": 8.333333333333334,
+          "unit_cost_shock": 0.009999999999999998,
+          "volume_index": 1.0
+        },
+        {
+          "month": 7,
+          "price_change": 0.0029569460390355905,
+          "profit": 1.0446734541450322,
+          "sales": 8.345617510454824,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9985215269804822
+        },
+        {
+          "month": 8,
+          "price_change": 0.0029569460390355905,
+          "profit": 1.0446734541450322,
+          "sales": 8.345617510454824,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9985215269804822
+        },
+        {
+          "month": 9,
+          "price_change": 0.0029569460390355905,
+          "profit": 1.0446734541450322,
+          "sales": 8.345617510454824,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9985215269804822
+        },
+        {
+          "month": 10,
+          "price_change": 0.005913892078071181,
+          "profit": 1.0630781021809623,
+          "sales": 8.357828824827335,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9970430539609644
+        },
+        {
+          "month": 11,
+          "price_change": 0.005913892078071181,
+          "profit": 1.0630781021809623,
+          "sales": 8.357828824827335,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9970430539609644
+        },
+        {
+          "month": 12,
+          "price_change": 0.005913892078071181,
+          "profit": 1.0630781021809623,
+          "sales": 8.357828824827335,
+          "unit_cost_shock": 0.019999999999999997,
+          "volume_index": 0.9970430539609644
+        }
+      ],
+      "profit_change_percent": -3.383093,
+      "scenario_profit_index": 12.850049,
+      "scenario_sales_index": 100.110339
+    },
+    "cogs_share_of_sales_reclassification_pp": 12.980769,
+    "meaning": "Move disclosed reclassified costs back to fixed other expense, preserving baseline profit. Analytical presentation control, not restated issuer accounts or harmonized procurement exposure.",
+    "reclassified_costs_eur_m": 1809
+  },
+  "issuers": [
+    {
+      "cogs_ratio": 0.536,
+      "issuer": "Nestle",
+      "one_percent_sales_unmitigated_cost_profit_hit_percent": 6.097561,
+      "profit_margin": 0.16399999999999998,
+      "scenario": {
+        "baseline_profit_index": 16.4,
+        "margin_change_bps": -50.318079,
+        "months": [
+          {
+            "month": 1,
+            "price_change": 0,
+            "profit": 1.3666666666666663,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 2,
+            "price_change": 0,
+            "profit": 1.3666666666666663,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 3,
+            "price_change": 0,
+            "profit": 1.3666666666666663,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 4,
+            "price_change": 0.0,
+            "profit": 1.3219999999999992,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 5,
+            "price_change": 0.0,
+            "profit": 1.3219999999999992,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 6,
+            "price_change": 0.0,
+            "profit": 1.3219999999999992,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 7,
+            "price_change": 0.0032159999999999997,
+            "profit": 1.2980162869333336,
+            "sales": 8.346690238933334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998392
+          },
+          {
+            "month": 8,
+            "price_change": 0.0032159999999999997,
+            "profit": 1.2980162869333336,
+            "sales": 8.346690238933334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998392
+          },
+          {
+            "month": 9,
+            "price_change": 0.0032159999999999997,
+            "profit": 1.2980162869333336,
+            "sales": 8.346690238933334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998392
+          },
+          {
+            "month": 10,
+            "price_change": 0.006431999999999999,
+            "profit": 1.3186130517333323,
+            "sales": 8.359960955733333,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996784
+          },
+          {
+            "month": 11,
+            "price_change": 0.006431999999999999,
+            "profit": 1.3186130517333323,
+            "sales": 8.359960955733333,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996784
+          },
+          {
+            "month": 12,
+            "price_change": 0.006431999999999999,
+            "profit": 1.3186130517333323,
+            "sales": 8.359960955733333,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996784
+          }
+        ],
+        "profit_change_percent": -2.951902,
+        "scenario_profit_index": 15.915888,
+        "scenario_sales_index": 100.119954
+      }
+    },
+    {
+      "cogs_ratio": 0.532,
+      "issuer": "Unilever",
+      "one_percent_sales_unmitigated_cost_profit_hit_percent": 4.926108,
+      "profit_margin": 0.203,
+      "scenario": {
+        "baseline_profit_index": 20.3,
+        "margin_change_bps": -50.455189,
+        "months": [
+          {
+            "month": 1,
+            "price_change": 0,
+            "profit": 1.6916666666666673,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 2,
+            "price_change": 0,
+            "profit": 1.6916666666666673,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 3,
+            "price_change": 0,
+            "profit": 1.6916666666666673,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 4,
+            "price_change": 0.0,
+            "profit": 1.647333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 5,
+            "price_change": 0.0,
+            "profit": 1.647333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 6,
+            "price_change": 0.0,
+            "profit": 1.647333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 7,
+            "price_change": 0.0031919999999999995,
+            "profit": 1.623474658400001,
+            "sales": 8.346590879733334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998404
+          },
+          {
+            "month": 8,
+            "price_change": 0.0031919999999999995,
+            "profit": 1.623474658400001,
+            "sales": 8.346590879733334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998404
+          },
+          {
+            "month": 9,
+            "price_change": 0.0031919999999999995,
+            "profit": 1.623474658400001,
+            "sales": 8.346590879733334,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.998404
+          },
+          {
+            "month": 10,
+            "price_change": 0.006383999999999999,
+            "profit": 1.6438644096000008,
+            "sales": 8.359763518933335,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996808
+          },
+          {
+            "month": 11,
+            "price_change": 0.006383999999999999,
+            "profit": 1.6438644096000008,
+            "sales": 8.359763518933335,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996808
+          },
+          {
+            "month": 12,
+            "price_change": 0.006383999999999999,
+            "profit": 1.6438644096000008,
+            "sales": 8.359763518933335,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.996808
+          }
+        ],
+        "profit_change_percent": -2.369373,
+        "scenario_profit_index": 19.819017,
+        "scenario_sales_index": 100.119063
+      }
+    },
+    {
+      "cogs_ratio": 0.62263203,
+      "issuer": "Danone",
+      "one_percent_sales_unmitigated_cost_profit_hit_percent": 7.518797,
+      "profit_margin": 0.133,
+      "scenario": {
+        "baseline_profit_index": 13.3,
+        "margin_change_bps": -56.782541,
+        "months": [
+          {
+            "month": 1,
+            "price_change": 0,
+            "profit": 1.1083333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 2,
+            "price_change": 0,
+            "profit": 1.1083333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 3,
+            "price_change": 0,
+            "profit": 1.1083333333333334,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0,
+            "volume_index": 1.0
+          },
+          {
+            "month": 4,
+            "price_change": 0.0,
+            "profit": 1.0564473306544206,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 5,
+            "price_change": 0.0,
+            "profit": 1.0564473306544206,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 6,
+            "price_change": 0.0,
+            "profit": 1.0564473306544206,
+            "sales": 8.333333333333334,
+            "unit_cost_shock": 0.009999999999999998,
+            "volume_index": 1.0
+          },
+          {
+            "month": 7,
+            "price_change": 0.0037357921928817444,
+            "profit": 1.0299545796921779,
+            "sales": 8.34884098353989,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9981321039035591
+          },
+          {
+            "month": 8,
+            "price_change": 0.0037357921928817444,
+            "profit": 1.0299545796921779,
+            "sales": 8.34884098353989,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9981321039035591
+          },
+          {
+            "month": 9,
+            "price_change": 0.0037357921928817444,
+            "profit": 1.0299545796921779,
+            "sales": 8.34884098353989,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9981321039035591
+          },
+          {
+            "month": 10,
+            "price_change": 0.007471584385763489,
+            "profit": 1.05523153021461,
+            "sales": 8.36423233255221,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9962642078071182
+          },
+          {
+            "month": 11,
+            "price_change": 0.007471584385763489,
+            "profit": 1.05523153021461,
+            "sales": 8.36423233255221,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9962642078071182
+          },
+          {
+            "month": 12,
+            "price_change": 0.007471584385763489,
+            "profit": 1.05523153021461,
+            "sales": 8.36423233255221,
+            "unit_cost_shock": 0.019999999999999997,
+            "volume_index": 0.9962642078071182
+          }
+        ],
+        "profit_change_percent": -4.136088,
+        "scenario_profit_index": 12.7499,
+        "scenario_sales_index": 100.13922
+      }
+    }
+  ],
+  "prepared_on": "2026-10-21"
+}

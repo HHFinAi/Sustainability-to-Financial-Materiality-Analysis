@@ -6,6 +6,16 @@ Which sustainability issues change cash flow, by how much, and what evidence wou
 
 ## Start with the research
 
+### Public-evidence cases — 21 October 2026
+
+| Question | Original analytical contribution | Inspect |
+|---|---|---|
+| What must battery flexibility earn? | Public cost benchmarks become dispatch/resilience hurdles; reserve and augmentation costs are explicit. | [Memo and chart](examples/battery-storage/README.md) · [Sensitivities](examples/battery-storage/RESULTS.md) |
+| How does climate-related input pressure reach staples profit? | A monthly hedge/inventory/pricing model exposes a material COGS comparability issue. | [Three-issuer case](examples/climate-staples/README.md) · [Results](examples/climate-staples/RESULTS.md) |
+| What do water/waste operating indicators establish? | Xylem order concentration, Veralto segment growth and WM pricing/volume are kept distinct. | [Monitor and chart](examples/water-waste/README.md) · [Frozen prospective hypotheses](evaluation/prospective-research/README.md) |
+
+The background reports guide analytical questions; inputs and conclusions are independently developed from public primary evidence. Each case supplies sources, assumptions, runnable calculations, contrary evidence and a named next observation. [Reproduction and scope](examples/PUBLIC_CASES.md). Site economics, procurement exposure and security valuation remain explicitly `NEEDS_DATA` where evidence is missing.
+
 ### AI infrastructure — when does earlier capacity justify extra capital?
 
 **New research, 16 October 2026:** value the delivery window and contractual cost allocation before underwriting a power workaround. A hypothetical 100 MW comparison tests commissioning delay, grid versus dedicated gas, hardware replacement, capital recovery and operational disruption. A narrow positive reference gas NPV turns negative with a six-month delay; this is an illustrative finding, not Microsoft site economics.
@@ -51,6 +61,10 @@ python examples/heidelberg-brevik/forward_model.py --check
 python examples/microsoft-ai/model.py --check
 python examples/microsoft-ai/claim_checks.py
 python evaluation/claim-accuracy/score.py --check
+python examples/battery-storage/model.py --check
+python examples/climate-staples/model.py --check
+python examples/water-waste/model.py --check
+python evaluation/prospective-research/score.py --check
 python scripts/validate_repository.py --out runs/validation-01
 ```
 

@@ -1,0 +1,16 @@
+{
+  "as_of": "2026-10-21",
+  "events": [],
+  "frozen_on": "2026-10-21",
+  "mean_brier_score": null,
+  "naive_mean_brier_score": null,
+  "pending": [
+    "XYL-2026Q3",
+    "VLTO-2026Q3",
+    "WM-2026Q3"
+  ],
+  "scope": "Operating hypotheses only; subjective probabilities, tiny correlated sample, no alpha claim.",
+  "scored_count": 0,
+  "status": "PENDING",
+  "total_predictions": 3
+}

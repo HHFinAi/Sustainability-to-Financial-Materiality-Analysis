@@ -1,0 +1,176 @@
+{
+  "evidence_cutoff": "2026-10-21",
+  "extraction": "Manual bounded factual extracts checked by assistant; original documents not redistributed.",
+  "sources": [
+    {
+      "id": "XYL_Q226",
+      "publisher": "Xylem",
+      "url": "https://www.sec.gov/Archives/edgar/data/1524472/000152447226000108/xyl07282026ex991.htm",
+      "publication_date": "2026-07-28",
+      "observation_period": "Q2 2026",
+      "retrieved_on": "2026-10-21",
+      "locator": "Highlights; Reported vs Organic Orders; Adjusted EBITDA reconciliation",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "revenue": {
+          "value": 2336,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "organic_growth": {
+          "value": 1,
+          "unit": "percent_yoy_rounded",
+          "kind": "REPORTED"
+        },
+        "orders": {
+          "value": 3086,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "orders_organic_growth": {
+          "value": 41,
+          "unit": "percent_yoy_rounded",
+          "kind": "REPORTED"
+        },
+        "adjusted_ebitda": {
+          "value": 544,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "margin": {
+          "value": 23.3,
+          "unit": "percent_sales",
+          "kind": "REPORTED"
+        },
+        "orders_wss_change": {
+          "value": 872,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "orders_total_change": {
+          "value": 912,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Issuer-hosted mirror checked: https://www.xylem.com/en-al/resources/press-releases/xylem-reports-second-quarter-2026-results/. Group EBITDA and segment order concentration; not municipal capex exposure."
+    },
+    {
+      "id": "VLTO_Q226",
+      "publisher": "Veralto",
+      "url": "https://investors.veralto.com/2026-07-28-Veralto-Reports-Second-Quarter-2026-Results",
+      "publication_date": "2026-07-28",
+      "observation_period": "Q2 ended 2026-07-03",
+      "retrieved_on": "2026-10-21",
+      "locator": "Key Second Quarter Results; Guidance",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "revenue": {
+          "value": 1474,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "core_growth": {
+          "value": 4.2,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "water_quality_core_growth": {
+          "value": 5.7,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "margin": {
+          "value": 24.6,
+          "unit": "percent_sales_adjusted_operating",
+          "kind": "REPORTED"
+        },
+        "fcf": {
+          "value": 328,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "q3_guidance_low": {
+          "value": 4,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "q3_guidance_high": {
+          "value": 5,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Operating margin is EBIT-like, not EBITDA. Adjusted EPS and margins include tariff-refund benefits; no unsupported normalization."
+    },
+    {
+      "id": "WM_Q226",
+      "publisher": "Waste Management",
+      "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+      "publication_date": "2026-07-28",
+      "observation_period": "Q2 2026",
+      "retrieved_on": "2026-10-21",
+      "locator": "Quarter results; Key Highlights; notes (b),(c),(e)",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {
+        "revenue": {
+          "value": 6684,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "revenue_growth": {
+          "value": 4,
+          "unit": "percent_yoy",
+          "kind": "REPORTED"
+        },
+        "adjusted_ebitda": {
+          "value": 2067,
+          "unit": "USD_m",
+          "kind": "REPORTED"
+        },
+        "margin": {
+          "value": 30.9,
+          "unit": "percent_sales_adjusted_operating_ebitda",
+          "kind": "REPORTED"
+        },
+        "core_price": {
+          "value": 5.7,
+          "unit": "percent",
+          "kind": "REPORTED"
+        },
+        "yield": {
+          "value": 3.6,
+          "unit": "percent",
+          "kind": "REPORTED"
+        },
+        "volume": {
+          "value": -1.8,
+          "unit": "percent",
+          "kind": "REPORTED"
+        },
+        "volume_ex_wildfire": {
+          "value": -0.4,
+          "unit": "percent",
+          "kind": "REPORTED"
+        }
+      },
+      "notes": "Core price is not realized yield. 2025 EBITDA comparisons restated for landfill accretion. Prior wildfire activity affects volume comparability."
+    },
+    {
+      "id": "EPA_SRF",
+      "publisher": "US EPA",
+      "url": "https://www.epa.gov/water-infrastructure/water-infrastructure-state-revolving-funds",
+      "publication_date": "2026-05-21",
+      "observation_period": "Funding framework",
+      "retrieved_on": "2026-10-21",
+      "locator": "CWSRF and DWSRF descriptions",
+      "review_status": "ASSISTANT_CHECKED_PRIMARY_SOURCE",
+      "raw_source_sha256": null,
+      "metrics": {},
+      "notes": "Funding and infrastructure needs are separate from awarded contracts, disbursements and issuer revenue."
+    }
+  ]
+}

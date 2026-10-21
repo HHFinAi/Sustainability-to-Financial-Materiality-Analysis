@@ -1,0 +1,31 @@
+{
+  "prepared_on": "2026-10-21",
+  "veralto": {
+    "adjusted_operating_margin_percent": 24.6,
+    "group_core_growth_percent": 4.2,
+    "q3_core_growth_guidance_midpoint_percent": 4.5,
+    "revenue_usd_m": 1474,
+    "water_quality_core_growth_percent": 5.7
+  },
+  "wm": {
+    "adjusted_operating_ebitda_margin_percent": 30.9,
+    "core_price_percent": 5.7,
+    "realized_yield_percent": 3.6,
+    "reported_revenue_growth_percent": 4,
+    "revenue_usd_m": 6684,
+    "volume_comparator_difference_pp": 1.4,
+    "volume_ex_wildfire_percent": -0.4,
+    "volume_percent": -1.8
+  },
+  "xylem": {
+    "adjusted_ebitda_margin_percent": 23.3,
+    "book_to_bill": 1.321062,
+    "orders_usd_m": 3086,
+    "organic_order_growth_percent": 41,
+    "organic_revenue_growth_percent": 1,
+    "reported_order_increase_other_usd_m": 40,
+    "reported_order_increase_wss_usd_m": 872,
+    "revenue_usd_m": 2336,
+    "wss_share_of_reported_order_increase_percent": 95.614035
+  }
+}
