@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "created_on": "2026-11-18",
+  "scope": "Illustrative pipeline revenue transmission, not projected spend or issuers' booked backlog. Potential spend and market premiums are user-defined synthetic assumptions.",
+  "cases": [
+    {
+      "case_id": "hvac-peer",
+      "status": "ILLUSTRATIVE_ONLY",
+      "currency": "USD",
+      "candidate_tickers": [
+        "TT",
+        "JCI",
+        "CARR"
+      ],
+      "issuer_specific_financials_verified": false,
+      "market_price_verified": false,
+      "funding_authorization_verified": false,
+      "assumptions": {
+        "years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "potential_project_spend_m": 1000,
+        "funded_fraction": 0.5,
+        "supplier_award_share": 0.08,
+        "delivery_conversion": 0.75,
+        "contribution_margin": 0.25,
+        "annual_fixed_cost_m": 2,
+        "annual_depreciation_m": 1,
+        "annual_recurring_capex_m": 1,
+        "annual_wc_add_m": 0.5,
+        "upfront_capex_m": 15,
+        "hypothetical_entry_price_premium_m": 20
+      }
+    },
+    {
+      "case_id": "grid-peer",
+      "status": "ILLUSTRATIVE_ONLY",
+      "currency": "USD",
+      "candidate_tickers": [
+        "GEV",
+        "HUBB",
+        "FLNC"
+      ],
+      "issuer_specific_financials_verified": false,
+      "market_price_verified": false,
+      "funding_authorization_verified": false,
+      "assumptions": {
+        "years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "potential_project_spend_m": 2000,
+        "funded_fraction": 0.4,
+        "supplier_award_share": 0.05,
+        "delivery_conversion": 0.6,
+        "contribution_margin": 0.22,
+        "annual_fixed_cost_m": 2,
+        "annual_depreciation_m": 1,
+        "annual_recurring_capex_m": 1,
+        "annual_wc_add_m": 0.75,
+        "upfront_capex_m": 15,
+        "hypothetical_entry_price_premium_m": 20
+      }
+    },
+    {
+      "case_id": "cement-infrastructure",
+      "status": "ILLUSTRATIVE_ONLY",
+      "currency": "EUR",
+      "candidate_tickers": [
+        "HEI.DE"
+      ],
+      "issuer_specific_financials_verified": false,
+      "market_price_verified": false,
+      "funding_authorization_verified": false,
+      "assumptions": {
+        "years": 5,
+        "discount_rate": 0.1,
+        "cash_tax_rate": 0.25,
+        "potential_project_spend_m": 600,
+        "funded_fraction": 0.4,
+        "supplier_award_share": 0.03,
+        "delivery_conversion": 0.7,
+        "contribution_margin": 0.3,
+        "annual_fixed_cost_m": 0.75,
+        "annual_depreciation_m": 0.3,
+        "annual_recurring_capex_m": 0.6,
+        "annual_wc_add_m": 0.2,
+        "upfront_capex_m": 10,
+        "hypothetical_entry_price_premium_m": 10
+      }
+    }
+  ]
+}

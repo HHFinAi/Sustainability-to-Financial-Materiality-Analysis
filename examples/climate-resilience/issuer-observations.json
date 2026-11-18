@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "cutoff": "2026-11-18",
+  "mode": "PUBLISHED_PRIMARY_FINANCIAL_OBSERVATIONS_ONLY",
+  "observations": [
+    {
+      "ticker": "TT",
+      "study": "cooling_hvac",
+      "company": "Trane Technologies",
+      "period": "Q3 2026",
+      "scope": "Consolidated continuing operations",
+      "currency": "USD",
+      "source_url": "https://investors.tranetechnologies.com/news-and-events/news-releases/news-release-details/2026/Trane-Technologies-Reports-Strong-Third-Quarter-Results-Raises-Full-Year-Revenue-Guidance-Reaffirms-Full-Year-EPS-Guidance/default.aspx",
+      "source_date": "2026-10-29",
+      "source_locator": "Q3 Financial Comparisons and Backlog headline",
+      "metrics": {
+        "orders_m": 7248,
+        "orders_prior_m": 5979,
+        "revenue_m": 6760,
+        "revenue_prior_m": 5743,
+        "gaap_operating_margin_pct": 19.9,
+        "backlog_m": 12500
+      },
+      "material_caveat": "Group-wide bookings, not specifically funded heat adaptation orders.",
+      "adaptation_revenue_verified": false,
+      "security_valuation_verified": false,
+      "quantified_climate_attribution": null
+    },
+    {
+      "ticker": "GEV",
+      "study": "resilient_power",
+      "company": "GE Vernova",
+      "period": "Q3 2026",
+      "scope": "Electrification segment",
+      "currency": "USD",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000162/gevpressrelease3q26.htm",
+      "source_date": "2026-10-28",
+      "source_locator": "Electrification segment reported orders/revenue/EBITDA; organic orders discussion",
+      "metrics": {
+        "orders_m": 5371,
+        "orders_prior_m": 5069,
+        "revenue_m": 3862,
+        "revenue_prior_m": 2565,
+        "segment_ebitda_m": 739,
+        "organic_orders_yoy_pct": -9
+      },
+      "material_caveat": "Acquisition and reporting realignment distort comparisons; reported order growth is not organic growth.",
+      "adaptation_revenue_verified": false,
+      "security_valuation_verified": false,
+      "quantified_climate_attribution": null
+    },
+    {
+      "ticker": "HEI.DE",
+      "study": "resilient_urban",
+      "company": "Heidelberg Materials",
+      "period": "Q3 2026",
+      "scope": "Group consolidated, RCO",
+      "currency": "EUR",
+      "source_url": "https://www.heidelbergmaterials.com/en/pr-2026-11-04",
+      "source_date": "2026-11-04",
+      "source_locator": "Q3 headline results, revenue and result from current operations",
+      "metrics": {
+        "revenue_m": 6413,
+        "revenue_prior_m": 5807,
+        "rco_m": 1281,
+        "rco_prior_m": 1179
+      },
+      "material_caveat": "RCO is not TT GAAP operating income nor GEV segment EBITDA; flood-protection contract sales unverified.",
+      "adaptation_revenue_verified": false,
+      "security_valuation_verified": false,
+      "quantified_climate_attribution": null
+    }
+  ]
+}
