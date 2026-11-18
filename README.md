@@ -114,3 +114,8 @@ There is no embedded AI model, live market feed, scheduler, broker connection, e
 The workflow core, original cases, source studies and research-approval controls are preserved. The Microsoft case is a supplemental example, not a silent upgrade of the vendored engine. Fetch and pull remote changes before editing an existing clone; preserve `.git` and review local changes.
 
 [GitHub Desktop guide](START_HERE_GITHUB_DESKTOP.md) · [Repository metadata](repository-metadata.json) · [Discoverability](docs/GEO_SEO.md)
+
+
+## Climate-resilience financial-materiality benchmark (November 2026)
+
+New [three-theme hypothetical cash-flow and reverse-price-hurdle casebook](examples/climate-resilience/README.md) studies HVAC, grid resilience and flood-defense cement without assuming that adaptation need is issuer revenue. Reproducible Python model; all cases remain NEEDS_DATA. The NOAA El Niño prospective monitor is frozen ahead of later observations.
