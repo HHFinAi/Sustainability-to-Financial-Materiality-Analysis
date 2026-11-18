@@ -211,9 +211,13 @@
     "RESPONSIBLE_AI.md": "eb066bf68078dbfef2560a579723d2cb341df9c218b0a71b9ef2440e4031525b",
     "examples/climate-resilience/model.py": "4c28cd6dd7c6ea1dcfb67f35458dad5809cc34fc32d1a30c90f31e03062bde24",
     "examples/climate-resilience/inputs.json": "75213b843b6bf5fb1c3ad7955ef0b2ca06d8da13855af1c759df65a02ee3cb35",
-    "examples/climate-resilience/README.md": "7a85861686d137b1c78e3c8a933692095c17eee06c6bae55acb54049ddb84dea",
+    "examples/climate-resilience/README.md": "ed66c472fbe49f94e3964c398ae586e38bf24ba91a6f987c49a248e3fdba3650",
     "examples/climate-resilience/EL_NINO_MONITOR.md": "20e99cd1ff86f467a779fd21c23bfc46141f5a5cb0b96a2836b68a5b92a9c6a0",
-    "tests/test_climate_resilience.py": "8e503d216c44305021fdcfd0915e0f23de689cee2532e1c0f81f819daa71b03c"
+    "tests/test_climate_resilience.py": "8e503d216c44305021fdcfd0915e0f23de689cee2532e1c0f81f819daa71b03c",
+    "examples/climate-resilience/issuer-observations.json": "bdd147525e5321aaac904ff311bf8f6a249e42f01c94ebd46f50ebe11f5a23b8",
+    "examples/climate-resilience/monitor.py": "943c1e1b4c4c37089545a8e188a7ab45ccf8cda770c47500db81da71b3d75c4c",
+    "examples/climate-resilience/OBSERVATIONS.md": "7e6b03e1b86fb1e727ae17004ca175855ffae12b742fc61142b129258de219f3",
+    "tests/test_climate_issuer_monitor.py": "9a1de0ad48837e839dba5e08d93bd37ca8a5a379ebf43d24f443f210f0124a12"
   },
   "inventory_reviewed_on": "2026-10-21",
   "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification.",
