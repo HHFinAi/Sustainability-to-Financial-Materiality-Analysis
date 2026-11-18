@@ -29,3 +29,8 @@ The inputs are **synthetic** and represent no expected current orders, market co
 5. Challenge: backlog growth without cash conversion; grid project delays or competition; cement freight/market-share restrictions. **Stop at NEEDS_DATA** if a material field is missing.
 
 For near-term prospective discipline, see [EL_NINO_MONITOR.md](EL_NINO_MONITOR.md); no local weather impact or company EPS forecast is inferred from NOAA ENSO strength.
+
+
+## Q3 2026 primary-source observation monitor
+
+See [OBSERVATIONS.md](OBSERVATIONS.md) and run `python examples/climate-resilience/monitor.py` for descriptive TT/GEV/Heidelberg operating indicators from current issuer disclosures. Accounting scopes differ; there is no verified climate-driven revenue or security valuation.
