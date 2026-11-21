@@ -1,0 +1,109 @@
+{
+  "classification": "SYNTHETIC_HOURLY_DATA_NOT_A_SITE",
+  "prepared_on": "2026-11-21",
+  "time_step_hours": 1,
+  "dispatchable_generation_mw": 85,
+  "battery_power_mw": 70,
+  "battery_energy_mwh": 400,
+  "battery_reserve_fraction": 0.25,
+  "initial_soc_fraction": 0.5,
+  "battery_roundtrip_efficiency": 0.85,
+  "hours": [
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 10
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 40
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 80
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 120
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 160
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 175
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 160
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 140
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 100
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 70
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 40
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 10
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    },
+    {
+      "load_mw": 100,
+      "solar_available_mw": 0
+    }
+  ]
+}

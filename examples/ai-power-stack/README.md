@@ -52,6 +52,21 @@ The optional \`--write\` generates \`results.json\` locally; it does not fetch
 new inputs or change the prior October research. Tests validate deterministic
 economic invariants, *not* issuer contracts, physical plant performance or alpha.
 
+## Optional hourly energy-adequacy experiment
+
+Run \`python examples/ai-power-stack/dispatch.py --check\` or omit
+\`--check\` to print the full hourly energy balance. This uses a **fictional
+24-hour** 100 MW facility load, solar supply, dispatchable generation, a
+4-hour battery and a strict 25% backup reserve. Battery charge/discharge
+efficiency and state of charge are explicit, with hourly energy conservation.
+
+The sample trace is **not a year**, not a reliability model and not
+automatically priced in the 120-month after-tax DCF. A simple percentage of
+fully served hours in this artificial day is *not* an annual 99% uptime claim;
+it cannot establish service-level guarantees without real hourly demand,
+weather, contingency distributions, degradation and operational contracts.
+
+
 ## Source and investment boundaries
 
 Research prompts: Morgan Stanley, *Clean Tech & Data Center Infrastructure –
