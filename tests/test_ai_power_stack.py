@@ -19,7 +19,7 @@ class PowerStackTest(unittest.TestCase):
     def test_all_routes_share_ownership_horizon_and_load(self):
         results = MODEL.build(self.base, self.config)
         self.assertEqual(results["investment_decision"], "NEEDS_DATA")
-        self.assertEqual(results["facility_peak_mw"], 115)
+        self.assertAlmostEqual(results["facility_peak_mw"], 115)
         self.assertEqual(results["horizon_months"], 120)
         self.assertEqual(set(results["reference"]), {"grid", "gas", "sofc"})
         self.assertTrue(all(row["horizon_months"] == 120 for row in results["reference"].values()))

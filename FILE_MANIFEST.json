@@ -208,7 +208,12 @@
     "tests/test_microsoft_ai_case.py": "d2ef70018a61178f71f11734e8e363bdbe0392f27eede10cc5b01d0e1bfb12e9",
     "tests/test_public_cases.py": "80e988b9a01e277f660c946cac94851271bea15f4401208d16c7521270f30165",
     "tests/test_release_inventory.py": "9eef0f81f9b6ca27d57d2a4f50fbba79bdfcbe8b8d8134d022b2ed36db5c6d49",
-    "RESPONSIBLE_AI.md": "eb066bf68078dbfef2560a579723d2cb341df9c218b0a71b9ef2440e4031525b"
+    "RESPONSIBLE_AI.md": "eb066bf68078dbfef2560a579723d2cb341df9c218b0a71b9ef2440e4031525b",
+    "examples/ai-power-stack/inputs.json": "c8d0bce89df70512dd0f7ab6eefc7f4a71e99a310223fe4c2a539b108bfdf66c",
+    "examples/ai-power-stack/model.py": "13616d9f521b778256df78810052ac812b8a2d6622d8ce73d64ba06f29668105",
+    "examples/ai-power-stack/README.md": "08774061ddadb77a7f8df40051d59055f33ad7e518aea9810011b5e6a8df81ff",
+    "examples/ai-power-stack/SOURCES.md": "964bfa4ad254b6603e6693448987a287ea8cdfc622c4c7d836a6c366aa56756a",
+    "tests/test_ai_power_stack.py": "0cf91b605f5b37521c2fba20358d8e75d26d95a1b0e9045eb09635c396a6e2a9"
   },
   "inventory_reviewed_on": "2026-10-21",
   "inventory_scope": "Reviewed public repository files; top-level transient runs/exports/outputs excluded. Nested evaluation archives are included. This unsigned inventory is not authenticated provenance or independent source verification.",
