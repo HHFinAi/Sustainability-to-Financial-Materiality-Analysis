@@ -1,0 +1,53 @@
+{
+  "case_id": "AI-POWER-STACK-2026-11-21",
+  "prepared_on": "2026-11-21",
+  "classification": "ILLUSTRATIVE_ANALYST_ASSUMPTIONS_NOT_ISSUER_ECONOMICS",
+  "source_case": "../ai-infrastructure/inputs.json",
+  "owner_boundary": "campus_owner_pays_all_infrastructure_hardware_and_operating_costs",
+  "firm_capacity_screen": "rated_MW_times_assumed_availability_factor_is_only_a_capacity_screen_not_reliability_or_N_minus_1",
+  "conventional_routes": "grid_and_gas_use_existing_2026_10_16_case_assumptions",
+  "route_default_delays_months": {
+    "grid": 12,
+    "gas": 6,
+    "sofc": 9
+  },
+  "sensitivity_delays_months": [
+    0,
+    6,
+    12,
+    18
+  ],
+  "routes": {
+    "grid": {
+      "rated_mw": 120,
+      "availability_factor": 0.99,
+      "overrides": {}
+    },
+    "gas": {
+      "rated_mw": 130,
+      "availability_factor": 0.92,
+      "overrides": {}
+    },
+    "sofc": {
+      "rated_mw": 140,
+      "availability_factor": 0.88,
+      "overrides": {
+        "generation_capex_m": 420,
+        "generation_life_months": 180,
+        "heat_rate_mmbtu_per_mwh": 6.5,
+        "generation_variable_om_usd_per_mwh": 16,
+        "generation_fixed_om_m_per_year": 21,
+        "generation_tco2_per_mwh": 0.4
+      }
+    }
+  },
+  "exclusions": [
+    "No Bloom Energy or hyperscaler forecasts",
+    "No CCS or 45Q benefit",
+    "No stack replacement beyond the fixed O&M allowance",
+    "No independently calibrated availability, N-1 resilience, tariffs, or equipment quotes",
+    "No battery dispatch or outage probability",
+    "No issuer-level EV or equity bridge",
+    "No site constraints, permitting, financing, or non-cash contractual obligations"
+  ]
+}
